@@ -1,5 +1,4 @@
 
-
 <h1 align="center">Hi 👋, I'm Sivanesan B</h1>
 <h3 align="center">AI & Data Science Enthusiast | Python Developer | Tech Learner from India</h3>
 
@@ -73,9 +72,3 @@
 ![](https://github-readme-stats.vercel.app/api?username=sivanesanbalu&theme=tokyonight&show_icons=true)
 
 ---
-
-## ✍️ Dev Quote
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-<!-- Proudly customized for Sivanesan B -->
