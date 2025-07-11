@@ -3,62 +3,97 @@
 ###
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo"  />
+  <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo" />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=pandas" height="60" alt="pandas logo"  />
+  <img src="https://skillicons.dev/icons?i=flask" height="60" alt="flask logo" />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=numpy" height="60" alt="numpy logo"  />
+  <img src="https://skillicons.dev/icons?i=nodejs" height="60" alt="nodejs logo" />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=sklearn" height="60" alt="sklearn logo"  />
+  <img src="https://skillicons.dev/icons?i=html,css,js" height="60" alt="html css js logo" />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=flask" height="60" alt="flask logo"  />
+  <img src="https://skillicons.dev/icons?i=mongodb" height="60" alt="mongodb logo" />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=html" height="60" alt="html logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=css" height="60" alt="css logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=js" height="60" alt="js logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=github" height="60" alt="github logo"  />
+  <img src="https://skillicons.dev/icons?i=git" height="60" alt="git logo" />
 </div>
 
 ###
 
 <div align="center">
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=EA4335&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
-  <img src="https://img.shields.io/static/v1?message=Portfolio&logo=githubpages&label=&color=blueviolet&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="portfolio logo"  />
+  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&style=for-the-badge" height="25" />
+  <img src="https://img.shields.io/static/v1?message=GitHub&logo=github&label=&color=181717&logoColor=white&style=for-the-badge" height="25" />
+  <img src="https://img.shields.io/static/v1?message=Portfolio&logo=githubpages&label=&color=blueviolet&logoColor=white&style=for-the-badge" height="25" />
 </div>
 
 ---
 
-## 🧠 About Me
+## 🚀 Projects & Work
 
-- 👨‍🎓 AI & Data Science Student from India  
-- 🔭 Working on **EduBot** – A chatbot to help students with AI-based responses  
-- 📊 Love exploring **data**, building **ML models**, and automating tasks  
-- 💡 Passionate about combining **AI + Web + Automation**
-- 🌱 Currently learning: `TensorFlow`, `model deployment`, and `data storytelling`
-- ✨ Fun Fact: I explain Python in Tamil to friends 😄
+🔭 I’m currently working on:  
+**Fine-Tuned Qwen LLM for Smart Inventory Management**  
+➡️ [View Project](https://lnkd.in/gZ6f65Nd)
+
+👯 I’m looking to collaborate on:  
+**Multi-language AI Chatbot (Google Generative AI + Node.js)**  
+➡️ [View Project](https://lnkd.in/gUehh7tt)
+
+🤝 I’m looking for help with:  
+**Disease Prediction Chatbot using NLP + AI**  
+➡️ [View Notebook](https://lnkd.in/ghQU9J6g)
 
 ---
 
-## 🛠️ Projects
+## 🌱 Currently Learning
+- Deep Learning (TensorFlow, PyTorch)  
+- Full-stack ML deployment  
+- Advanced data visualization
 
-| 🔗 Project Name | Description |
-|----------------|-------------|
-| 🎓 [EduBot Chatbot](https://github.com/sivanesanb/edubot-chatbot) | A chatbot using Python + Flask for answering student queries |
-| 📊 [E-commerce CSV Analyzer](https://github.com/sivanesanb/csv-analyzer) | Python script that analyzes customer data and outputs summaries |
-| 🧮 [Student Marks Predictor](https://github.com/sivanesanb/marks-predictor) | ML model predicting pass/fail from study hours and test marks |
+---
+
+## 🛠 Tech Stack
+
+**Languages:**  
+Python, JavaScript, HTML, CSS, Bash  
+
+**Frameworks & Tools:**  
+Flask, Node.js, MongoDB, scikit-learn, Pandas, UiPath RPA  
+
+**DevOps & Cloud:**  
+GitHub, Git, Render, Replit  
+
+---
+
+## 💬 Ask Me About
+- Frontend + Backend Integration  
+- GenAI & LLM Fine-Tuning  
+- Flask / Node / RPA Automation  
+
+---
+
+## 📫 How to Reach Me
+📧 apsiva69@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/sivanesan-balu-871ba7264)  
+🌐 [Portfolio](https://your-portfolio-link.com) *(Add if available)*
+
+---
+
+## 👨‍💻 All of My Projects Are Available At
+🔗 [GitHub Profile](https://github.com/sivanesanb)  
+🎥 [Burger Shop Website Demo](https://lnkd.in/gCBKv2Vy)  
+💻 [Burger App Code](https://lnkd.in/g88n6hWU)
+
+---
+
+## ⚡ Fun Fact  
+I teach Python in Tamil & love building chatbots that talk smarter than me 😄
 
 ---
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=sivanesanb&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-  <img src="https://github-profile-trophy.vercel.app?username=sivanesanb&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph"  />
+  <img src="https://streak-stats.demolab.com?user=sivanesanb&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="150" />
+  <img src="https://github-profile-trophy.vercel.app?username=sivanesanb&theme=dracula&row=1&margin-w=10&margin-h=8" height="150" />
 </div>
 
-###
+---
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sivanesanb/sivanesanb/output/pacman-contribution-graph-dark.svg">
