@@ -1,102 +1,75 @@
-<h1 align="center">Hey 👋 What's Up?</h1>
+# 💫 Hi 👋, I'm Sivanesan B
+**An AI Engineer | Full Stack Developer | RPA Enthusiast from India 🇮🇳**
 
-###
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo" />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=flask" height="60" alt="flask logo" />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=nodejs" height="60" alt="nodejs logo" />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=html,css,js" height="60" alt="html css js logo" />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=mongodb" height="60" alt="mongodb logo" />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=git" height="60" alt="git logo" />
-</div>
-
-###
-
-<div align="center">
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&style=for-the-badge" height="25" />
-  <img src="https://img.shields.io/static/v1?message=GitHub&logo=github&label=&color=181717&logoColor=white&style=for-the-badge" height="25" />
-  <img src="https://img.shields.io/static/v1?message=Portfolio&logo=githubpages&label=&color=blueviolet&logoColor=white&style=for-the-badge" height="25" />
-</div>
+📬 **Reach me at:** apsiva69@gmail.com  
+📍 Paramakudi, Tamil Nadu | 📞 +91 8438692752
 
 ---
 
-## 🚀 Projects & Work
+### 🚀 About Me
 
-🔭 I’m currently working on:  
-**Fine-Tuned Qwen LLM for Smart Inventory Management**  
-➡️ [View Project](https://lnkd.in/gZ6f65Nd)
+- 🔭 **Currently working on:**
+  - Fine-Tuning Lightweight LLMs for Inventory Management ([View Project](https://lnkd.in/gZ6f65Nd))
+  - AI-powered Disease Prediction Chatbot ([Colab Notebook](https://lnkd.in/ghQU9J6g))
+  - Burger Shop Full-Stack Web App ([GitHub](https://lnkd.in/g88n6hWU))
 
-👯 I’m looking to collaborate on:  
-**Multi-language AI Chatbot (Google Generative AI + Node.js)**  
-➡️ [View Project](https://lnkd.in/gUehh7tt)
-
-🤝 I’m looking for help with:  
-**Disease Prediction Chatbot using NLP + AI**  
-➡️ [View Notebook](https://lnkd.in/ghQU9J6g)
-
----
-
-## 🌱 Currently Learning
-- Deep Learning (TensorFlow, PyTorch)  
-- Full-stack ML deployment  
-- Advanced data visualization
+- 👯 **Looking to collaborate on:** AI projects, Web apps, Educational tech tools  
+- 🤝 **Need help with:** GenAI fine-tuning and large dataset optimization  
+- 🌱 **Currently learning:** Reinforcement Learning, Advanced Prompt Engineering  
+- 💬 **Ask me about:** Flask, TensorFlow, gTTS, MongoDB, GenAI, UiPath  
+- 📝 **My Projects:** See more on my [GitHub Portfolio](https://github.com/YOUR_USERNAME_HERE)  
+- 📄 **Resume:** [View Resume](https://example.com) *(replace with actual link)*  
+- ⚡ **Fun fact:** I built my first AI chatbot before graduating!
 
 ---
 
-## 🛠 Tech Stack
+## 🔧 Tech Stack:
 
-**Languages:**  
-Python, JavaScript, HTML, CSS, Bash  
-
-**Frameworks & Tools:**  
-Flask, Node.js, MongoDB, scikit-learn, Pandas, UiPath RPA  
-
-**DevOps & Cloud:**  
-GitHub, Git, Render, Replit  
-
----
-
-## 💬 Ask Me About
-- Frontend + Backend Integration  
-- GenAI & LLM Fine-Tuning  
-- Flask / Node / RPA Automation  
+![Python](https://img.shields.io/badge/python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![MongoDB](https://img.shields.io/badge/mongodb-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)
+![UiPath](https://img.shields.io/badge/UiPath-orange?style=for-the-badge&logo=uipath&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/tensorflow-%23FF6F00.svg?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/pytorch-%23EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
-## 📫 How to Reach Me
-📧 apsiva69@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/sivanesan-balu-871ba7264)  
-🌐 [Portfolio](https://your-portfolio-link.com) *(Add if available)*
+## 🌐 Socials:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sivanesan-balu-871ba7264)
+[![Instagram](https://img.shields.io/badge/Instagram-pink?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/YOUR_HANDLE)
+[![YouTube](https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@YOURCHANNEL)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_USERNAME)
 
 ---
 
-## 👨‍💻 All of My Projects Are Available At
-🔗 [GitHub Profile](https://github.com/sivanesanb)  
-🎥 [Burger Shop Website Demo](https://lnkd.in/gCBKv2Vy)  
-💻 [Burger App Code](https://lnkd.in/g88n6hWU)
+## 🏆 GitHub Trophies
+
+![](https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 ---
 
-## ⚡ Fun Fact  
-I teach Python in Tamil & love building chatbots that talk smarter than me 😄
+## 📊 GitHub Stats
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&theme=tokyonight&layout=compact)
+![](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&theme=tokyonight&show_icons=true)
 
 ---
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=sivanesanb&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5" height="150" />
-  <img src="https://github-profile-trophy.vercel.app?username=sivanesanb&theme=dracula&row=1&margin-w=10&margin-h=8" height="150" />
-</div>
+## ✍️ Dev Quote
+
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sivanesanb/sivanesanb/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sivanesanb/sivanesanb/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/sivanesanb/sivanesanb/output/pacman-contribution-graph.svg">
-</picture>
+<!-- Optional Snake Animation -->
+<!-- <div align="center">
+  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+</div> -->
+
+<!-- Proudly customized for Sivanesan B -->
