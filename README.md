@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsmilewithkhushi.hashnode.dev%2Fstarting-your-machine-learning-odyssey-a-comprehensive-guide&psig=AOvVaw1pgaTKKskeZEfB_M3YszIT&ust=1752820344890000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCK5-aiw44DFQAAAAAdAAAAABAE)" alt="AI Developer GIF" width="400" />
+  <img src="C:\Users\Rohini Ramesh\OneDrive - Kumaraguru College of Technology\Desktop\machine-learning-libraries.gif" alt="AI Developer GIF" width="400" />
 </p>
 
 
