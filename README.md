@@ -12,10 +12,10 @@
 
   🌟 Let’s build something intelligent and impactful together!
 </p>
+<div align="center">
+  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+</div>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif" alt="Terminal Loading" width="500"/>
-</p>
 
 
 
