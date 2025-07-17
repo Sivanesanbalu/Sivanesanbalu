@@ -7,8 +7,9 @@
 <p align="center">
   🎓 Final-year B.Tech student in <strong>Artificial Intelligence & Data Science</strong> <br>
   💻 Diploma holder in <strong>Computer Science</strong> with a strong foundation in programming and AI development
+  🔥 Passionate AI & ML Developer | Creative Problem Solver | Lifelong Learner 📚
 </p>
-### 🔥 Passionate AI & ML Developer | Creative Problem Solver | Lifelong Learner 📚
+
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/sivanesan-b-871ba7264/) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@https://www.youtube.com/@3GenTechies) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:apsiva69@gmail.com) 
