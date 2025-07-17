@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="[https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsmilewithkhushi.hashnode.dev%2Fstarting-your-machine-learning-odyssey-a-comprehensive-guide&psig=AOvVaw1pgaTKKskeZEfB_M3YszIT&ust=1752820344890000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCK5-aiw44DFQAAAAAdAAAAABAE)" alt="AI Developer GIF" width="400" />
+</p>
+
+
 Passionate AI & ML Developer |<br><br>Creative Problem Solver |<br><br>Lifelong Learner<br><br>I love turning smart ideas into intelligent and beautiful user experiences<br><br>+ Specializing in Python, Machine Learning, and AI-powered solutions<br><br>Leveling up my skills in Deep Learning, LLMs, and Data Science tools<br><br>Always ready to talk about AI trends, chatbot systems, and cool ML projects<br><br>Building responsive, smart, and impactful applications<br><br>Forever a student of algorithms, model optimization, and clean code<br><br>Let’s create something awesome and intelligent together!<br>
 
 
