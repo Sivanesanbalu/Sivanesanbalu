@@ -14,8 +14,9 @@
 </p>
 
 <p align="center">
-  <img src="https://i.gifer.com/origin/7c/7cae54b0b27abf1d2aa72a2d420ff7ae_w200.gif" alt="Matrix Code" width="600"/>
+  <img src="https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif" alt="Terminal Loading" width="500"/>
 </p>
+
 
 
 ## 🌐 Socials:
