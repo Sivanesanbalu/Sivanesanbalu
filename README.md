@@ -5,7 +5,7 @@
 <h2 align="center">Hi there, I'm Sivanesan B 👋</h2>
 
 <p align="center">
-  🎓 Final-year B.Tech student in <strong>Artificial Intelligence & Data Science</strong> at KPR Institute of Engineering and Technology<br>
+  🎓 Final-year B.Tech student in <strong>Artificial Intelligence & Data Science</strong> <br>
   💻 Diploma holder in <strong>Computer Science</strong> with a strong foundation in programming and AI development
 </p>
 
