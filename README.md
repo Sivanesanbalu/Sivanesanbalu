@@ -9,11 +9,6 @@
   💻 Diploma holder in <strong>Computer Science</strong>, with a solid foundation in programming, algorithms, and AI systems<br>
   🤖 Passionate <strong>AI & ML Developer</strong> | Creative Problem Solver | Lifelong Learner 📚<br><br>
 
-  🚀 I enjoy transforming innovative ideas into smart and impactful AI-driven solutions.<br>
-  🧠 Specializing in <strong>Python, Machine Learning, and AI-powered applications</strong><br>
-  📈 Currently leveling up in <strong>Deep Learning, LLMs, and Data Science tools</strong><br>
-  💬 Always open to discussing <strong>chatbots, AI trends, and ML project ideas</strong><br>
-  🛠️ Focused on writing <strong>clean, scalable, and optimized code</strong><br><br>
 
   🌟 Let’s build something intelligent and impactful together!
 </p>
