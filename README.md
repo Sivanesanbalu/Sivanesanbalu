@@ -9,23 +9,6 @@
   💻 Diploma holder in <strong>Computer Science</strong> with a strong foundation in programming and AI development
 </p>
 
----
-
-Passionate AI & ML Developer |<br><br>
-Creative Problem Solver |<br><br>
-Lifelong Learner 📚<br><br>
-
-I love turning smart ideas into intelligent and beautiful user experiences<br><br>
-
-+ Specializing in Python, Machine Learning, and AI-powered solutions<br><br>
-Leveling up my skills in Deep Learning, LLMs, and Data Science tools<br><br>
-Always ready to talk about AI trends, chatbot systems, and cool ML projects<br><br>
-Building responsive, smart, and impactful applications<br><br>
-Forever a student of algorithms, model optimization, and clean code<br><br>
-
-Let’s create something awesome and intelligent together! 🚀
-
-
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/sivanesan-b-871ba7264/) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@https://www.youtube.com/@3GenTechies) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:apsiva69@gmail.com) 
 
