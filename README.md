@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="C:\Users\Rohini Ramesh\OneDrive - Kumaraguru College of Technology\Desktop\machine-learning-libraries.gif" alt="AI Developer GIF" width="400" />
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="AI Thinking GIF" width="400" />
 </p>
+
 
 
 Passionate AI & ML Developer |<br><br>Creative Problem Solver |<br><br>Lifelong Learner<br><br>I love turning smart ideas into intelligent and beautiful user experiences<br><br>+ Specializing in Python, Machine Learning, and AI-powered solutions<br><br>Leveling up my skills in Deep Learning, LLMs, and Data Science tools<br><br>Always ready to talk about AI trends, chatbot systems, and cool ML projects<br><br>Building responsive, smart, and impactful applications<br><br>Forever a student of algorithms, model optimization, and clean code<br><br>Let’s create something awesome and intelligent together!<br>
