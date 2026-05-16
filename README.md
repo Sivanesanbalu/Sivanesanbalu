@@ -5,7 +5,7 @@
 <h2 align="center">Hi there, I'm Sivanesan B 👋</h2>
 
 <p align="center">
-  🎓 Final-year B.Tech student in <strong>Artificial Intelligence & Data Science</strong><br>
+  🎓 B.Tech graduate in <strong>Artificial Intelligence & Data Science</strong><br>
   💻 Diploma holder in <strong>Computer Science</strong>, with a solid foundation in programming, algorithms, and AI systems<br>
   🤖 Passionate <strong>AI & ML Developer</strong> | Creative Problem Solver | Lifelong Learner 📚<br><br>
 
