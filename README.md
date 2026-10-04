@@ -1,8 +1,10 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,100:004e92&height=220&section=header&text=Sivanesan%20B&fontSize=52&fontAlignY=38&animation=twinkling&desc=AI%20Engineer%20%E2%80%A2%20Autonomous%20Agent%20Architect%20%E2%80%A2%20IEEE%20Researcher&descAlignY=58&descAlign=50" alt="Sivanesan B Header Banner" width="100%" />
-</p>
-
 <div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" alt="Developer Coding at Desk" width="480" />
+
+# 🌌 Hi there, I'm Sivanesan B
+
+### 🚀 AI Engineer • Autonomous Multi-Agent Architect • IEEE-Published Researcher
 
 <p align="center">
   <a href="https://git.io/typing-svg">
@@ -232,7 +234,3 @@
 <p><i>💡 Passionate about building intelligent systems that push the boundaries of AI autonomy and efficiency.</i></p>
 
 </div>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,100:004e92&height=120&section=footer" alt="Footer Wave" width="100%" />
-</p>
