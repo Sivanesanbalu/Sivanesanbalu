@@ -1,12 +1,12 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,100:004e92&height=220&section=header&text=Sivanesan%20B&fontSize=52&fontAlignY=38&animation=twinkling&desc=AI%20Engineer%20%E2%80%A2%20Autonomous%20Agent%20Architect%20%E2%80%A2%20IEEE%20Researcher&descAlignY=58&descAlign=50" alt="Sivanesan B Header Banner" width="100%" />
+</p>
+
 <div align="center">
-
-# 🌌 Hi there, I'm Sivanesan B
-
-### 🚀 AI Engineer • Autonomous Multi-Agent Architect • IEEE-Published Researcher
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&width=680&lines=Autonomous+Multi-Agent+Workflows+(LangGraph+%2B+Inngest);Production+RAG+Architectures+%26+Vector+Retrieval+(FAISS);Carbon-Efficient+LLM+Inference+(IEEE+Published+Researcher);Voice+AI+Control+Planes+%26+On-Device+Speech+Intelligence;Full-Stack+AI+Engineering+(Next.js+15+%2B+FastAPI)" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1000&color=00F2FE&center=true&vCenter=true&width=700&lines=🤖+Autonomous+Multi-Agent+Workflows+(LangGraph+%2B+Inngest);⚡+Production+RAG+Architectures+%26+Vector+Retrieval+(FAISS);🌿+Carbon-Efficient+LLM+Inference+(IEEE+Published+Researcher);🎙️+Voice+AI+Control+Planes+%26+On-Device+Speech+Intelligence;🚀+Full-Stack+AI+Engineering+(Next.js+15+%2B+FastAPI)" alt="Typing SVG" />
   </a>
 </p>
 
@@ -28,17 +28,24 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-🟢_Building_Next--Gen_Agentic_AI_Systems-brightgreen?style=flat-square" alt="Status" />
-  <img src="https://img.shields.io/badge/Location-Coimbatore%2C_India-blue?style=flat-square&logo=googlemaps&logoColor=white" alt="Location" />
+  <img src="https://img.shields.io/badge/Role-GenAI_Executive_@_Nunes_Instruments-blue?style=flat-square" alt="Role" />
+  <img src="https://img.shields.io/badge/Location-Coimbatore%2C_India-0052cc?style=flat-square&logo=googlemaps&logoColor=white" alt="Location" />
   <img src="https://img.shields.io/badge/Open_To-AI_Roles_%26_Collaborations-orange?style=flat-square" alt="Open To" />
+</p>
+
+<p align="center">
+  <a href="#-technical-arsenal--tech-stack">
+    <img src="https://skillicons.dev/icons?i=py,pytorch,fastapi,nextjs,react,ts,nodejs,postgres,supabase,docker,gcp,git" alt="Tech Stack Icons" />
+  </a>
 </p>
 
 </div>
 
 ---
 
-### 💡 Executive Summary & Highlights
+### 💡 Executive Highlights
 
-- 💼 **GenAI Executive & Prompt Engineer** at **Nunes Instruments** — engineering production LLM agent pipelines, real-time audio intelligence, and structured data extraction systems.
+- 💼 **GenAI Executive & Prompt Engineer** at **Nunes Instruments** — architecting enterprise LLM pipelines, autonomous multi-agent workflows, and real-time audio intelligence systems.
 - 🎓 **B.Tech in Artificial Intelligence & Data Science** from **Kumaraguru College of Technology** (KCT) & **Diploma in Computer Engineering** (CGPA: 8.0/10).
 - 🏆 **Best Final Year Project Award Winner** for cutting-edge carbon-efficient deep learning research.
 - 📄 **IEEE-Published Researcher** in carbon-efficient transformer inference optimization.
@@ -225,3 +232,7 @@
 <p><i>💡 Passionate about building intelligent systems that push the boundaries of AI autonomy and efficiency.</i></p>
 
 </div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,100:004e92&height=120&section=footer" alt="Footer Wave" width="100%" />
+</p>
