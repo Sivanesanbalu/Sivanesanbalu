@@ -1,17 +1,18 @@
 <div align="center">
 
 <!-- 🌌 Animated Header Hero Banner with Twinkling Particles -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,35:0c2d48,70:0969da,100:00f2fe&height=240&section=header&text=Sivanesan%20B&fontSize=52&fontAlignY=36&desc=AI%20Engineer%20•%20Autonomous%20Multi-Agent%20Architect%20•%20IEEE-Published%20Researcher&descFontSize=17&descAlignY=62&fontColor=ffffff&stroke=00f2fe&strokeWidth=1.5&animation=twinkling" alt="Sivanesan B Animated Header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,35:0c2d48,70:0969da,100:00f2fe&height=240&section=header&text=Sivanesan%20B&fontSize=52&fontAlignY=36&desc=AI%20Engineer%20%7C%20Autonomous%20Multi-Agent%20Architect%20%7C%20IEEE-Published%20Researcher&descFontSize=17&descAlignY=62&fontColor=ffffff&stroke=00f2fe&strokeWidth=1.5&animation=twinkling" alt="Sivanesan B Animated Header" width="100%" />
 
-<!-- ⚡ Glowing Animated Laser Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4300-a447-11eb-908a-139a6edaec5c.gif" width="100%" height="28" alt="Glowing Neon Laser Bar" />
+<!-- ⚡ Glowing Neon Laser Divider -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f2fe,100:0969da&height=4&section=header" width="100%" alt="Neon Divider" />
 
 <!-- 🤖 Animated Multi-Agent & Research Coding Centerpiece -->
 <img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" alt="Autonomous AI Engineer at Work" width="380" />
 
+<!-- ⌨️ Live Typing SVG Banner -->
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=21&duration=2400&pause=1100&color=00F2FE&center=true&vCenter=true&width=780&lines=🤖+Autonomous+Multi-Agent+Swarm+Architectures+(LangGraph+%2B+Inngest);🌿+Eco-Transformers%3A+58%25+Lower+CO₂+%26+56%25+Faster+LLM+Inference;🎙️+Enterprise+Voice+AI+Control+Planes+(Vapi+%2B+SIP+%2B+Whisper+STT);⚡+Production+RAG+Engines+%26+Sub-Second+Vector+Search+(FAISS);🚀+Full-Stack+AI+Systems+(Next.js+15+%2B+FastAPI+%2B+PostgreSQL)" alt="Typing SVG Banner" />
+  <a href="https://github.com/Sivanesanbalu">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2400&pause=1000&color=00F2FE&center=true&vCenter=true&width=750&lines=Autonomous+Multi-Agent+Swarms+(LangGraph+%2B+Inngest);Eco-Transformers:+58%25+Lower+CO2+%26+56%25+Faster+LLM+Inference;Enterprise+Voice+AI+Control+Planes+(Vapi+%2B+Whisper+STT);Production+RAG+Engines+%26+Sub-Second+Vector+Search+(FAISS);Full-Stack+AI+Systems+(Next.js+15+%2B+FastAPI+%2B+PostgreSQL)&v=4" alt="Typing SVG Banner" />
   </a>
 </p>
 
@@ -44,28 +45,6 @@
 </p>
 
 </div>
-
----
-
-### ⚡ Quick Interactive Terminal
-
-```bash
-# Run my interactive CLI card directly from your terminal:
-npx sivanesan-balu
-# Or inspect my verified public key & credentials:
-curl -sL https://sivanesanbalu.netlify.app/api/profile.json | jq
-```
-
----
-
-### 🧬 Executive Profile & Architectural Impact
-
-I bridge the gap between **pioneering academic AI research** and **scalable, production-grade agentic engineering**:
-
-- 🔬 **Carbon-Efficient Neural Inference**: Author of *"Eco-Transformers"* (IEEE 2025), introducing self-pruning and activation freezing mechanisms in transformer LLMs. Slashed inference CO₂ emissions by **58%** and accelerated forward-pass latency by **56%** with zero perplexity degradation.
-- 🤖 **Autonomous Multi-Agent Systems**: Architect of stateful agent topologies using **LangGraph**, **Inngest**, and **Playwright** with durable self-healing execution loops, dynamic human-in-the-loop escalation, and sub-second tool routing.
-- 🎙️ **Voice AI & Low-Latency Telephony**: Deployed enterprise voice control planes with **Vapi**, custom SIP trunks, real-time WebRTC audio streams, and local air-gapped **Whisper STT** for low-latency (<400ms TTFB) conversation.
-- 🏢 **Enterprise Impact**: Leading generative AI architectures and prompt engineering at **Nunes Instruments**, automating high-volume B2B RFQs, multi-modal sensor telemetry parsing, and multi-tenant agent fleets.
 
 ---
 
@@ -116,6 +95,28 @@ I bridge the gap between **pioneering academic AI research** and **scalable, pro
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=Sivanesanbalu&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="98%" />
 </div>
+
+---
+
+### ⚡ Quick Interactive Terminal
+
+```bash
+# Run my interactive CLI card directly from your terminal:
+npx sivanesan-balu
+# Or inspect my verified public key & credentials:
+curl -sL https://sivanesanbalu.netlify.app/api/profile.json | jq
+```
+
+---
+
+### 🧬 Executive Profile & Architectural Impact
+
+I bridge the gap between **pioneering academic AI research** and **scalable, production-grade agentic engineering**:
+
+- 🔬 **Carbon-Efficient Neural Inference**: Author of *"Eco-Transformers"* (IEEE 2025), introducing self-pruning and activation freezing mechanisms in transformer LLMs. Slashed inference CO₂ emissions by **58%** and accelerated forward-pass latency by **56%** with zero perplexity degradation.
+- 🤖 **Autonomous Multi-Agent Systems**: Architect of stateful agent topologies using **LangGraph**, **Inngest**, and **Playwright** with durable self-healing execution loops, dynamic human-in-the-loop escalation, and sub-second tool routing.
+- 🎙️ **Voice AI & Low-Latency Telephony**: Deployed enterprise voice control planes with **Vapi**, custom SIP trunks, real-time WebRTC audio streams, and local air-gapped **Whisper STT** for low-latency (<400ms TTFB) conversation.
+- 🏢 **Enterprise Impact**: Leading generative AI architectures and prompt engineering at **Nunes Instruments**, automating high-volume B2B RFQs, multi-modal sensor telemetry parsing, and multi-tenant agent fleets.
 
 ---
 
