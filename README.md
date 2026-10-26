@@ -69,6 +69,56 @@ I bridge the gap between **pioneering academic AI research** and **scalable, pro
 
 ---
 
+### 🌐 3D Isometric Contribution Universe
+
+<!-- Real-time 3D Isometric Contribution Graph with Light/Dark Support -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/profile-night-view.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/profile-green-animate.svg" />
+    <img alt="Sivanesan's 3D Isometric Contribution Universe" src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/profile-night-view.svg" width="100%" />
+  </picture>
+</div>
+
+<details>
+  <summary><b>🕹️ Click to view alternate 3D projections (Animated Green & GitBlock)</b></summary>
+  <div align="center">
+    <br/>
+    <p><b>Animated Isometric Blocks</b></p>
+    <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/profile-green-animate.svg" alt="3D Animated Green Graph" width="95%" />
+    <br/><br/>
+    <p><b>GitBlock Cube Projection</b></p>
+    <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/profile-gitblock.svg" alt="3D GitBlock" width="95%" />
+  </div>
+</details>
+
+---
+
+### 🐍 Contribution Radar & Kinetic Snake Grid
+
+<!-- Dynamic Snake Eating Contribution Grid with Dark/Light Support -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/github-contribution-grid-snake.svg" width="100%" />
+  </picture>
+</div>
+
+<br/>
+
+<!-- Live GitHub Performance & Velocity Stats -->
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Sivanesanbalu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sivanesanbalu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="49%" />
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=Sivanesanbalu&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="98%" />
+</div>
+
+---
+
 ### 📄 Featured Publication Spotlight (IEEE Xplore)
 
 <div align="center">
@@ -189,26 +239,6 @@ I bridge the gap between **pioneering academic AI research** and **scalable, pro
   <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
 </p>
 
-</div>
-
----
-
-### 🐍 Contribution Activity & Snake Animation
-
-<!-- Dynamic Snake Eating Contribution Grid via GitHub Actions -->
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Sivanesanbalu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sivanesanbalu&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="49%" />
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=Sivanesanbalu&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="98%" />
 </div>
 
 ---
