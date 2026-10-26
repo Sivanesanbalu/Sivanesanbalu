@@ -40,11 +40,12 @@ jobs:
 
       - name: Bundle Animation Assets
         run: |
+          sudo chown -R $USER:$USER .
           mkdir -p dist
           if [ -d "profile-3d-contrib" ]; then
             cp -r profile-3d-contrib/* dist/
           fi
-          echo "Generated assets:"
+          echo "Generated assets in dist:"
           ls -la dist/
 
       - name: Deploy Assets to Output Branch
