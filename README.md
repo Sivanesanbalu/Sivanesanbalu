@@ -5,11 +5,11 @@
 
 **An immersive 3D pirate voyage through AI engineering.**
 
-### [🌊 ENTER THE LIVE 3D WORLD](https://sivanesan-grand-line-3d.vercel.app)
+### [🌊 ENTER THE LIVE 3D WORLD](https://grand-line-3d-sivanesan.vercel.app)
 
 **Sail a 3D ship** · **Explore AI project islands** · **Swap 3D pirate captains** · **Load your own GLB character**
 
-[**Live 3D Portfolio**](https://sivanesan-grand-line-3d.vercel.app) · [**Source code**](https://github.com/Sivanesanbalu/Sivanesanbalu/tree/main/docs) · [**Professional portfolio**](https://sivanesanbalu.netlify.app)
+[**Live 3D Portfolio**](https://grand-line-3d-sivanesan.vercel.app) · [**Source code**](https://github.com/Sivanesanbalu/Sivanesanbalu/tree/main/docs) · [**Professional portfolio**](https://sivanesanbalu.netlify.app)
 
 *GitHub README cannot run WebGL. Open the live experience for smooth 3D movement and character customization.*
 
