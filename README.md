@@ -7,6 +7,10 @@
 
 <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-wanted.svg" alt="Sivanesan B animated pirate wanted poster" width="75%" />
 
+### 🧭 Interactive Grand Line Adventure
+
+[**⚓ Explore the interactive pirate map (portfolio source)**](https://github.com/Sivanesanbalu/Sivanesanbalu/blob/main/docs/index.html) · Clickable project islands, animated ship, wanted poster and treasure vault. *(GitHub Pages hosting still needs to be enabled to make this a live website.)*
+
 ### 🏴‍☠️ Captain's Log · The AI Grand Line
 
 **The mission:** Build reliable AI systems, explore new architectures, and turn ambitious research into production-ready tools.
