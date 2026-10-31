@@ -1,34 +1,17 @@
-<!-- GRAND LINE PROFILE THEME: Original professional profile retained below -->
+<!-- GRAND LINE 3D: new interactive experience, original professional profile preserved below -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-banner.svg" alt="Animated Grand Line of Code pirate ship banner" width="100%" />
+# 🏴‍☠️ GRAND LINE 3D · SIVANESAN B
 
-<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-awakening.svg" alt="Animated AI Engineer awakening aura" width="100%" />
+**An immersive 3D pirate voyage through AI engineering.**
 
-<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-wanted.svg" alt="Sivanesan B animated pirate wanted poster" width="75%" />
+### [🌊 ENTER THE LIVE 3D WORLD](https://sivanesan-grand-line-3d.vercel.app)
 
-### 🧭 Interactive Grand Line Adventure
+**Sail a 3D ship** · **Explore AI project islands** · **Swap 3D pirate captains** · **Load your own GLB character**
 
-[**⚓ Explore the interactive pirate map (portfolio source)**](https://github.com/Sivanesanbalu/Sivanesanbalu/blob/main/docs/index.html) · Clickable project islands, animated ship, wanted poster and treasure vault. *(GitHub Pages hosting still needs to be enabled to make this a live website.)*
+[**Live 3D Portfolio**](https://sivanesan-grand-line-3d.vercel.app) · [**Source code**](https://github.com/Sivanesanbalu/Sivanesanbalu/tree/main/docs) · [**Professional portfolio**](https://sivanesanbalu.netlify.app)
 
-### 🏴‍☠️ Captain's Log · The AI Grand Line
-
-**The mission:** Build reliable AI systems, explore new architectures, and turn ambitious research into production-ready tools.
-
-<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-map.svg" alt="Animated map of AI project islands" width="100%" />
-
-| 🏝️ Island | ⚓ Expedition |
-| :--- | :--- |
-| 🎙️ Voice AI Port | Voice agents, speech interfaces and real-time AI |
-| 📚 RAG Island | Retrieval, vector search and knowledge systems |
-| 🤖 Agent Fleet | Multi-agent workflows and automation |
-| 🌿 Green AI Atoll | Eco-Transformers research and efficient inference |
-
-**⚔️ Crew abilities:** `Python` · `GenAI` · `LLMs` · `RAG` · `Voice AI` · `FastAPI` · `Next.js`
-
-<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-treasure.svg" alt="Animated treasure chest showing AI skills" width="100%" />
-
-*Set sail below for research, repositories, contributions, and the full engineering story.*
+*GitHub README cannot run WebGL. Open the live experience for smooth 3D movement and character customization.*
 
 </div>
 
