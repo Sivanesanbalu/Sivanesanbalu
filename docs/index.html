@@ -19,6 +19,8 @@ a{color:inherit;text-decoration:none}button,select{font:inherit}button{cursor:po
 #world:active{cursor:grabbing}
 #loading{position:absolute;inset:0;background:radial-gradient(circle at 67% 39%,#a8774d55,transparent 22%),linear-gradient(165deg,#081728,#235774 70%,#071524);z-index:1;display:grid;place-items:center;font-size:12px;color:#ebd2a1;text-transform:uppercase;letter-spacing:.22em;opacity:1;pointer-events:none;transition:opacity .8s}
 #loading.loaded{opacity:0}
+#loading:before{content:'';position:absolute;z-index:-1;inset:52% -5% -20%;border-radius:50% 50% 0 0;background:repeating-radial-gradient(ellipse at 56% 5%,#3c8690 0,#255b75 17px,#123750 33px,#08253e 54px);opacity:.7;transform:perspective(300px) rotateX(20deg)}
+#loading:after{content:'';position:absolute;z-index:-1;width:170px;height:220px;top:23%;right:19%;opacity:.6;background:linear-gradient(135deg,transparent 50%,#f3ddaf 50% 53%,transparent 54%),linear-gradient(40deg,transparent 48%,#e5cda2 48% 75%,transparent 76%);clip-path:polygon(45% 0,99% 70%,70% 70%,100% 85%,8% 85%,0 69%,42% 69%);filter:drop-shadow(0 10px 15px #0005)}
 #vignette{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#05121edd 0%,#071725b8 32%,transparent 75%),linear-gradient(0deg,#061423 0%,transparent 27%),linear-gradient(180deg,#06152388 0%,transparent 25%)}
 #grain{position:absolute;inset:0;z-index:8;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E")}
 header{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:23px clamp(20px,5vw,74px)}
@@ -110,6 +112,29 @@ footer a{color:#f2d392}
 <section id="details"><article class="card"><div class="kicker" id="chapter">CAPTAIN'S LOG / WELCOME</div><h2 id="title">Every line of code is a new voyage.</h2><p id="summary">Choose one of the four 3D project islands above to fly there with the camera and explore my actual GitHub work. The pirate characters and world are original 3D creations. You can also import your own GLB character, directly in your browser.</p><div class="card-links"><a id="repo-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">Explore repositories ↗</a><a href="https://sivanesanbalu.netlify.app" target="_blank" rel="noopener noreferrer">Professional portfolio ↗</a></div></article><div class="compass"><div class="symbol" aria-hidden="true">✧</div><b>GRAND LINE COMPASS</b><small>IMAGINE · BUILD · EXPLORE</small></div></section>
 </main>
 <footer>Built with Three.js · Procedural 3D ship, sea and characters · <a href="https://github.com/Sivanesanbalu">Sivanesan B</a></footer>
+<script>
+(function(){
+const content={
+voice:{title:'Voice AI Port',copy:'Voice agents, real-time speech interactions, transcription and production conversational AI.',query:'voice'},
+rag:{title:'RAG Island',copy:'Retrieval-augmented generation, document reasoning, vector search and knowledge pipelines.',query:'rag'},
+agents:{title:'Agent Fleet',copy:'Multi-agent tools, coordinated workflows, durable automation and intelligent systems.',query:'agent'},
+green:{title:'Green AI Atoll',copy:'Eco-Transformers research on energy-efficient inference.',query:'transformer'}
+};
+document.querySelectorAll('[data-island]').forEach(function(b){b.addEventListener('click',function(){
+if(document.documentElement.dataset.engine==='ready')return;
+const d=content[b.dataset.island];
+document.querySelectorAll('[data-island]').forEach(function(k){k.setAttribute('aria-pressed',String(k===b))});
+document.querySelector('#chapter').textContent='CAPTAIN’S LOG / '+b.dataset.island.toUpperCase();
+document.querySelector('#title').textContent=d.title;
+document.querySelector('#summary').textContent=d.copy;
+document.querySelector('#repo-link').href='https://github.com/Sivanesanbalu?tab=repositories&q='+encodeURIComponent(d.query);
+document.querySelector('#details').scrollIntoView({behavior:'smooth'});
+})});
+document.querySelector('#set-sail').addEventListener('click',function(){if(document.documentElement.dataset.engine!=='ready')document.querySelector('[data-island=voice]').click()});
+document.querySelector('#character').addEventListener('change',function(){if(document.documentElement.dataset.engine!=='ready')document.querySelector('#loading').textContent='3D CHARACTER VIEW REQUIRES WEBGL · OPEN IN CHROME OR SAFARI'});
+document.querySelector('#upload-button').addEventListener('click',function(){if(document.documentElement.dataset.engine!=='ready')document.querySelector('#loading').textContent='3D MODEL VIEW REQUIRES WEBGL · OPEN IN CHROME OR SAFARI'});
+})();
+</script>
 <script type="module" src="./world.js"></script>
 <script>window.addEventListener('error',function(e){if(e.message&&(/module|webgl|three/i).test(e.message)){var n=document.getElementById('loading');n.textContent='3D requires WebGL and an internet connection. Please refresh.'}})</script>
 </body>
