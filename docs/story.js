@@ -19,9 +19,9 @@ captain:{title:'AI ENGINEER · GRAND LINE CAPTAIN',tag:'BUILDING THE IMPOSSIBLE'
 inventor:{title:'FULL-STACK AI SYSTEMS INVENTOR',tag:'SHIPPING REAL SYSTEMS',desc:'From prototype to production.'},
 researcher:{title:'IEEE-PUBLISHED AI RESEARCHER',tag:'CURIOUS BEYOND THE HORIZON',desc:'Exploring efficient intelligence.'}
 };
-$$('[data-persona]').forEach(btn=>btn.addEventListener('click',()=>{
+$('button[data-persona]').forEach(btn=>btn.addEventListener('click',()=>{
 const mode=btn.dataset.persona;const d=personaData[mode];if(!d)return;
-$$('[data-persona]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
+$('button[data-persona]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
 document.body.dataset.persona=mode;hero.dataset.persona=mode;
 personaRole.textContent=d.title;personaTag.textContent=d.tag;personaDesc.textContent=d.desc;
 }));
