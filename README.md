@@ -3,6 +3,10 @@
 
 <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-banner.svg" alt="Animated Grand Line of Code pirate ship banner" width="100%" />
 
+<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-awakening.svg" alt="Animated AI Engineer awakening aura" width="100%" />
+
+<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-wanted.svg" alt="Sivanesan B animated pirate wanted poster" width="75%" />
+
 ### 🏴‍☠️ Captain's Log · The AI Grand Line
 
 **The mission:** Build reliable AI systems, explore new architectures, and turn ambitious research into production-ready tools.
@@ -17,6 +21,8 @@
 | 🌿 Green AI Atoll | Eco-Transformers research and efficient inference |
 
 **⚔️ Crew abilities:** `Python` · `GenAI` · `LLMs` · `RAG` · `Voice AI` · `FastAPI` · `Next.js`
+
+<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-treasure.svg" alt="Animated treasure chest showing AI skills" width="100%" />
 
 *Set sail below for research, repositories, contributions, and the full engineering story.*
 
