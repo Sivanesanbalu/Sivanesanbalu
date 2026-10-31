@@ -1,17 +1,15 @@
-<!-- GRAND LINE 3D: new interactive experience, original professional profile preserved below -->
+<!-- PERSONAL GRAND LINE: cinematic portfolio with professional content preserved below -->
 <div align="center">
 
-# 🏴‍☠️ GRAND LINE 3D · SIVANESAN B
+# 🏴‍☠️ SIVANESAN B · THE ENGINEER'S GRAND LINE
 
-**An immersive 3D pirate voyage through AI engineering.**
+### [⚓ ENTER MY STORY — CINEMATIC PORTFOLIO](https://grand-line-3d-sivanesan.vercel.app/)
 
-### [🌊 ENTER THE LIVE 3D WORLD](https://grand-line-3d-sivanesan.vercel.app)
+**One Piece-inspired chapters · Real AI engineering · IEEE research · Featured GitHub projects**
 
-**Sail a 3D ship** · **Explore AI project islands** · **Swap 3D pirate captains** · **Load your own GLB character**
+[**Story-driven portfolio**](https://grand-line-3d-sivanesan.vercel.app/) · [**Interactive 3D explorer**](https://grand-line-3d-sivanesan.vercel.app/world.html) · [**Source code**](https://github.com/Sivanesanbalu/Sivanesanbalu/tree/main/docs) · [**Original professional portfolio**](https://sivanesanbalu.netlify.app)
 
-[**Live 3D Portfolio**](https://grand-line-3d-sivanesan.vercel.app) · [**Source code**](https://github.com/Sivanesanbalu/Sivanesanbalu/tree/main/docs) · [**Professional portfolio**](https://sivanesanbalu.netlify.app)
-
-*GitHub README cannot run WebGL. Open the live experience for smooth 3D movement and character customization.*
+*The anime inspires the storytelling. My projects, research, and engineering work are the subject.*
 
 </div>
 
