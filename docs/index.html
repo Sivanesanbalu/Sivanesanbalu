@@ -3,139 +3,252 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
-<meta name="theme-color" content="#061725"/>
-<meta name="description" content="Sivanesan B — Grand Line 3D. Explore a living ocean, sail a pirate ship, switch 3D characters and discover AI projects."/>
-<title>Grand Line 3D | Sivanesan B</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<style>
-:root{--gold:#f2d49a;--white:#f6f3e9;--muted:#b8cbd0;--navy:#071525;--stroke:#bfd6d536;font-family:'DM Sans',system-ui,sans-serif;background:#071525;color:var(--white);scroll-behavior:smooth}
-*{box-sizing:border-box}
-body{margin:0;overflow-x:hidden;background:radial-gradient(circle at 72% 25%,#21425a,#061523 55%);min-height:100svh}
-a{color:inherit;text-decoration:none}button,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid #ffe8aa;outline-offset:3px}
-#stage{height:max(800px,100svh);width:100%;position:relative;overflow:hidden;isolation:isolate}
-#world{display:block;width:100%;height:100%;position:absolute;inset:0;touch-action:pan-y;cursor:grab;z-index:0}
-#world:active{cursor:grabbing}
-#loading{position:absolute;inset:0;background:radial-gradient(circle at 67% 39%,#a8774d55,transparent 22%),linear-gradient(165deg,#081728,#235774 70%,#071524);z-index:1;display:grid;place-items:center;font-size:12px;color:#ebd2a1;text-transform:uppercase;letter-spacing:.22em;opacity:1;pointer-events:none;transition:opacity .8s}
-#loading.loaded{opacity:0}
-#loading:before{content:'';position:absolute;z-index:-1;inset:52% -5% -20%;border-radius:50% 50% 0 0;background:repeating-radial-gradient(ellipse at 56% 5%,#3c8690 0,#255b75 17px,#123750 33px,#08253e 54px);opacity:.7;transform:perspective(300px) rotateX(20deg)}
-#loading:after{content:'';position:absolute;z-index:-1;width:170px;height:220px;top:23%;right:19%;opacity:.6;background:linear-gradient(135deg,transparent 50%,#f3ddaf 50% 53%,transparent 54%),linear-gradient(40deg,transparent 48%,#e5cda2 48% 75%,transparent 76%);clip-path:polygon(45% 0,99% 70%,70% 70%,100% 85%,8% 85%,0 69%,42% 69%);filter:drop-shadow(0 10px 15px #0005)}
-#vignette{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#05121edd 0%,#071725b8 32%,transparent 75%),linear-gradient(0deg,#061423 0%,transparent 27%),linear-gradient(180deg,#06152388 0%,transparent 25%)}
-#grain{position:absolute;inset:0;z-index:8;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E")}
-header{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:23px clamp(20px,5vw,74px)}
-.brand{display:flex;gap:12px;align-items:center;color:#fff3dd;font:800 16px 'Outfit',sans-serif;letter-spacing:.09em;white-space:nowrap}
-.brand>span:first-child{border:1px solid #deb97790;border-radius:50%;width:40px;height:40px;display:grid;place-items:center;color:#f4d397;font-size:22px;box-shadow:0 0 25px #d2a46732}
-.brand small{display:block;color:#aac6cc;font:500 10px 'DM Sans',sans-serif;letter-spacing:.17em;margin-top:2px}
-nav{display:flex;align-items:center;gap:22px}
-nav a{font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:#dbe7e7}
-nav a:hover{color:#ffe2a9}
-.status{font-size:11px;font-weight:700;color:#d6ece7;border:1px solid #8bbab46b;background:#0a2632b3;border-radius:999px;padding:8px 13px;white-space:nowrap}
-.status:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:#69e0b6;margin-right:9px;box-shadow:0 0 12px #69e0b6}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid #e4bb7f;border-radius:8px;background:linear-gradient(120deg,#f7dba2,#ca9e5e);color:#1a2734;font-size:13px;font-weight:800;padding:13px 18px;transition:transform .2s,filter .2s}
-.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
-.btn-ghost{background:#0b2236a8;color:#f2e3c4;border:1px solid #bbd5d25b}
-.hero{position:relative;z-index:3;padding:clamp(95px,15vh,175px) clamp(20px,6vw,92px) 0;max-width:750px;min-height:clamp(520px,67vh,790px);pointer-events:none}
-.hero>*{pointer-events:auto}
-.eyebrow{display:flex;align-items:center;gap:12px;font-weight:800;color:#e7c58a;letter-spacing:.22em;text-transform:uppercase;font-size:11px}
-.eyebrow:before{content:'';width:30px;height:1px;background:#e7c58a}
-h1,h2,h3{font-family:'Outfit',sans-serif}
-h1{font-size:clamp(62px,8.3vw,128px);letter-spacing:-.077em;line-height:.88;margin:24px 0 26px;font-weight:800;text-shadow:0 8px 28px #031321b8}
-h1 em{font-style:normal;display:block;color:#edcf95}
-.hero p{color:#c4d3d6;max-width:540px;font-size:clamp(15px,1.6vw,18px);line-height:1.8;text-shadow:0 1px 12px #061525}
-.hero strong{color:#fff1c3}
-.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}
-#world-note{position:absolute;z-index:3;right:26px;top:42%;writing-mode:vertical-rl;font-size:10px;letter-spacing:.23em;color:#cbdad9aa;pointer-events:none}
-#island-controls{position:relative;z-index:4;margin:0 clamp(16px,4vw,65px) 20px;display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:15px;align-items:stretch}
-.panel{border:1px solid var(--stroke);border-radius:17px;background:linear-gradient(130deg,#102f45e8,#081d31dc);box-shadow:0 20px 40px #030d1880;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);padding:17px 18px}
-.panel-label{display:block;color:#a8c3c8;font-weight:800;font-size:10px;text-transform:uppercase;letter-spacing:.2em;margin-bottom:12px}
-.islands{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
-.islands button{min-height:54px;border:1px solid #6595a05e;border-radius:10px;color:#d5e7e5;background:#14354ba8;display:flex;align-items:center;justify-content:center;gap:9px;font-size:12px;font-weight:700;padding:8px;transition:transform .25s,border .25s,background .25s}
-.islands button:hover{transform:translateY(-3px);border-color:#e7d29f}
-.islands button[aria-pressed="true"]{background:#e6c789;color:#1c2e38;border-color:#f8e2b5}
-.islands button b{font-size:18px}
-.character{display:grid;grid-template-columns:1fr;gap:8px}
-.character .panel-label{margin-bottom:0}
-.character select{width:100%;border:1px solid #82b5bb6e;border-radius:9px;padding:10px 12px;color:#f6e9cd;background:#0c2a3d;font-weight:700}
-.character option{background:#0c2a3d;color:#fff}
-#upload-button{color:#e6d39e;font-size:11px;text-decoration:underline;text-underline-offset:3px;border:0;background:none;text-align:left;padding:0}
-#model{display:none}
-#toast{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);z-index:6;text-align:center;padding:10px 17px;border:1px solid #88d9c68a;background:#0c2939e8;border-radius:30px;font-size:12px;color:#ecf4eb;white-space:nowrap;max-width:95%;overflow:hidden;text-overflow:ellipsis}
-#toast[hidden]{display:none}
-#details{padding:53px max(20px,calc((100vw - 1190px)/2)) 85px;display:grid;grid-template-columns:1fr 250px;gap:18px;position:relative;z-index:4;background:linear-gradient(#061523,#071a2c)}
-.card{background:#0e2537;border:1px solid #7296a25b;border-radius:19px;padding:31px}
-.kicker{color:#e3c184;text-transform:uppercase;letter-spacing:.22em;font-size:10px;font-weight:800}
-.card h2{font-size:clamp(26px,3.5vw,44px);line-height:1.1;letter-spacing:-.045em;margin:12px 0 17px}
-.card p{max-width:800px;color:#b4cbd0;line-height:1.9}
-.card-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:23px}
-.card-links a{display:inline-block;border:1px solid #d6bd818f;padding:10px 15px;border-radius:9px;color:#ffe6ad;font-size:12px;font-weight:700}
-.card-links a:first-child{background:#e7c68a;color:#172b3a}
-.compass{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;text-align:center;background:radial-gradient(circle,#1e5360,#0b2136);border:1px solid #5d879b88;border-radius:19px}
-.compass .symbol{font-size:72px;color:#ddbe83;animation:rotate 24s linear infinite}
-.compass small{color:#b6ccd0;letter-spacing:.1em;font-size:11px}
-@keyframes rotate{to{transform:rotate(360deg)}}
-footer{padding:20px 15px 36px;text-align:center;color:#96abb2;font-size:11px;background:#071a2c}
-footer a{color:#f2d392}
-@media(max-width:1050px){#island-controls{grid-template-columns:1fr}.character{grid-template-columns:1fr auto;align-items:center}.character .panel-label{grid-column:1/-1}.character select{grid-column:1}.character #upload-button{grid-column:2}}
-@media(max-width:750px){#stage{min-height:875px;height:max(875px,100svh)}header{padding:18px 16px}header .brand{font-size:12px}header .brand small{font-size:8px}header .brand>span:first-child{height:34px;width:34px}nav{gap:10px}nav a:not(:last-child),nav .status{display:none}nav a{font-size:10px}.hero{padding:92px 20px 0;min-height:565px}h1{font-size:clamp(60px,15vw,91px)}.hero p{max-width:350px;font-size:14px;line-height:1.7}#vignette{background:linear-gradient(90deg,#061525e0,#06152535),linear-gradient(0deg,#061525 0%,transparent 32%)}#world-note{display:none}#island-controls{margin:0 12px 18px}.panel{padding:14px}.islands{grid-template-columns:repeat(2,minmax(0,1fr))}.islands button{min-height:42px;justify-content:flex-start;font-size:11px}.character{grid-template-columns:1fr 1fr}.character select{min-width:0;font-size:11px}.character #upload-button{font-size:10px}#details{grid-template-columns:1fr;padding:36px 12px}.card{padding:24px}.compass{min-height:145px}.compass .symbol{font-size:48px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
-</style>
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}</script>
+<meta name="theme-color" content="#07131d"/>
+<meta name="description" content="The Grand Line of Sivanesan B: the real journey of an AI Engineer and IEEE researcher, told through cinematic anime-inspired chapters. Explore projects in GenAI, RAG, Voice AI and agentic systems."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Sivanesan B | The Engineer's Grand Line"/>
+<meta property="og:description" content="An anime-inspired interactive journey through real AI engineering projects, research, and the next frontier."/>
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/161239880?v=4"/>
+<title>Sivanesan B — The Engineer's Grand Line</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2307131d'/%3E%3Ccircle cx='50' cy='50' r='35' stroke='%23edc987' fill='none' stroke-width='3'/%3E%3Cpath d='M50 18L63 44L82 50L56 61L50 82L42 57L18 50L43 42Z' fill='%23edc987'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="./story.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="./story.js"></script>
 </head>
-<body>
-<div id="stage">
-<canvas id="world" aria-label="Interactive 3D pirate ship sailing between AI project islands" role="img"></canvas>
-<div id="loading">Loading your cinematic 3D world…</div>
-<div id="vignette"></div><div id="grain"></div>
-<header><a class="brand" href="#stage"><span>✦</span><span>SIVANESAN B<small>THE GRAND LINE · THREE-DIMENSIONAL EXPERIENCE</small></span></a><nav><span class="status">3D INTERACTIVE</span><a href="#details">Projects</a><a href="https://github.com/Sivanesanbalu" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></header>
-<div class="hero">
-<div class="eyebrow">An AI engineer's voyage · Chapter 01</div>
-<h1>BEYOND<br><em>THE GRAND</em> LINE.</h1>
-<p>Ahoy, I'm <strong>Sivanesan B</strong>. Sail a living 3D ocean, change your pirate captain, and explore the islands of <strong>GenAI, RAG, Voice AI, multi-agent systems and Green AI.</strong></p>
-<div class="hero-actions"><button class="btn" id="set-sail">Set sail · Explore ↗</button><a class="btn btn-ghost" href="#details">Captain's log ↓</a></div>
-</div>
-<div id="world-note">DRAG TO ROTATE · SELECT ISLAND · REPLACE CHARACTER</div>
-<div id="island-controls">
-<div class="panel"><span class="panel-label">01 / Choose an island to move the 3D camera</span><div class="islands">
-<button type="button" data-island="voice" aria-pressed="false"><b>🎙</b>Voice AI Port</button>
-<button type="button" data-island="rag" aria-pressed="false"><b>📚</b>RAG Island</button>
-<button type="button" data-island="agents" aria-pressed="false"><b>⚙</b>Agent Fleet</button>
-<button type="button" data-island="green" aria-pressed="false"><b>🌿</b>Green AI</button>
-</div></div>
-<div class="panel character"><label class="panel-label" for="character">02 / Replace your 3D pirate character</label>
-<select id="character"><option value="straw">Straw Hat Explorer</option><option value="storm">Storm Captain</option><option value="shadow">Shadow Navigator</option></select>
-<button type="button" id="upload-button">Or upload your own .glb model ↗</button><input id="model" type="file" accept=".glb,model/gltf-binary"/>
-</div></div>
-<div id="toast" role="status" aria-live="polite" hidden></div>
-</div>
+<body data-persona="captain">
+<div id="progress" aria-hidden="true"></div><div id="grain" aria-hidden="true"></div>
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="#top"><span class="brand-symbol">✦</span><span>SIVANESAN B<small>THE ENGINEER'S GRAND LINE</small></span></a>
+<button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-controls="header-links" aria-expanded="false" type="button">☰</button>
+<nav class="header-links" id="header-links" aria-label="Main navigation">
+<a href="#voyage">My Story</a><a href="#work">Projects</a><a href="#research">Research</a><a href="#atlas">Anime Atlas</a><a class="nav-cta" href="#contact">Let's connect ↗</a>
+</nav></div>
+</header>
 <main>
-<section id="details"><article class="card"><div class="kicker" id="chapter">CAPTAIN'S LOG / WELCOME</div><h2 id="title">Every line of code is a new voyage.</h2><p id="summary">Choose one of the four 3D project islands above to fly there with the camera and explore my actual GitHub work. The pirate characters and world are original 3D creations. You can also import your own GLB character, directly in your browser.</p><div class="card-links"><a id="repo-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">Explore repositories ↗</a><a href="https://sivanesanbalu.netlify.app" target="_blank" rel="noopener noreferrer">Professional portfolio ↗</a></div></article><div class="compass"><div class="symbol" aria-hidden="true">✧</div><b>GRAND LINE COMPASS</b><small>IMAGINE · BUILD · EXPLORE</small></div></section>
+<section class="hero" id="top" data-persona="captain" aria-label="Sivanesan B portfolio introduction">
+<div class="hero-horizon" aria-hidden="true"><div class="sun"></div><div class="hero-cloud"></div><div class="hero-sea"></div><div class="hero-wind"></div></div>
+<div class="shell hero-grid">
+<div class="hero-copy">
+<div class="overline">An engineer's adventure · Since the first line of code</div>
+<h1 class="hero-title display">SIVANESAN<span>B.</span></h1>
+<p class="hero-sub">Not chasing the One Piece.<br/><span class="accent">Building what comes next.</span></p>
+<p class="hero-intro">I'm Sivanesan B — AI Engineer, builder of real-world GenAI systems, and IEEE-published researcher. This is <strong>my story</strong>, told through the spirit of a Grand Line adventure.</p>
+<div class="hero-actions">
+<a class="btn" href="#voyage">Begin my story <span aria-hidden="true">↗</span></a>
+<a class="btn ghost" href="./world.html">Explore 3D world <span aria-hidden="true">↗</span></a>
+</div>
+<div class="hero-proof" aria-label="Profile highlights">
+<div><b>IEEE</b><small>Published research</small></div><div class="break"></div>
+<div><b>06</b><small>Featured expeditions</small></div><div class="break"></div>
+<div><b id="repo-count">54+</b><small>GitHub repositories</small></div>
+</div></div>
+<div class="hero-visual">
+<div class="hero-ring" aria-hidden="true"></div>
+<div>
+<div class="poster-wrap" id="poster-wrap">
+<div class="poster">
+<div class="poster-eyebrow">THE GRAND LINE ARCHIVES · ENGINEER EDITION</div>
+<div class="poster-wanted">WANTED</div>
+<div class="poster-photo"><img src="https://avatars.githubusercontent.com/u/161239880?v=4" alt="GitHub profile photo of Sivanesan B" loading="eager"/><div class="photo-overlay"></div></div>
+<div class="poster-name">SIVANESAN B.</div>
+<p class="poster-rank" id="persona-role">AI ENGINEER · GRAND LINE CAPTAIN</p>
+<div class="poster-footer" id="persona-tag">BUILDING THE IMPOSSIBLE</div>
+</div>
+<div class="poster-seal"><span>REAL</span><span>BUILDER</span><small>NO FAKE BOUNTY</small></div>
+<div class="poster-stripe">AN ORIGINAL DEVELOPER'S SAGA</div>
+</div>
+<div class="persona" role="group" aria-label="Choose a chapter persona">
+<button data-persona="captain" type="button" aria-pressed="true">Captain</button>
+<button data-persona="inventor" type="button" aria-pressed="false">Inventor</button>
+<button data-persona="researcher" type="button" aria-pressed="false">Researcher</button>
+</div><div class="persona-note" id="persona-desc">Engineer by craft. Explorer by instinct.</div>
+</div></div>
+</div>
+<div class="scroll-hint">Scroll to enter the story</div>
+</section>
+<div class="ticker" aria-label="AI Engineer, Voice AI, Retrieval Augmented Generation, multi-agent systems and green AI">
+<div class="ticker-track" aria-hidden="true">
+<span>THE GRAND LINE OF CODE</span><span>VOICE AI</span><span>RAG & KNOWLEDGE</span><span>AGENTIC SYSTEMS</span><span>GREEN AI</span><span>FULL STACK ENGINEERING</span><span>THE GRAND LINE OF CODE</span><span>VOICE AI</span><span>RAG & KNOWLEDGE</span><span>AGENTIC SYSTEMS</span><span>GREEN AI</span><span>FULL STACK ENGINEERING</span>
+</div></div>
+<section class="section intro-section" id="voyage">
+<div class="shell manifesto">
+<div>
+<div class="section-kicker">00 / THE CAPTAIN'S LOG</div>
+<h2 class="manifesto-big display">EVERY GREAT<br/>JOURNEY<br/><em>BEGINS WITH<br/>A DREAM.</em></h2>
+</div>
+<div class="manifesto-copy">
+<p>One Piece is about chasing a dream across an impossible ocean. My version of that dream is simpler: <strong>build AI that actually works outside a demo.</strong></p>
+<p>From studying Artificial Intelligence & Data Science at Kumaraguru College of Technology to research in efficient LLMs and engineering voice agents, retrieval pipelines and autonomous workflows — each new problem has been another island.</p>
+<div class="manifesto-line">The anime inspires the chapters. The products, code, research, and work are mine.</div>
+<div class="stats-list">
+<div class="stat"><b>2025</b><span>IEEE research publication</span></div>
+<div class="stat"><b>AI +</b><span>Production engineering</span></div>
+<div class="stat"><b>∞</b><span>Curiosity to build</span></div>
+</div></div></div>
+</section>
+<div class="voyage-head">
+<div class="shell section-top">
+<div><div class="section-kicker">01 / THE PERSONAL SAGA</div><h2 class="section-title display">THE SIX<br/>CHAPTERS.</h2></div>
+<p class="section-lead">Inspired by the progression of One Piece's major arcs, reimagined around my real engineering journey. These aren't claims about the anime's characters — they're milestones from my own story. <span id="current-arc">EAST BLUE</span> is the current chapter.</p>
+</div></div>
+<div class="timeline" aria-label="Six real career story chapters">
+<div class="timeline-rail" aria-hidden="true"></div>
+<div class="shell">
+<section class="chapter" id="east-blue" data-arc="East Blue">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 01 <i></i> The departure</div>
+<h3>EAST<br/><span>BLUE.</span></h3>
+<div class="chapter-arc">ORIGIN STORY / AI & DATA SCIENCE</div>
+<p>My first island was curiosity. I studied Artificial Intelligence and Data Science at <strong>Kumaraguru College of Technology</strong> and started turning ideas into actual software, experiments and working prototypes.</p>
+<div class="chapter-proof"><span>B.Tech AI & DS</span><span>Problem Solving</span><span>Early Projects</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">Explore the first builds <span>↗</span></a>
+</div>
+<div class="chapter-art art-east" aria-label="Original illustrated dawn over a new sea">
+<span class="art-title">THE FIRST HORIZON</span><div class="big-sun"></div>
+<svg class="boat" viewBox="0 0 200 125" aria-hidden="true"><path d="M29 84H171L148 110H60Z" fill="#563a31" stroke="#261c29" stroke-width="5"/><path d="M96 81V15" stroke="#58422d" stroke-width="8"/><path d="M91 18L36 77H91Z" fill="#f7e6c1"/><path d="M103 25L151 76H103Z" fill="#ead0a5"/><path d="M96 18v-9m0 9l31 7-31 15Z" fill="#ab4d3a" stroke="#58422d" stroke-width="3"/></svg>
+<div class="cliff"></div><span class="art-num">01</span>
+</div></section>
+<section class="chapter" id="skypiea" data-arc="Skypiea">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 02 <i></i> Going beyond</div>
+<h3>SKY<br/><span>PIEA.</span></h3>
+<div class="chapter-arc">RESEARCH / ECO-TRANSFORMERS</div>
+<p>Instead of simply making LLMs bigger, I explored making them <strong>more efficient</strong>. My Eco-Transformers work studied self-pruning and activation freezing, culminating in an IEEE conference publication.</p>
+<div class="chapter-proof"><span>IEEE 2025</span><span>LLM Efficiency</span><span>PyTorch</span></div>
+<a class="story-link" href="https://doi.org/10.1109/ICNGCS64900.2025.11183217" target="_blank" rel="noopener noreferrer">Explore published research <span>↗</span></a>
+</div>
+<div class="chapter-art art-sky" aria-label="Original illustration of an island above the clouds"><span class="art-title">REACH BEYOND THE CLOUDS</span><div class="cloud"></div><div class="sky-island"></div><div class="research-badge"><b>IEEE · 2025</b><span>Eco-Transformers / Carbon-efficient LLM inference</span></div><span class="art-num">02</span></div>
+</section>
+<section class="chapter" id="water7" data-arc="Water 7">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 03 <i></i> Building the ship</div>
+<h3>WATER<br/><span>SEVEN.</span></h3>
+<div class="chapter-arc">PRODUCTION SYSTEMS / VOICEFORGE AI</div>
+<p>Ships need engineering, not just a beautiful sail. <strong>VoiceForge AI</strong> represents that mindset: voice agent management, telephony integration, realtime transcripts, provider workflows and full-stack product engineering.</p>
+<div class="chapter-proof"><span>Voice AI</span><span>Next.js</span><span>Telephony</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu/VoiceForge-AI" target="_blank" rel="noopener noreferrer">Explore VoiceForge AI <span>↗</span></a>
+</div>
+<div class="chapter-art art-water" aria-label="Animated conceptual UI for a Voice AI application">
+<span class="art-title">VOICEFORGE / LIVE CONVERSATION ENGINE</span>
+<div class="voice-ui"><div class="voice-top"><span>VOICE ENGINE · ONLINE</span><span><i></i> LOW LATENCY</span></div>
+<div class="waveform" aria-hidden="true">
+<i style="--h:31;--i:1"></i><i style="--h:48;--i:2"></i><i style="--h:62;--i:3"></i><i style="--h:24;--i:4"></i><i style="--h:81;--i:5"></i><i style="--h:53;--i:6"></i><i style="--h:38;--i:7"></i><i style="--h:92;--i:8"></i><i style="--h:45;--i:9"></i><i style="--h:69;--i:10"></i><i style="--h:37;--i:11"></i><i style="--h:74;--i:12"></i><i style="--h:57;--i:13"></i><i style="--h:34;--i:14"></i><i style="--h:83;--i:15"></i><i style="--h:49;--i:16"></i><i style="--h:61;--i:17"></i><i style="--h:25;--i:18"></i>
+</div><div class="voice-caption">Intelligence in every conversation.</div><div class="voice-small">Transcripts · Routing · Real-time workflows</div>
+</div><span class="art-num">03</span></div>
+</section>
+<section class="chapter" id="enies" data-arc="Enies Lobby">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 04 <i></i> Challenging limits</div>
+<h3>ENIES<br/><span>LOBBY.</span></h3>
+<div class="chapter-arc">RETRIEVAL / OFFLINE RAG</div>
+<p>Useful intelligence must respect the environment it serves. My <strong>Offline Inventory RAG Assistant</strong> combines local speech recognition, a quantized language model and FAISS search for knowledge workflows without relying on cloud connectivity.</p>
+<div class="chapter-proof"><span>Whisper STT</span><span>Qwen</span><span>FAISS</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu/RAG-Offline-Inventory-Management-System" target="_blank" rel="noopener noreferrer">Explore offline RAG <span>↗</span></a>
+</div>
+<div class="chapter-art art-rag" aria-label="Original animated document scanning and knowledge retrieval illustration">
+<span class="art-title">KNOWLEDGE BEYOND THE NETWORK</span>
+<div class="document a"><div class="line"></div><div class="line short"></div><div class="line"></div><div class="line"></div><div class="line short"></div><div class="stamp">LOCAL</div></div>
+<div class="document b"><div class="line short"></div><div class="line"></div><div class="line"></div><div class="line short"></div><div class="line"></div><div class="stamp">RAG</div></div>
+<div class="scan"></div><span class="art-num">04</span>
+</div></section>
+<section class="chapter" id="wano" data-arc="Wano">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 05 <i></i> The awakening</div>
+<h3>WANO<br/><span>COUNTRY.</span></h3>
+<div class="chapter-arc">AUTONOMOUS AGENTS / AI WORKFLOWS</div>
+<p>The next leap was making systems that <strong>coordinate and act</strong>. My projects include an autonomous job agent and AI voice recruiter, combining browser workflows, event orchestration, conversational AI and computer vision.</p>
+<div class="chapter-proof"><span>LangGraph</span><span>Playwright</span><span>Multi-Agent</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu/ai-job-agent-v2" target="_blank" rel="noopener noreferrer">Explore agentic systems <span>↗</span></a>
+</div>
+<div class="chapter-art art-agents" aria-label="Animated network of collaborating autonomous AI agents">
+<span class="art-title">THE AGENT FLEET · ORCHESTRATION</span>
+<svg viewBox="0 0 460 420" preserveAspectRatio="none" class="agent-lines" aria-hidden="true"><path d="M100 193Q176 110 242 98T351 204"/><path d="M100 193Q145 322 227 327T351 204"/><path d="M242 98V327"/><path d="M100 193H351"/></svg>
+<div class="node n1">⌘</div><div class="node n2">✦</div><div class="node n3">◇</div><div class="node n4">⟡</div><span class="art-num">05</span>
+</div></section>
+<section class="chapter" id="egghead" data-arc="Egghead">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 06 <i></i> The future island</div>
+<h3>EGG<br/><span>HEAD.</span></h3>
+<div class="chapter-arc">CURRENT DIRECTION / BUILDER'S FUTURE</div>
+<p>There is no final island for an engineer. I'm continuing to explore <strong>production RAG, autonomous AI, voice systems and efficient models</strong>, always with one question: how do we make this useful in the real world?</p>
+<div class="chapter-proof"><span>GenAI</span><span>Applied AI</span><span>Product Engineering</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">See what I'm building now <span>↗</span></a>
+</div>
+<div class="chapter-art art-future" aria-label="Animated abstract futuristic glowing rings"><span class="art-title">THE NEXT ERA IS BUILT, NOT FOUND</span><div class="sunrings"></div><div class="future-text">WHAT'S<br/>NEXT?</div><span class="art-num">06</span></div>
+</section>
+</div></div>
+<section class="map-atlas" id="atlas" aria-label="One Piece story arc inspirations">
+<div class="shell atlas-head"><div><div class="section-kicker">02 / THE ANIME ATLAS</div><h2>THE WORLD<br/>THAT INSPIRED IT.</h2></div>
+<p>One Piece's legendary arc names provide the storytelling structure, not claims about my personal history. The route below is a selective chronological map of major arcs, from East Blue through Elbaph. <a style="text-decoration:underline;color:#eac98e" href="https://one-piece.com/story/index.html" target="_blank" rel="noopener noreferrer">Official story reference ↗</a></p></div>
+<div class="atlas-scroll" tabindex="0" aria-label="Horizontally scrollable One Piece arc inspiration list">
+<article><b>01</b><h3>East Blue</h3><p>Every dream needs a departure.</p></article>
+<article><b>02</b><h3>Alabasta</h3><p>First impossible missions.</p></article>
+<article><b>03</b><h3>Skypiea</h3><p>Go farther than expected.</p></article>
+<article><b>04</b><h3>Water 7</h3><p>Build the ship that carries the dream.</p></article>
+<article><b>05</b><h3>Enies Lobby</h3><p>Challenge what seems impossible.</p></article>
+<article><b>06</b><h3>Thriller Bark</h3><p>Learn in uncertain territory.</p></article>
+<article><b>07</b><h3>Marineford</h3><p>Resolve under pressure.</p></article>
+<article><b>08</b><h3>Fish-Man Island</h3><p>New horizons below the surface.</p></article>
+<article><b>09</b><h3>Dressrosa</h3><p>Collaborate across complexity.</p></article>
+<article><b>10</b><h3>Whole Cake Island</h3><p>Navigate unexpected constraints.</p></article>
+<article><b>11</b><h3>Wano</h3><p>Awaken new capabilities.</p></article>
+<article><b>12</b><h3>Egghead</h3><p>The future of intelligence.</p></article>
+<article><b>13</b><h3>Elbaph</h3><p>More adventures ahead.</p></article>
+</div>
+</section>
+<section class="section featured" id="work">
+<div class="shell">
+<div class="section-top">
+<div><div class="section-kicker">03 / THE REAL TREASURE</div><h2 class="section-title display">PROJECT<br/>EXPEDITIONS.</h2></div>
+<p class="section-lead">The story is a tribute. <strong>The work is real.</strong> Explore public repositories, implementation approaches and the engineering problems behind each chapter.</p>
+</div>
+<div class="filterbar" role="group" aria-label="Filter featured projects">
+<button type="button" data-project-filter="all" aria-pressed="true">All</button>
+<button type="button" data-project-filter="voice" aria-pressed="false">Voice AI</button>
+<button type="button" data-project-filter="agents" aria-pressed="false">Agents</button>
+<button type="button" data-project-filter="research" aria-pressed="false">Research</button>
+<button type="button" data-project-filter="rag" aria-pressed="false">RAG</button>
+</div>
+<p class="mini" id="project-status" aria-live="polite" style="color:#a5c2c2">6 featured expeditions shown</p>
+<div class="project-grid">
+<article class="project-card" data-categories="voice"><div class="project-idx">EXPEDITION 001 / VOICE AI</div><div class="pictogram">🎙️</div><h3>VoiceForge AI</h3><p>Provider-oriented voice agent platform for conversational workflows, telephony, transcripts and AI operations.</p><div class="tech">Next.js · TypeScript · Vapi · PostgreSQL</div><a href="https://github.com/Sivanesanbalu/VoiceForge-AI" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="rag"><div class="project-idx">EXPEDITION 002 / RAG</div><div class="pictogram">📚</div><h3>Offline Inventory RAG</h3><p>Air-gapped inventory assistant combining local language inference, Whisper speech-to-text and FAISS retrieval.</p><div class="tech">Python · Qwen · Whisper · FAISS</div><a href="https://github.com/Sivanesanbalu/RAG-Offline-Inventory-Management-System" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="research"><div class="project-idx">EXPEDITION 003 / RESEARCH</div><div class="pictogram">🌿</div><h3>Eco-Transformers</h3><p>Research into self-pruning and activation freezing methods for accelerated, carbon-efficient LLM inference.</p><div class="tech">PyTorch · Transformers · CodeCarbon</div><a href="https://github.com/Sivanesanbalu/Eco-Transformer" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="agents"><div class="project-idx">EXPEDITION 004 / AGENTS</div><div class="pictogram">⚙️</div><h3>Autonomous Job Agent</h3><p>AI-powered job workflows: discovery, application preparation, browser automation and multi-step execution.</p><div class="tech">Python · Playwright · LLM workflows</div><a href="https://github.com/Sivanesanbalu/ai-job-agent-v2" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="voice agents"><div class="project-idx">EXPEDITION 005 / VOICE + VISION</div><div class="pictogram">🧭</div><h3>AI Voice Recruiter</h3><p>Voice-first interview experience with contextual follow-ups and computer-vision-enabled proctoring experiments.</p><div class="tech">Next.js · Voice AI · Computer Vision</div><a href="https://github.com/Sivanesanbalu/AI_Voice_Recruiter" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="agents"><div class="project-idx">EXPEDITION 006 / APPLIED AI</div><div class="pictogram">🛠️</div><h3>QuotientAI</h3><p>Production-oriented AI full-stack systems and practical agent-driven application engineering.</p><div class="tech">AI Systems · Full Stack · Production</div><a href="https://github.com/Sivanesanbalu/quotient-ai-production" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+</div>
+<div class="archive">
+<div class="archive-head"><div><h3>Open the full repository treasure chest</h3><p>Live public GitHub repositories; searchable by name, description and language.</p></div><button id="archive-toggle" type="button" aria-expanded="false" aria-controls="archive-body">Explore full repository archive +</button></div>
+<div class="archive-body" id="archive-body" hidden><label for="repo-search" class="mini">Search your repositories</label><div style="margin-top:12px"><input id="repo-search" placeholder="Try RAG, voice, Python, agents..." autocomplete="off"/></div><p id="archive-status" role="status">Loading repository data…</p><div class="repo-list" id="repo-list"></div></div>
+</div>
+</div></section>
+<section class="section research-section" id="research">
+<div class="shell research-grid">
+<div><div class="section-kicker">04 / THE RESEARCH SCROLL</div><h2 class="display">EFFICIENT<br/>INTELLIGENCE.</h2><p><strong>Eco-Transformers:</strong> Carbon-Efficient and Accelerated Inference through Self-Pruning and Activation Freezing in LLMs. Presented as a 2025 IEEE conference publication.</p>
+<div class="button-row"><a class="btn" href="https://doi.org/10.1109/ICNGCS64900.2025.11183217" target="_blank" rel="noopener noreferrer">Read the IEEE paper ↗</a><a class="btn ghost" href="https://github.com/Sivanesanbalu/Eco-Transformer" target="_blank" rel="noopener noreferrer" style="color:#26414b;border-color:#8d6c47">Research code ↗</a></div>
+</div>
+<div><div class="metrics"><div class="metric"><b>58%</b><span>Reported lower inference CO₂</span></div><div class="metric"><b>56%</b><span>Reported latency improvement</span></div></div>
+<p class="research-note">Performance figures are the results described in the project's GitHub profile; refer to the paper and methodology for experimental conditions and limitations.</p></div>
+</div></section>
+<section class="section techstack" id="skills">
+<div class="shell tech-shell">
+<div><div class="section-kicker">05 / THE CREW'S TOOLKIT</div><h2 class="display">BUILT WITH<br/><span class="accent">REAL TOOLS.</span></h2><p style="color:#aebfc0;max-width:460px">No fictional power levels: these are the technologies used across my projects, research and full-stack experiments.</p><a class="btn ghost" href="./world.html">Explore original 3D world ↗</a></div>
+<div class="skillgroups">
+<div class="skillgroup"><h3>Intelligence & agent systems</h3><p>Python · LLMs · LangGraph · RAG · Prompt engineering · AI agents · Retrieval evaluation</p></div>
+<div class="skillgroup"><h3>Speech & conversation</h3><p>Voice AI · Vapi · Whisper STT · Real-time pipelines · Telephony integration</p></div>
+<div class="skillgroup"><h3>Product & backend engineering</h3><p>FastAPI · TypeScript · Next.js · REST APIs · PostgreSQL · Supabase · Playwright</p></div>
+<div class="skillgroup"><h3>Research & optimization</h3><p>PyTorch · Transformers · FAISS · CodeCarbon · Efficient inference</p></div>
+</div>
+</div></section>
+<section class="contact" id="contact"><div class="shell">
+<div class="section-kicker">06 / THE NEXT ISLAND IS YOURS</div>
+<h2 class="display">LET'S BUILD<br/><span class="accent">WHAT'S NEXT.</span></h2>
+<p>Have a challenging AI problem, an engineering opportunity, or an idea worth exploring? I'm ready to talk about what can actually be built.</p>
+<div class="button-row"><a class="btn" href="mailto:apsiva69@gmail.com?subject=Let's%20Build%20Something%20with%20AI">Get in touch ↗</a><a class="btn ghost" href="https://www.linkedin.com/in/sivanesan-b-871ba7264/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div>
+</div></section>
 </main>
-<footer>Built with Three.js · Procedural 3D ship, sea and characters · <a href="https://github.com/Sivanesanbalu">Sivanesan B</a></footer>
-<script>
-(function(){
-const content={
-voice:{title:'Voice AI Port',copy:'Voice agents, real-time speech interactions, transcription and production conversational AI.',query:'voice'},
-rag:{title:'RAG Island',copy:'Retrieval-augmented generation, document reasoning, vector search and knowledge pipelines.',query:'rag'},
-agents:{title:'Agent Fleet',copy:'Multi-agent tools, coordinated workflows, durable automation and intelligent systems.',query:'agent'},
-green:{title:'Green AI Atoll',copy:'Eco-Transformers research on energy-efficient inference.',query:'transformer'}
-};
-document.querySelectorAll('[data-island]').forEach(function(b){b.addEventListener('click',function(){
-if(document.documentElement.dataset.engine==='ready')return;
-const d=content[b.dataset.island];
-document.querySelectorAll('[data-island]').forEach(function(k){k.setAttribute('aria-pressed',String(k===b))});
-document.querySelector('#chapter').textContent='CAPTAIN’S LOG / '+b.dataset.island.toUpperCase();
-document.querySelector('#title').textContent=d.title;
-document.querySelector('#summary').textContent=d.copy;
-document.querySelector('#repo-link').href='https://github.com/Sivanesanbalu?tab=repositories&q='+encodeURIComponent(d.query);
-document.querySelector('#details').scrollIntoView({behavior:'smooth'});
-})});
-document.querySelector('#set-sail').addEventListener('click',function(){if(document.documentElement.dataset.engine!=='ready')document.querySelector('[data-island=voice]').click()});
-document.querySelector('#character').addEventListener('change',function(){if(document.documentElement.dataset.engine!=='ready')document.querySelector('#loading').textContent='3D CHARACTER VIEW REQUIRES WEBGL · OPEN IN CHROME OR SAFARI'});
-document.querySelector('#upload-button').addEventListener('click',function(){if(document.documentElement.dataset.engine!=='ready')document.querySelector('#loading').textContent='3D MODEL VIEW REQUIRES WEBGL · OPEN IN CHROME OR SAFARI'});
-})();
-</script>
-<script type="module" src="./world.js"></script>
-<script>window.addEventListener('error',function(e){if(e.message&&(/module|webgl|three/i).test(e.message)){var n=document.getElementById('loading');n.textContent='3D requires WebGL and an internet connection. Please refresh.'}})</script>
-</body>
-</html>
+<footer><div class="shell footer-inner"><span>© 2026 Sivanesan B · An original, unofficial One Piece-inspired portfolio.</span><span><a href="https://github.com/Sivanesanbalu" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="./world.html">3D world</a> · <a href="https://one-piece.com/story/index.html" target="_blank" rel="noopener noreferrer">Story inspiration</a> · <a href="#top">Back to top ↑</a></span></div></footer>
+</body></html>
