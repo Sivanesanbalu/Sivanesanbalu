@@ -112,4 +112,4 @@ if(!reduced)for(let o of cloth){let a=o.geometry.attributes.position,b=o.userDat
 let alpha=reduced?1:1-Math.exp(-delta*2.4);for(let k of ['x','y','z','d','a','p'])look[k]+=(target[k]-look[k])*alpha;
 let a=look.a,p=look.p,d=look.d;camera.position.lerp(new THREE.Vector3(look.x+Math.sin(a)*d,look.y+Math.sin(p)*d*.9,look.z+Math.cos(a)*d),reduced?1:Math.min(1,delta*4));
 camera.lookAt(look.x,look.y,look.z);renderer.render(scene,camera);requestAnimationFrame(frame)}
-frame();spinner.classList.add('loaded');
+document.documentElement.dataset.engine='ready';frame();spinner.classList.add('loaded');
