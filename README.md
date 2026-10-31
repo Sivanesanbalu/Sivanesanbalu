@@ -1,3 +1,29 @@
+<!-- GRAND LINE PROFILE THEME: Original professional profile retained below -->
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-banner.svg" alt="Animated Grand Line of Code pirate ship banner" width="100%" />
+
+### 🏴‍☠️ Captain's Log · The AI Grand Line
+
+**The mission:** Build reliable AI systems, explore new architectures, and turn ambitious research into production-ready tools.
+
+<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/grand-line-map.svg" alt="Animated map of AI project islands" width="100%" />
+
+| 🏝️ Island | ⚓ Expedition |
+| :--- | :--- |
+| 🎙️ Voice AI Port | Voice agents, speech interfaces and real-time AI |
+| 📚 RAG Island | Retrieval, vector search and knowledge systems |
+| 🤖 Agent Fleet | Multi-agent workflows and automation |
+| 🌿 Green AI Atoll | Eco-Transformers research and efficient inference |
+
+**⚔️ Crew abilities:** `Python` · `GenAI` · `LLMs` · `RAG` · `Voice AI` · `FastAPI` · `Next.js`
+
+*Set sail below for research, repositories, contributions, and the full engineering story.*
+
+</div>
+
+---
+
 <div align="center">
 
 <!-- 🌌 Animated Header Hero Banner with Twinkling Particles -->
