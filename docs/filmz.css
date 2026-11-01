@@ -1,0 +1,21 @@
+/* Fan clip supplied by the portfolio owner; deliberately separate from the original 3D character models. */
+.filmz-reference{background:linear-gradient(145deg,#091b28,#122d3a 55%,#0b1c29);position:relative;overflow:hidden;padding:65px 0 75px;border-top:1px solid #e3b96c35;border-bottom:1px solid #e3b96c36}
+.filmz-reference:before{content:'';position:absolute;width:600px;height:600px;border:1px solid #edc98712;border-radius:50%;right:-200px;top:-260px;box-shadow:0 0 0 50px #e8c18107,0 0 0 110px #e8c18105;pointer-events:none}
+.filmz-layout{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(22px,5vw,80px);align-items:center}
+.filmz-reel{position:relative;isolation:isolate;background:#132738;border:8px solid #0b141c;box-shadow:0 0 0 1px #e4b86d87,0 24px 55px #01070fb5;max-width:600px}
+.filmz-reel:before,.filmz-reel:after{content:'';position:absolute;left:0;right:0;height:10px;z-index:2;pointer-events:none;background:repeating-linear-gradient(90deg,#0a131d 0 15px,#ba9051 16px 22px,#0a131d 23px 36px)}
+.filmz-reel:before{top:-8px}.filmz-reel:after{bottom:-8px}
+.filmz-reel img{width:100%;height:auto;aspect-ratio:500/281;display:block;object-fit:cover;image-rendering:auto}
+.filmz-reel-label{position:absolute;bottom:12px;left:12px;z-index:3;background:#061522d8;border:1px solid #edca8766;border-radius:2px;padding:6px 10px;color:#f4deae;font-size:.58rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;text-shadow:0 2px 5px #000}
+.filmz-note{margin:12px 0 0;color:#9cb4b8;font-size:.7rem;line-height:1.7}
+.filmz-copy{position:relative;z-index:2}
+.filmz-copy h2{font:400 clamp(3.9rem,7.8vw,7.2rem) 'Bebas Neue',Impact,sans-serif;line-height:.93;letter-spacing:.015em;margin:15px 0 19px}
+.filmz-copy h2 span{color:#e9c17b}
+.filmz-copy p{max-width:520px;color:#b8cdd0;font-size:.91rem}
+.filmz-copy strong{color:#ffe0a2}
+.filmz-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.filmz-actions a{display:inline-flex;align-items:center;gap:9px;text-decoration:none;padding:11px 16px;border-radius:3px;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;border:1px solid #e6bb79a6;color:#f0dcb1;background:#0d2a38}
+.filmz-actions a:first-child{background:#e8c58b;color:#132631}
+.filmz-actions a:hover{filter:brightness(1.14)}
+@media(max-width:850px){.filmz-layout{grid-template-columns:1fr;gap:28px}.filmz-reference{padding:50px 0 60px}.filmz-reel{width:min(100%,590px);margin:auto}.filmz-copy h2{font-size:clamp(3.8rem,13vw,6rem)}}
+@media(max-width:540px){.filmz-reference{padding:38px 0 52px}.filmz-copy p{font-size:.82rem}.filmz-reel{border-width:5px}.filmz-copy h2{font-size:clamp(3.7rem,16vw,5.7rem)}.filmz-reel-label{font-size:.5rem}}
