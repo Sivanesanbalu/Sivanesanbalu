@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {createGrandLineShip,createAnimeCrew} from './grandline-3d-kit.js';
 
 const canvas=document.querySelector('#world');
 const stage=document.querySelector('#stage');
@@ -36,44 +37,73 @@ function box(p,w,h,d,m,x=0,y=0,z=0){return add(p,new THREE.BoxGeometry(w,h,d),m,
 function cy(p,a,b,h,m,x=0,y=0,z=0){return add(p,new THREE.CylinderGeometry(a,b,h,12),m,x,y,z)}
 function sph(p,r,m,x=0,y=0,z=0){return add(p,new THREE.SphereGeometry(r,14,10),m,x,y,z)}
 function line(p,a,b,rad,m){let aa=new THREE.Vector3(...a),bb=new THREE.Vector3(...b);let o=add(p,new THREE.CylinderGeometry(rad,rad,aa.distanceTo(bb),8),m);o.position.copy(aa).add(bb).multiplyScalar(.5);o.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),bb.sub(aa).normalize());return o}
-const boat=new THREE.Group();scene.add(boat);boat.position.y=.7;
-let rings=[[-4,.1],[-3.5,.88],[-2.5,1.5],[0,1.83],[2.4,1.55],[3.3,1],[3.6,.18]];
-let pos=[],idx=[];for(let [z,w] of rings)for(let [x,y] of [[-w,.2],[w,.2],[w*.7,-1],[-w*.7,-1]])pos.push(x,y,z);
-for(let k=0;k<rings.length-1;k++)for(let j=0;j<4;j++){let a=k*4+j,b=k*4+(j+1)%4,c=(k+1)*4+(j+1)%4,d=(k+1)*4+j;idx.push(a,b,d,b,c,d)}
-idx.push(0,1,2,0,2,3);let last=(rings.length-1)*4;idx.push(last,last+2,last+1,last,last+3,last+2);
-const hg=new THREE.BufferGeometry();hg.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));hg.setIndex(idx);hg.computeVertexNormals();add(boat,hg,teak);
-box(boat,2.85,.2,5.8,deck,0,.35,.2);
-for(let z=-2.4;z<3;z+=.4)box(boat,2.8,.015,.035,dark,0,.46,z);
-for(let s of [-1,1]){for(let z=-2.4;z<2.9;z+=1)cy(boat,.07,.08,.62,rope,s*1.45,.76,z);line(boat,[s*1.45,1.05,-2.6],[s*1.45,1.05,2.9],.07,gold)}
-const cloth=[];
-for(let [z,top,bottom,width] of [[-1.2,5.8,3.05,3.8],[1.5,4.9,3.65,2.9]]){
-cy(boat,.13,.14,6.4,dark,0,3.55,z);line(boat,[-width/2,top,z],[width/2,top,z],.1,rope);
-let g=new THREE.PlaneGeometry(width,top-bottom,14,10),o=add(boat,g,canvasMat,0,(top+bottom)/2,z-.1);o.userData.base=new Float32Array(g.attributes.position.array);cloth.push(o);
-for(let s of [-1,1])line(boat,[s*width/2,top,z],[s*1.5,.55,z+1.5],.025,rope);
+/* Grand Line V3: original detailed modeled galleon and full spatial articulated 3D crew */
+const ship=createGrandLineShip(THREE,{mobile});
+const boat=ship.group;
+scene.add(boat);
+const actors=[
+ {kind:'captain',name:'Straw-hat Captain',x:0,z:-1.05,scale:.69},
+ {kind:'swordsman',name:'Triple-blade Swordsman',x:-1.04,z:.8,scale:.62},
+ {kind:'navigator',name:'Navigator',x:1.02,z:1.12,scale:.62}
+].map(cfg=>{
+ const rig=createAnimeCrew(THREE,cfg.kind,{mobile});
+ rig.group.position.set(cfg.x,.48,cfg.z);rig.group.scale.setScalar(cfg.scale);
+ boat.add(rig.group);
+ return {...cfg,rig};
+});
+let selectedActor='captain';
+function pickActor(kind){
+ const actor=actors.find(a=>a.kind===kind);
+ if(!actor)return;
+ selectedActor=kind;
+ document.querySelector('#character').value=kind;
+ for(const a of actors){
+   a.rig.group.scale.setScalar(a.scale*(a.kind===kind?1.14:1));
+   a.rig.group.rotation.y=a.kind===kind?-.15:.06;
+ }
+ target={x:0,y:2.1,z:0,d:kind==='captain'?10.7:10.6,a:kind==='swordsman'?-0.42:.47,p:.33};
+ actor.rig.setAction(kind==='swordsman'?'slash':kind==='navigator'?'point':'wave');
+ say(actor.name+' selected — native 3D rig with animated joints');
 }
-line(boat,[0,5.8,-1.2],[0,6.8,-1.2],.07,gold);
-let flag=add(boat,new THREE.PlaneGeometry(1.2,.53,6,3),M(0xbb554b),.65,6.33,-1.2);flag.userData.base=new Float32Array(flag.geometry.attributes.position.array);cloth.push(flag);
-let deckLight=sph(boat,.25,M(0xffd17c,.2),1.3,1.22,2.7);deckLight.material.emissive=new THREE.Color(0xb97132);deckLight.material.emissiveIntensity=.5;
-const captainHolder=new THREE.Group();captainHolder.position.set(0,.47,.75);boat.add(captainHolder);let captain=null;
-function makeCaptain(theme){
-const g=new THREE.Group();
-const c=theme==='storm'?{coat:0x214968,pants:0x29344c,hat:0x17374c,band:0xf1b967,skin:0xe4aa81}:theme==='shadow'?{coat:0x583b6a,pants:0x29283d,hat:0x312741,band:0xc7a1dd,skin:0xc99172}:{coat:0xb34b42,pants:0x2d5d75,hat:0xe1b875,band:0xb5473d,skin:0xe4ad84};
-let co=M(c.coat),pa=M(c.pants),ha=M(c.hat),ba=M(c.band),sk=M(c.skin),shoe=M(0x29242a),hair=M(0x2c2426);
-for(let s of [-1,1]){cy(g,.2,.23,.78,pa,s*.23,.59,0);cy(g,.24,.2,.37,shoe,s*.23,.19,.1)}
-cy(g,.34,.47,1.03,co,0,1.48,0);box(g,.32,.8,.25,M(0xf2e3c9),0,1.53,.31);cy(g,.12,.15,.2,sk,0,2.12,0);
-sph(g,.38,sk,0,2.49,0);for(let s of [-1,1]){sph(g,.055,hair,s*.14,2.54,.36);let arm=cy(g,.15,.15,.84,co,s*.51,1.58,0);arm.rotation.z=s*.31;sph(g,.15,sk,s*.63,1.11,0)}
-for(let i=0;i<7;i++){let a=i*Math.PI*2/7;sph(g,.12,hair,Math.cos(a)*.3,2.8,Math.sin(a)*.3)}
-cy(g,.62,.62,.075,ha,0,2.95,0);cy(g,.37,.41,.44,ha,0,3.18,0);cy(g,.41,.41,.1,ba,0,3.03,0);
-if(theme==='storm'){let plume=add(g,new THREE.ConeGeometry(.14,.8,8),M(0xffefc4),.4,3.58,0);plume.rotation.z=-.35}
-if(theme==='shadow'){let cape=add(g,new THREE.ConeGeometry(.72,1.24,12,1,true),M(0x362a4d),0,1.39,-.16);cape.rotation.x=.14}
-return g;
-}
-function replaceCaptain(theme){if(captain)captainHolder.remove(captain);captain=makeCaptain(theme);captainHolder.add(captain);say((theme==='straw'?'Straw Hat Explorer':theme==='storm'?'Storm Captain':'Shadow Navigator')+' aboard!')}
-replaceCaptain('straw');
-document.querySelector('#character').addEventListener('change',e=>replaceCaptain(e.target.value));
+document.querySelector('#character').addEventListener('change',e=>pickActor(e.target.value));
+document.querySelector('#crew-action').addEventListener('click',()=>{
+ const a=actors.find(a=>a.kind===selectedActor);
+ if(a){a.rig.setAction(a.kind==='swordsman'?'slash':a.kind==='navigator'?'point':'wave');say(a.name+' performs a 3D animated action')}
+});
+document.querySelector('#ship-tour').addEventListener('click',()=>{
+ document.querySelectorAll('[data-island]').forEach(b=>b.setAttribute('aria-pressed','false'));
+ target={x:0,y:2.3,z:0,d:15.5,a:Math.PI*.67,p:.46};
+ for(const actor of actors)actor.rig.setAction('wave');
+ say('Galleon tour — full 3D hull, rigging, cannons, deck and ocean wake');
+});
 const upload=document.querySelector('#model');
 document.querySelector('#upload-button').addEventListener('click',()=>upload.click());
-upload.addEventListener('change',e=>{let f=e.target.files?.[0];if(!f)return;if(!f.name.toLowerCase().endsWith('.glb'))return say('Choose a .glb file');if(f.size>20e6)return say('Please choose a model under 20 MB');let u=URL.createObjectURL(f);new GLTFLoader().load(u,gltf=>{try{let model=gltf.scene;let bounds=new THREE.Box3().setFromObject(model);let size=bounds.getSize(new THREE.Vector3());if(size.y<=.001)throw Error('Invalid 3D model');let scale=3.1/Math.max(size.y,size.x*.8,size.z*.8);model.scale.setScalar(scale);let center=bounds.getCenter(new THREE.Vector3());model.position.set(-center.x*scale,-bounds.min.y*scale,-center.z*scale);if(captain)captainHolder.remove(captain);captain=model;captainHolder.add(captain);say('Custom 3D captain loaded!')}catch(err){say('Could not read 3D model')}URL.revokeObjectURL(u)},undefined,()=>{URL.revokeObjectURL(u);say('Model failed to load')})});
+upload.addEventListener('change',e=>{
+ const file=e.target.files?.[0];
+ if(!file)return;
+ if(!file.name.toLowerCase().endsWith('.glb'))return say('Choose a .glb 3D character file.');
+ if(file.size>20*1024*1024)return say('Maximum GLB size is 20 MB.');
+ const url=URL.createObjectURL(file);
+ new GLTFLoader().load(url,gltf=>{
+   try{
+     const model=gltf.scene;
+     const bounds=new THREE.Box3().setFromObject(model);
+     const dims=bounds.getSize(new THREE.Vector3());
+     if(!(Number.isFinite(dims.y)&&dims.y>.001))throw Error('Invalid 3D model bounds');
+     const k=2.25/Math.max(dims.y,dims.x*.8,dims.z*.8);
+     model.scale.setScalar(k);
+     const center=bounds.getCenter(new THREE.Vector3());
+     model.position.set(-center.x*k,-bounds.min.y*k+.50,-center.z*k-1.08);
+     model.traverse(o=>{if(o.isMesh){o.castShadow=!mobile;o.receiveShadow=!mobile;}});
+     if(upload.custom)boat.remove(upload.custom);
+     upload.custom=model;boat.add(model);
+     say('Custom GLB model loaded — original ship and crew stay in the scene.');
+   }catch(err){say('Unable to prepare this GLB file.');}
+   URL.revokeObjectURL(url);
+ },undefined,()=>{
+   URL.revokeObjectURL(url);say('GLB could not load. Try a self-contained GLB.');
+ });
+});
 const islands=[];
 function island(id,x,z,tint,gem,kind){const root=new THREE.Group();root.position.set(x,0,z);scene.add(root);let sand=M(0xe1b879),grass=M(tint),stone=M(0x546675),accent=M(gem,.4,.18);
 add(root,new THREE.CylinderGeometry(3.4,4.15,1.32,11),sand,0,.55,0);
@@ -107,8 +137,8 @@ canvas.addEventListener('wheel',e=>{target.d=THREE.MathUtils.clamp(target.d+e.de
 function resize(){const w=stage.clientWidth,h=stage.clientHeight;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h,false)}window.addEventListener('resize',resize);resize();
 const clock=new THREE.Clock();let elapsed=0;
 function frame(){let delta=Math.min(clock.getDelta(),.04);elapsed+=reduced?0:delta;let t=elapsed;waterTime.value=t;
-boat.position.y=.72+(reduced?0:Math.sin(t*1.3)*.14);boat.rotation.z=reduced?0:Math.sin(t*.9)*.025;boat.rotation.x=reduced?0:Math.sin(t*.67)*.022;
-if(!reduced)for(let o of cloth){let a=o.geometry.attributes.position,b=o.userData.base;for(let i=0;i<a.count;i++){let k=i*3;a.array[k+2]=b[k+2]+Math.sin(t*1.25+b[k]*1.6+b[k+1]*.6)*.14;}a.needsUpdate=true;o.geometry.computeVertexNormals()}
+ship.update(t);
+if(!reduced)for(const actor of actors)actor.rig.update(t);
 let alpha=reduced?1:1-Math.exp(-delta*2.4);for(let k of ['x','y','z','d','a','p'])look[k]+=(target[k]-look[k])*alpha;
 let a=look.a,p=look.p,d=look.d;camera.position.lerp(new THREE.Vector3(look.x+Math.sin(a)*d,look.y+Math.sin(p)*d*.9,look.z+Math.cos(a)*d),reduced?1:Math.min(1,delta*4));
 camera.lookAt(look.x,look.y,look.z);renderer.render(scene,camera);requestAnimationFrame(frame)}
