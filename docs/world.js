@@ -77,6 +77,7 @@ document.querySelector('#ship-tour').addEventListener('click',()=>{
  say('Galleon tour — full 3D hull, rigging, cannons, deck and ocean wake');
 });
 const upload=document.querySelector('#model');
+let importedMixer=null;
 document.querySelector('#upload-button').addEventListener('click',()=>upload.click());
 upload.addEventListener('change',e=>{
  const file=e.target.files?.[0];
@@ -96,8 +97,15 @@ upload.addEventListener('change',e=>{
      model.position.set(-center.x*k,-bounds.min.y*k+.50,-center.z*k-1.08);
      model.traverse(o=>{if(o.isMesh){o.castShadow=!mobile;o.receiveShadow=!mobile;}});
      if(upload.custom)boat.remove(upload.custom);
+     importedMixer=null;
      upload.custom=model;boat.add(model);
-     say('Custom GLB model loaded — original ship and crew stay in the scene.');
+     if(Array.isArray(gltf.animations)&&gltf.animations.length){
+       importedMixer=new THREE.AnimationMixer(model);
+       importedMixer.clipAction(gltf.animations[0]).play();
+       say('Animated GLB imported! Playing '+gltf.animations.length+' available animation clip(s).');
+     }else{
+       say('3D GLB imported. Add a rigged animation in Blender / Mixamo for movement.');
+     }
    }catch(err){say('Unable to prepare this GLB file.');}
    URL.revokeObjectURL(url);
  },undefined,()=>{
@@ -138,7 +146,7 @@ function resize(){const w=stage.clientWidth,h=stage.clientHeight;camera.aspect=w
 const clock=new THREE.Clock();let elapsed=0;
 function frame(){let delta=Math.min(clock.getDelta(),.04);elapsed+=reduced?0:delta;let t=elapsed;waterTime.value=t;
 ship.update(t);
-if(!reduced)for(const actor of actors)actor.rig.update(t);
+if(!reduced){for(const actor of actors)actor.rig.update(t);if(importedMixer)importedMixer.update(delta);}
 let alpha=reduced?1:1-Math.exp(-delta*2.4);for(let k of ['x','y','z','d','a','p'])look[k]+=(target[k]-look[k])*alpha;
 let a=look.a,p=look.p,d=look.d;camera.position.lerp(new THREE.Vector3(look.x+Math.sin(a)*d,look.y+Math.sin(p)*d*.9,look.z+Math.cos(a)*d),reduced?1:Math.min(1,delta*4));
 camera.lookAt(look.x,look.y,look.z);renderer.render(scene,camera);requestAnimationFrame(frame)}
