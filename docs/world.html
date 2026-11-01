@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
 <meta name="theme-color" content="#061725"/>
 <meta name="description" content="Sivanesan B — Grand Line 3D. Explore a living ocean, sail a pirate ship, switch 3D characters and discover AI projects."/>
-<title>Grand Line 3D | Sivanesan B</title>
+<title>Grand Line 3D V3 — Real 3D Galleon & Crew | Sivanesan B</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
@@ -58,6 +58,13 @@ h1 em{font-style:normal;display:block;color:#edcf95}
 .character .panel-label{margin-bottom:0}
 .character select{width:100%;border:1px solid #82b5bb6e;border-radius:9px;padding:10px 12px;color:#f6e9cd;background:#0c2a3d;font-weight:700}
 .character option{background:#0c2a3d;color:#fff}
+#crew-action,#ship-tour{border:1px solid #dbb97988;border-radius:8px;background:#0c293a;color:#f2d9a3;font-weight:800;font-size:11px;padding:10px;min-height:38px}
+#crew-action:hover,#ship-tour:hover{background:#174257}
+.character-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.v3-indicator{display:inline-flex;gap:8px;align-items:center;margin:10px 0 0;padding:8px 12px;background:#071c2ec9;border:1px solid #eed6a166;border-radius:999px;color:#e8dfc8;font-size:10px;font-weight:800;letter-spacing:.1em}
+.v3-indicator:before{content:'●';color:#72debd;filter:drop-shadow(0 0 6px #74e6bf)}
+@media(max-width:750px){.character-buttons{grid-column:1/-1;grid-template-columns:1fr 1fr}.character #upload-button{grid-column:2}.v3-indicator{font-size:9px}}
+
 #upload-button{color:#e6d39e;font-size:11px;text-decoration:underline;text-underline-offset:3px;border:0;background:none;text-align:left;padding:0}
 #model{display:none}
 #toast{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);z-index:6;text-align:center;padding:10px 17px;border:1px solid #88d9c68a;background:#0c2939e8;border-radius:30px;font-size:12px;color:#ecf4eb;white-space:nowrap;max-width:95%;overflow:hidden;text-overflow:ellipsis}
@@ -87,14 +94,15 @@ footer a{color:#f2d392}
 <canvas id="world" aria-label="Interactive 3D pirate ship sailing between AI project islands" role="img"></canvas>
 <div id="loading">Loading your cinematic 3D world…</div>
 <div id="vignette"></div><div id="grain"></div>
-<header><a class="brand" href="#stage"><span>✦</span><span>SIVANESAN B<small>THE GRAND LINE · THREE-DIMENSIONAL EXPERIENCE</small></span></a><nav><span class="status">3D INTERACTIVE</span><a href="#details">Projects</a><a href="https://github.com/Sivanesanbalu" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></header>
+<header><a class="brand" href="#stage"><span>✦</span><span>SIVANESAN B<small>THE GRAND LINE · THREE-DIMENSIONAL EXPERIENCE</small></span></a><nav><span class="status">REAL 3D V3</span><a href="#details">Projects</a><a href="https://github.com/Sivanesanbalu" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></header>
 <div class="hero">
 <div class="eyebrow">An AI engineer's voyage · Chapter 01</div>
 <h1>BEYOND<br><em>THE GRAND</em> LINE.</h1>
-<p>Ahoy, I'm <strong>Sivanesan B</strong>. Sail a living 3D ocean, change your pirate captain, and explore the islands of <strong>GenAI, RAG, Voice AI, multi-agent systems and Green AI.</strong></p>
+<div class="v3-indicator">3 ORIGINAL RIGGED 3D CREW · FULLY MODELED GALLEON</div>
+<p>Ahoy, I'm <strong>Sivanesan B</strong>. Sail a detailed animated pirate galleon, watch three fully modeled original characters move in real 3D, and explore the islands of <strong>GenAI, RAG, Voice AI, multi-agent systems and Green AI.</strong></p>
 <div class="hero-actions"><button class="btn" id="set-sail">Set sail · Explore ↗</button><a class="btn btn-ghost" href="#details">Captain's log ↓</a></div>
 </div>
-<div id="world-note">DRAG TO ROTATE · SELECT ISLAND · REPLACE CHARACTER</div>
+<div id="world-note">DRAG TO ROTATE · SELECT CREW · INSPECT 3D SHIP</div>
 <div id="island-controls">
 <div class="panel"><span class="panel-label">01 / Choose an island to move the 3D camera</span><div class="islands">
 <button type="button" data-island="voice" aria-pressed="false"><b>🎙</b>Voice AI Port</button>
@@ -103,15 +111,16 @@ footer a{color:#f2d392}
 <button type="button" data-island="green" aria-pressed="false"><b>🌿</b>Green AI</button>
 </div></div>
 <div class="panel character"><label class="panel-label" for="character">02 / Replace your 3D pirate character</label>
-<select id="character"><option value="straw">Straw Hat Explorer</option><option value="storm">Storm Captain</option><option value="shadow">Shadow Navigator</option></select>
+<select id="character"><option value="captain">Straw-hat Captain — 3D Rig</option><option value="swordsman">Triple-blade Swordsman — 3D Rig</option><option value="navigator">Navigator — 3D Rig</option></select>
+<div class="character-buttons"><button type="button" id="crew-action">Animate selected crew ✦</button><button type="button" id="ship-tour">Inspect the galleon ⚓</button></div>
 <button type="button" id="upload-button">Or upload your own .glb model ↗</button><input id="model" type="file" accept=".glb,model/gltf-binary"/>
 </div></div>
 <div id="toast" role="status" aria-live="polite" hidden></div>
 </div>
 <main>
-<section id="details"><article class="card"><div class="kicker" id="chapter">CAPTAIN'S LOG / WELCOME</div><h2 id="title">Every line of code is a new voyage.</h2><p id="summary">Choose one of the four 3D project islands above to fly there with the camera and explore my actual GitHub work. The pirate characters and world are original 3D creations. You can also import your own GLB character, directly in your browser.</p><div class="card-links"><a id="repo-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">Explore repositories ↗</a><a href="https://sivanesanbalu.netlify.app" target="_blank" rel="noopener noreferrer">Professional portfolio ↗</a></div></article><div class="compass"><div class="symbol" aria-hidden="true">✧</div><b>GRAND LINE COMPASS</b><small>IMAGINE · BUILD · EXPLORE</small></div></section>
+<section id="details"><article class="card"><div class="kicker" id="chapter">CAPTAIN'S LOG / WELCOME</div><h2 id="title">Every line of code is a new voyage.</h2><p id="summary">Choose one of the four 3D project islands above to fly there with the camera and explore my actual GitHub work. The pirate characters are original articulated 3D meshes with animated joints. The ship features moving cloth sails, deck and cannons, a figurehead, railings, rigging and wake foam. You can import a GLB character in your browser.</p><div class="card-links"><a id="repo-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">Explore repositories ↗</a><a href="https://sivanesanbalu.netlify.app" target="_blank" rel="noopener noreferrer">Professional portfolio ↗</a></div></article><div class="compass"><div class="symbol" aria-hidden="true">✧</div><b>GRAND LINE COMPASS</b><small>IMAGINE · BUILD · EXPLORE</small></div></section>
 </main>
-<footer>Built with Three.js · Procedural 3D ship, sea and characters · <a href="https://github.com/Sivanesanbalu">Sivanesan B</a></footer>
+<footer>Built with Three.js · True 3D geometry and animation · Original fan-inspired character designs · No licensed anime models · <a href="https://github.com/Sivanesanbalu">Sivanesan B</a></footer>
 <script>
 (function(){
 const content={
