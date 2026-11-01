@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="680" viewBox="0 0 420 680" role="img" aria-label="Original animated straw-hat pirate captain, inspired by One Piece"><title>Original animated straw-hat pirate captain, inspired by One Piece</title>
+<defs>
+<linearGradient id="skin" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f7d0aa"/><stop offset=".55" stop-color="#df976b"/><stop offset="1" stop-color="#a65c47"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#e45a45"/><stop offset=".6" stop-color="#b62e39"/><stop offset="1" stop-color="#581c36"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#344557"/><stop offset=".7" stop-color="#0e1e31"/><stop offset="1" stop-color="#050d1c"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff2c4"/><stop offset=".5" stop-color="#e6ba6c"/><stop offset="1" stop-color="#a97444"/></linearGradient>
+<filter id="aura"><feGaussianBlur stdDeviation="10"/></filter>
+</defs><style>
+@keyframes idle{0%,100%{transform:translateY(0px) rotate(-.5deg)}50%{transform:translateY(-9px) rotate(1deg)}}
+@keyframes hat{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-5deg)}}
+@keyframes arm{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(6deg)}}
+@keyframes sparkle{0%,100%{opacity:.15;transform:translateY(0)}50%{opacity:.9;transform:translateY(-20px)}}
+@keyframes wind{to{stroke-dashoffset:-120}}
+@keyframes glow{50%{opacity:.28}}
+.char{animation:idle 5.5s ease-in-out infinite;transform-origin:210px 500px}.hat{animation:hat 6s ease-in-out infinite;transform-origin:210px 190px}
+.arm{animation:arm 3s ease-in-out infinite;transform-origin:128px 350px}
+.spark{animation:sparkle 3.2s ease-in-out infinite}.wind{stroke-dasharray:22 18;animation:wind 4s linear infinite}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<ellipse cx="215" cy="622" rx="136" ry="27" fill="#020f22" opacity=".35"/>
+<ellipse cx="203" cy="340" rx="151" ry="280" fill="#d4a55f" opacity=".2" filter="url(#aura)"/>
+<g opacity=".57" fill="none" stroke="#ffdfa5" stroke-width="4"><path class="wind" d="M14 193Q57 176 97 182"/><path class="wind" d="M290 88q60-14 94 15"/><path class="wind" d="M19 516q38-17 73-12"/></g>
+<g class="char" stroke="#151a27" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<!-- boots and navy rolled trousers -->
+<path d="M150 476q-9 65-14 109l-30 31q-6 19 14 23h70q20-7 15-28l-1-97z" fill="#264259"/>
+<path d="M226 487q8 57 14 111l27 29q14 15 35 8l11-19-28-37 7-111z" fill="#1d354c"/>
+<path d="M112 597q-27 19-16 39 28 17 104 7l4-22-64-17zM234 598l32 7 47 24q24 21-9 25l-68-2z" fill="#382e30"/>
+<!-- torso and sash -->
+<path d="M139 320q50-19 127-1l39 61-21 135q-66 29-149-2l-20-133z" fill="url(#skin)"/>
+<path d="M134 322q-37 18-53 80l40 85 47-65 5-107zM264 309q54 18 67 98l-49 72-44-70z" fill="url(#cloth)"/>
+<path d="M164 421q53 15 117-5l-1 41q-49 24-127 4z" fill="#f7d6a9"/>
+<path d="M134 464q69-18 152 2l-20 31q-70-18-130 7z" fill="#e5c68c"/>
+<path d="M244 483q57-4 83 15l-17 18q-35-17-73-10" fill="#e7bb69"/>
+<!-- right arm -->
+<path d="M286 336q52 13 65 75l-13 46q-20 11-37-7l-21-42-19-30z" fill="url(#skin)"/>
+<path d="M319 447q-12 31 4 41l25-8 16-34q-10-12-25-13z" fill="url(#skin)"/>
+<!-- waving left forearm -->
+<g class="arm">
+<path d="M141 337q-50-33-82-21L30 245q-14-23-34-7l-4 24 28 105q28 31 65 33l58-25z" fill="url(#skin)"/>
+<path d="M-13 248q-22-27-7-39l11 2q3-35 16-28l8 29q13-38 25-23l-4 31q21-24 29-9l-19 45-33 16z" fill="#e9a37d"/>
+</g>
+<!-- neck and face -->
+<path d="M176 296h57l12 48q-29 27-67 2z" fill="url(#skin)"/>
+<ellipse cx="209" cy="229" rx="75" ry="94" fill="url(#skin)"/>
+<path d="M143 224q-30-31-13-56 15-22 43-20l28-22 22 15q38-9 58 33l-5 54-22-34-24 9-27-25-26 32-22-5z" fill="#191c2a"/>
+<path d="M165 225l-22 32 27-10m88-28 22 33-31-10" fill="#161d2b" stroke-width="7"/>
+<path d="M167 236q12-9 26 0M226 237q12-9 24 0" stroke="#2f1e26" fill="none"/>
+<circle cx="185" cy="241" r="5" fill="#162338" stroke="none"/><circle cx="237" cy="241" r="5" fill="#162338" stroke="none"/>
+<path d="M189 282q20 15 44-2" fill="none" stroke="#863d35" stroke-width="5"/>
+<path d="M178 211l21-6m27 5 23 6" fill="none" stroke="#31252a" stroke-width="5"/>
+<!-- iconic broad woven straw hat -->
+<g class="hat"><ellipse cx="206" cy="156" rx="139" ry="34" fill="url(#gold)"/>
+<path d="M147 156q-9-78 61-95 72 6 68 95-64 28-129 0z" fill="#e6bd72"/>
+<path d="M146 130q70 17 132-1l1 28q-65 18-136-1z" fill="#b4423d" stroke-width="4"/>
+<path d="M98 158q110 31 226-5" fill="none" stroke="#a57448" stroke-width="3"/>
+<path d="M165 88q34-19 83 5" fill="none" stroke="#fff2bd" stroke-width="5" opacity=".6"/></g>
+</g>
+<g fill="#ffe7a9" class="spark"><circle cx="46" cy="120" r="5"/><circle cx="334" cy="278" r="4"/><path d="M350 118v20m-10-10h20" stroke="#ffe7a9" stroke-width="3"/></g>
+</svg>
