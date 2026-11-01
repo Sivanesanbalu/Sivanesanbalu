@@ -1,124 +1,148 @@
 <!--
-  SIVANESAN B · GitHub Profile
-  Interactive Three.js experience: https://sivanesan-ai-command-center-sivas-projects-f0d9f6a6.vercel.app/command-center.html
-  Previous design safely preserved on backup/profile-before-3d-redesign-2026-11-01
+  SIVANESAN B | Main GitHub Profile README
+  Design system: 3D Command Core / deep navy + electric cyan + soft violet
+  The hero and project gallery are repo-hosted SVG assets rendered directly in GitHub.
+  No website, JavaScript runtime or WebGL iframe is required to see the visuals.
+  Prior profile safely preserved: backup/readme-before-native-3d-2026-11-01
 -->
 
 <div align="center">
 
-  <sub>◉ AI COMMAND CENTER · THREE.JS · WEBGL</sub>
+<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/ai-command-center-3d.svg" width="100%" alt="Sivanesan B: animated 3D AI Command Core with luminous neural sphere, rotating 3D orbital geometry and floating holographic modules"/>
 
-  <h1>SIVANESAN B</h1>
+<br/>
 
-  <strong>AI Engineer · GenAI · RAG · Voice AI · Applied AI</strong>
+**AI Engineer · Generative AI · RAG / LLM · Voice AI · Agentic Systems**
 
-  <br/><br/>
+*I build practical AI products — connecting research, models, software engineering, and real users.*
 
-  <a href="https://sivanesan-ai-command-center-sivas-projects-f0d9f6a6.vercel.app/command-center.html">
-    <img alt="Launch the interactive 3D AI Command Center" src="https://img.shields.io/badge/ENTER-THE_3D_AI_COMMAND_CENTER-067C85?style=for-the-badge&logo=threedotjs&logoColor=white" />
-  </a>
+<br/>
 
-  <p><sub>Real WebGL-rendered 3D: orbit the camera, zoom into modules, explore projects. Built with JavaScript and Three.js. The experience opens in your browser because GitHub Markdown cannot execute WebGL.</sub></p>
+<a href="https://sivanesanbalu.netlify.app"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-VIEW_MY_WORK-006C87?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/sivanesan-b-871ba7264/"><img alt="LinkedIn" src="https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:apsiva69@gmail.com"><img alt="Email" src="https://img.shields.io/badge/EMAIL-CONTACT_ME-564C9F?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://doi.org/10.1109/ICNGCS64900.2025.11183217"><img alt="IEEE research" src="https://img.shields.io/badge/IEEE-PUBLISHED_RESEARCH-00629B?style=for-the-badge&logo=ieee&logoColor=white"/></a>
 
-  <a href="https://sivanesan-ai-command-center-sivas-projects-f0d9f6a6.vercel.app/command-center.html"><img alt="Real 3D scene" src="https://img.shields.io/badge/3D_ENGINE-THREE.JS-111B38?style=flat-square&logo=javascript&logoColor=white" /></a>
-  <img alt="4 interactive project stations" src="https://img.shields.io/badge/4-INTERACTIVE_MODULES-164F58?style=flat-square" />
-  <img alt="Camera interactions" src="https://img.shields.io/badge/CAMERA-ORBIT_%26_ZOOM-1C2852?style=flat-square" />
+<br/><br/>
 
-  <br/><br/>
-
-  **Building useful, reliable AI systems — from retrieval and voice interfaces to agent workflows.**
-
-  <br/>
-
-  <a href="https://sivanesanbalu.netlify.app"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-Explore-11A8CD?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/sivanesan-b-871ba7264/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:apsiva69@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-Say_Hello-6F63C4?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://doi.org/10.1109/ICNGCS64900.2025.11183217"><img alt="IEEE publication" src="https://img.shields.io/badge/IEEE-Research_Paper-00629B?style=for-the-badge&logo=ieee&logoColor=white" /></a>
-
-  <br/><br/>
-
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
-  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/PYTHON-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/PYTORCH-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+<img src="https://img.shields.io/badge/NEXT.JS-111827?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+<img src="https://img.shields.io/badge/FASTAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+<img src="https://img.shields.io/badge/POSTGRESQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 
 </div>
 
 ---
 
-### 👋 About me
+### 01 / The engineer behind the systems
 
-I'm **Sivanesan B**, an AI engineer and AI & Data Science graduate based in India. I enjoy taking an AI idea beyond a notebook: connecting data, models, APIs, interfaces, and evaluation into a system people can actually use.
+Hi, I'm **Sivanesan B** — an AI & Data Science graduate, AI engineer and builder interested in everything from language model inference to user-facing products.
 
-- 🧠 **Generative AI & agents:** orchestration, tool use, human review, and reliable workflows.
-- 🎙️ **Voice AI:** speech-to-text, conversational interfaces, and provider integrations.
-- 📚 **RAG & local AI:** document/CSV retrieval, vector search, and privacy-conscious assistants.
-- ⚙️ **Engineering:** Python, TypeScript, API design, databases, testing, and deployment workflows.
-- 🌱 **Research interest:** efficient transformer inference and reducing AI compute costs.
+My focus is translating a good AI prototype into an **end-to-end system**: ingestion, retrieval, agents, APIs, interface, testing, monitoring and deployment.
 
-**Interested in:** AI Engineer · GenAI Engineer · RAG/LLM Engineer · Voice AI Engineer · Applied AI.
+- **Build:** Generative AI workflows, RAG search and task-focused agents.
+- **Explore:** Speech interfaces, voice infrastructure and offline-first assistants.
+- **Engineer:** Python backends, TypeScript interfaces, databases, secure integrations and testing.
+- **Research:** Resource-efficient LLM inference, activation freezing and responsible compute.
+- **Next:** Full-time AI engineering roles involving GenAI, Voice AI, RAG and applied AI systems.
 
-### 🚀 Selected projects
-
-| Project | What it demonstrates | Explore |
-| :--- | :--- | :---: |
-| **🎙️ VoiceForge AI** | A Next.js voice-agent control plane for managing agents, calls, provider connections, and usage. Real provider access requires environment configuration. | [Repository](https://github.com/Sivanesanbalu/VoiceForge-AI) |
-| **🧠 Offline Voice RAG** | A local-first assistant combining CSV knowledge, FAISS retrieval, Qwen-compatible language models, Whisper, and text-to-speech. | [Repository](https://github.com/Sivanesanbalu/RAG-Offline-Inventory-Management-System) |
-| **🤖 AI Job Agent v2** | A multi-step system design for job discovery, role matching, browser automation, and application-status tracking. | [Repository](https://github.com/Sivanesanbalu/ai-job-agent-v2) |
-| **🛡️ DevShield** | A pre-production security research platform exploring software-IP exposure scans, API protection, and authenticated service controls. | [Repository](https://github.com/Sivanesanbalu/devshield-ai) |
-| **🗣️ LinguaBridge AI** | A multilingual phone-translation project with deterministic tests and local simulations; not yet production-verified. | [Repository](https://github.com/Sivanesanbalu/linguabridge-ai) |
-
-> **My engineering principle:** make the demo work, make the failure cases visible, then make the system maintainable.
-
-### 📄 Published research
-
-**Eco-Transformers: Carbon-Efficient and Accelerated Inference through Self-Pruning and Activation Freezing in Large Language Models**
-
-Published in the **2025 International Conference on Next Generation Computing Systems (ICNGCS)**, IEEE. The work explores runtime weight masking and activation freezing to improve transformer inference efficiency.
-
-[**Read the IEEE paper ↗**](https://doi.org/10.1109/ICNGCS64900.2025.11183217)
-
-### 🧰 My toolkit
-
-| Area | Tools & technologies |
-| :--- | :--- |
-| **AI/ML** | Python, PyTorch, Hugging Face, LLM APIs, LangGraph |
-| **Retrieval & voice** | RAG, FAISS, Whisper, Qwen, Vapi |
-| **Web & services** | Next.js, React, TypeScript, FastAPI, Node.js |
-| **Storage & infrastructure** | PostgreSQL, Supabase, Docker, Vercel, GitHub Actions |
-| **Quality & automation** | Git, testing, CI workflows, Playwright |
-
-### 🌌 My contribution universe
+### 02 / AI systems laboratory
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/profile-night-view.svg" width="95%" alt="Isometric 3D GitHub contributions" />
+<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/ai-module-lab-3d.svg" width="100%" alt="Four isometric 3D illustrations showing a voice microphone, stacked retrieval databases, an agent network and a research processor"/>
+</div>
+
+| Featured build | Engineering focus | Source |
+| :--- | :--- | :---: |
+| **🎙️ VoiceForge AI** | Provider-aware voice-agent control plane for configuring agents, recording calls, handling provider connections and tracking usage. Integrations depend on configured credentials. | [Explore](https://github.com/Sivanesanbalu/VoiceForge-AI) |
+| **📚 Offline Voice RAG Assistant** | Local knowledge querying with CSV, FAISS similarity search, Whisper-compatible speech input and Qwen-family language models. | [Explore](https://github.com/Sivanesanbalu/RAG-Offline-Inventory-Management-System) |
+| **🤖 AI Job Agent v2** | Agent workflow design for discovering roles, matching resumes, handling browser forms and tracking the application lifecycle. | [Explore](https://github.com/Sivanesanbalu/ai-job-agent-v2) |
+| **🗣️ LinguaBridge AI** | Tamil/Hindi telephone translation architecture, provider adapters and deterministic simulations. **Not production-verified.** | [Explore](https://github.com/Sivanesanbalu/linguabridge-ai) |
+| **🛡️ DevShield AI** | Defensive engineering research on release exposure, API abuse and protected application access. **Pre-production.** | [Explore](https://github.com/Sivanesanbalu/devshield-ai) |
+| **🏭 Instrument Dealer Hub** | Industrial procurement and quotation workflow experiments: supplier discovery, structured RFQs and communications. | [Explore](https://github.com/Sivanesanbalu/whatsapp-instrument-connect) |
+
+> **How I approach engineering:** build the prototype, prove its behavior, expose its limitations, then improve reliability before making production claims.
+
+### 03 / Research that shapes the engineering
+
+<div align="center">
+
+**Eco-Transformers**
+
+*Carbon-Efficient and Accelerated Inference through Self-Pruning and Activation Freezing in Large Language Models*
+
+<a href="https://doi.org/10.1109/ICNGCS64900.2025.11183217"><img src="https://img.shields.io/badge/IEEE_Xplore-READ_THE_2025_PAPER-00629B?style=for-the-badge&logo=ieee&logoColor=white" alt="Read Eco-Transformers at IEEE Xplore"/></a>
+
+</div>
+
+Published at **ICNGCS 2025**. The research explores ways to make transformer inference more efficient through self-pruning and activation freezing. I apply that curiosity about **latency, memory and compute** to practical AI engineering decisions.
+
+### 04 / Architecture + technology
+
+| Layer | Tools and practices |
+| :--- | :--- |
+| **Generative AI** | LLM APIs, PyTorch, Hugging Face, LangGraph, prompt and context design |
+| **Retrieval** | RAG, FAISS, embeddings, CSV/document indexing and search evaluation |
+| **Speech & agents** | Whisper, Qwen, Vapi, conversational workflows, human review |
+| **Software** | Python, TypeScript, FastAPI, Next.js, React, Node.js |
+| **Infrastructure** | PostgreSQL, Supabase, Docker, Vercel, GitHub Actions |
+| **Quality** | Git, CI, automated tests, API checks, Playwright |
+
+<details>
+<summary><b>See how the system pieces connect</b></summary>
+
+```mermaid
+flowchart LR
+    A[User / Voice / Documents] --> B[API & Auth]
+    B --> C{Orchestrator}
+    C --> D[Knowledge Retrieval]
+    C --> E[LLM / Tool Calls]
+    D --> F[Vector Index]
+    F --> E
+    E --> G[Validation & Human Review]
+    G --> H[Response / Action]
+    H --> I[Logs & Evaluation]
+```
+
+*Illustrative architecture — projects use different subsets of these components.*
+
+</details>
+
+### 05 / GitHub universe
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/profile-night-view.svg" width="98%" alt="3D isometric visualization of GitHub contributions"/>
+
 </div>
 
 <details>
-<summary><b>🐍 View animated contribution trail</b></summary>
+<summary><b>View the animated contribution snake</b></summary>
 <br/>
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/github-contribution-grid-snake-dark.svg" width="95%" alt="Animated GitHub contribution trail" />
+<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/output/github-contribution-grid-snake-dark.svg" width="98%" alt="Animated GitHub contribution snake"/>
 </div>
 </details>
 
-### 📊 GitHub snapshot
-
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sivanesanbalu&layout=compact&theme=tokyonight&hide_border=true" height="155" alt="Languages across public GitHub repositories" />
-  <img src="https://github-readme-stats.vercel.app/api?username=Sivanesanbalu&show_icons=true&theme=tokyonight&hide_border=true" height="155" alt="Public GitHub activity" />
+
+<img src="https://github-readme-stats.vercel.app/api?username=Sivanesanbalu&show_icons=true&theme=tokyonight&hide_border=true" width="49%" alt="GitHub public activity statistics"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sivanesanbalu&layout=compact&theme=tokyonight&hide_border=true" width="42%" alt="Repository language overview"/>
+
 </div>
 
 ---
 
 <div align="center">
 
-**Have an AI problem worth solving?** I'd love to hear about it.
+### Let's build something useful.
 
-[**Portfolio**](https://sivanesanbalu.netlify.app) · [**LinkedIn**](https://www.linkedin.com/in/sivanesan-b-871ba7264/) · [**Email me**](mailto:apsiva69@gmail.com)
+**Open to AI Engineer / GenAI / RAG / Voice AI opportunities and technical collaboration.**
 
-<sub>Designed with curiosity. Built with code. The AI Command Center is an original, interactive JavaScript/Three.js project linked above.</sub>
+[**Portfolio**](https://sivanesanbalu.netlify.app) · [**LinkedIn**](https://www.linkedin.com/in/sivanesan-b-871ba7264/) · [**Email**](mailto:apsiva69@gmail.com) · [**GitHub Repositories**](https://github.com/Sivanesanbalu?tab=repositories)
+
+<sub>Original animated 3D-projected visual assets are stored in this repository and appear directly in this README. GitHub Markdown does not execute interactive JavaScript/WebGL scenes.</sub>
 
 </div>
