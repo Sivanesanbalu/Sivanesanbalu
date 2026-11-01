@@ -75,7 +75,7 @@ function init(){
   requestAnimationFrame(frame);
  }catch(err){
    console.error('Grand Line 3D stage',err);
-   stage.dataset.error='true';note('This browser could not start 3D. Open the dedicated 3D world instead.');
+   stage.dataset.error='true';stage.dataset.errorMessage=String(err?.message||err).slice(0,200);note('3D startup: '+stage.dataset.errorMessage);
  }
 }
 function resize(){
