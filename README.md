@@ -1,31 +1,30 @@
 <!--
   SIVANESAN B · GitHub Profile
-  Interactive Three.js experience: https://grand-line-3d-sivanesan.vercel.app/world.html
+  Interactive Three.js experience: https://grand-line-3d-sivanesan.vercel.app/
   Previous design safely preserved on backup/profile-before-3d-redesign-2026-11-01
 -->
 
 <div align="center">
 
-  <sub>⚓ THE ENGINEER'S GRAND LINE · AI SYSTEMS & RESEARCH</sub>
+  <sub>◉ AI COMMAND CENTER · THREE.JS · WEBGL</sub>
 
   <h1>SIVANESAN B</h1>
 
-  <strong>AI Engineer · Generative AI · RAG · Voice AI</strong>
+  <strong>AI Engineer · GenAI · RAG · Voice AI · Applied AI</strong>
 
   <br/><br/>
 
-  <a href="https://grand-line-3d-sivanesan.vercel.app/world.html">
-    <img alt="Enter interactive Three.js Grand Line world" src="https://img.shields.io/badge/EXPLORE-MY_REAL_3D_WORLD-0B6080?style=for-the-badge&logo=threedotjs&logoColor=white" />
-  </a>
-
-  <p><sub>3D ship, articulated crew, camera rotation and animated ocean run on the linked interactive page (not inside GitHub Markdown).</sub></p>
-
   <a href="https://grand-line-3d-sivanesan.vercel.app/">
-    <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/docs/assets/zoro-cutout.gif" width="116" alt="Animated Zoro artwork" />
-    <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/docs/assets/nami-cutout.gif" width="116" alt="Animated Nami artwork" />
+    <img alt="Launch the interactive 3D AI Command Center" src="https://img.shields.io/badge/ENTER-THE_3D_AI_COMMAND_CENTER-067C85?style=for-the-badge&logo=threedotjs&logoColor=white" />
   </a>
 
-  <br/>
+  <p><sub>Real WebGL-rendered 3D: orbit the camera, zoom into modules, explore projects. Built with JavaScript and Three.js. The experience opens in your browser because GitHub Markdown cannot execute WebGL.</sub></p>
+
+  <a href="https://grand-line-3d-sivanesan.vercel.app/"><img alt="Real 3D scene" src="https://img.shields.io/badge/3D_ENGINE-THREE.JS-111B38?style=flat-square&logo=javascript&logoColor=white" /></a>
+  <img alt="4 interactive project stations" src="https://img.shields.io/badge/4-INTERACTIVE_MODULES-164F58?style=flat-square" />
+  <img alt="Camera interactions" src="https://img.shields.io/badge/CAMERA-ORBIT_%26_ZOOM-1C2852?style=flat-square" />
+
+  <br/><br/>
 
   **Building useful, reliable AI systems — from retrieval and voice interfaces to agent workflows.**
 
@@ -120,6 +119,6 @@ Published in the **2025 International Conference on Next Generation Computing Sy
 
 [**Portfolio**](https://sivanesanbalu.netlify.app) · [**LinkedIn**](https://www.linkedin.com/in/sivanesan-b-871ba7264/) · [**Email me**](mailto:apsiva69@gmail.com)
 
-<sub>Designed with curiosity. Built with code. The interactive 3D Grand Line site is built using Three.js and linked above.</sub>
+<sub>Designed with curiosity. Built with code. The AI Command Center is an original, interactive JavaScript/Three.js project linked above.</sub>
 
 </div>
