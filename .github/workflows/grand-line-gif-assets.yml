@@ -50,6 +50,8 @@ jobs:
           git add assets/profile/*.gif
           if ! git diff --cached --quiet; then
               git commit -m "assets: publish generated animated Grand Line GIF banner and character cutouts"
+              git fetch origin main
+              git rebase origin/main
               git push origin HEAD:main
           else
               echo "GIF assets already up to date"
