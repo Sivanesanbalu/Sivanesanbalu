@@ -1,13 +1,28 @@
 <!--
   SIVANESAN B · GitHub Profile
-  Original animated 3D artwork: assets/hero-3d.svg
+  Interactive Three.js experience: https://grand-line-3d-sivanesan.vercel.app/world.html
   Previous design safely preserved on backup/profile-before-3d-redesign-2026-11-01
 -->
 
 <div align="center">
 
-  <a href="https://sivanesanbalu.netlify.app" title="Visit my portfolio">
-    <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/hero-3d.svg" width="100%" alt="Sivanesan B | AI Engineer — original animated 3D crystalline AI scene" />
+  <sub>⚓ THE ENGINEER'S GRAND LINE · AI SYSTEMS & RESEARCH</sub>
+
+  <h1>SIVANESAN B</h1>
+
+  <strong>AI Engineer · Generative AI · RAG · Voice AI</strong>
+
+  <br/><br/>
+
+  <a href="https://grand-line-3d-sivanesan.vercel.app/world.html">
+    <img alt="Enter interactive Three.js Grand Line world" src="https://img.shields.io/badge/EXPLORE-MY_REAL_3D_WORLD-0B6080?style=for-the-badge&logo=threedotjs&logoColor=white" />
+  </a>
+
+  <p><sub>3D ship, articulated crew, camera rotation and animated ocean run on the linked interactive page (not inside GitHub Markdown).</sub></p>
+
+  <a href="https://grand-line-3d-sivanesan.vercel.app/">
+    <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/docs/assets/zoro-cutout.gif" width="116" alt="Animated Zoro artwork" />
+    <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/docs/assets/nami-cutout.gif" width="116" alt="Animated Nami artwork" />
   </a>
 
   <br/>
@@ -105,6 +120,6 @@ Published in the **2025 International Conference on Next Generation Computing Sy
 
 [**Portfolio**](https://sivanesanbalu.netlify.app) · [**LinkedIn**](https://www.linkedin.com/in/sivanesan-b-871ba7264/) · [**Email me**](mailto:apsiva69@gmail.com)
 
-<sub>Designed with curiosity. Built with code. The 3D hero is original artwork stored in this repository.</sub>
+<sub>Designed with curiosity. Built with code. The interactive 3D Grand Line site is built using Three.js and linked above.</sub>
 
 </div>
