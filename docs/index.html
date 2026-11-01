@@ -13,10 +13,13 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2307131d'/%3E%3Ccircle cx='50' cy='50' r='35' stroke='%23edc987' fill='none' stroke-width='3'/%3E%3Cpath d='M50 18L63 44L82 50L56 61L50 82L42 57L18 50L43 42Z' fill='%23edc987'/%3E%3C/svg%3E"/>
 <link rel="stylesheet" href="./story.css"/>
 <link rel="stylesheet" href="./anime.css"/>
+<link rel="stylesheet" href="./stage3d.css"/>
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script defer src="./story.js"></script>
 <script defer src="./anime.js"></script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}</script>
+<script type="module" src="./stage3d.js"></script>
 </head>
 <body data-persona="captain">
 <div id="progress" aria-hidden="true"></div><div id="grain" aria-hidden="true"></div>
@@ -39,7 +42,7 @@
 <p class="hero-intro">I'm Sivanesan B — AI Engineer, builder of real-world GenAI systems, and IEEE-published researcher. This is <strong>my story</strong>, told through the spirit of a Grand Line adventure.</p>
 <div class="hero-actions">
 <a class="btn" href="#voyage">Begin my story <span aria-hidden="true">↗</span></a>
-<a class="btn ghost" href="./world.html">Explore 3D world <span aria-hidden="true">↗</span></a>
+<a class="btn ghost" href="#real-3d">See real 3D crew <span aria-hidden="true">↗</span></a>
 </div>
 <div class="hero-proof" aria-label="Profile highlights">
 <div><b>IEEE</b><small>Published research</small></div><div class="break"></div>
@@ -87,6 +90,34 @@
 <div class="ticker-track" aria-hidden="true">
 <span>THE GRAND LINE OF CODE</span><span>VOICE AI</span><span>RAG & KNOWLEDGE</span><span>AGENTIC SYSTEMS</span><span>GREEN AI</span><span>FULL STACK ENGINEERING</span><span>THE GRAND LINE OF CODE</span><span>VOICE AI</span><span>RAG & KNOWLEDGE</span><span>AGENTIC SYSTEMS</span><span>GREEN AI</span><span>FULL STACK ENGINEERING</span>
 </div></div>
+
+<section class="real3d-section" id="real-3d" aria-label="Interactive real 3D pirate galleon and anime-inspired characters">
+ <div class="shell">
+  <div class="real3d-top">
+   <div><div class="real3d-kicker">NEW WORLD · V3 / GENUINE 3D GEOMETRY</div><h2 class="real3d-title">THE CREW.<br><span>THE SHIP.</span></h2></div>
+   <p>Real 3D pirate characters with articulated arms, legs and animated faces, standing aboard a detailed 3D sailing galleon. Drag to orbit, select your crew and animate their poses — while my AI engineering remains the story.</p>
+  </div>
+  <div class="real3d-frame" id="real3d-frame">
+   <img class="real3d-fallback" src="./assets/grand-line-banner.svg" alt="" aria-hidden="true" loading="lazy"/>
+   <canvas id="real3d-canvas" role="img" aria-label="Live Three.js 3D pirate ship and three articulated original anime-inspired characters"></canvas>
+   <div class="real3d-corner"><b>THE GRAND LINE / LIVE STAGE</b><span>ORIGINAL FULL 3D SHIP + CREW</span></div>
+   <div class="real3d-verified">INTERACTIVE 3D</div>
+   <div class="real3d-stage-hint">DRAG TO ORBIT · SCROLL TO ZOOM</div>
+   <div class="real3d-overlay" role="group" aria-label="Choose a 3D anime-inspired pirate">
+    <button data-stage-crew="captain" type="button" aria-pressed="false">☀ Straw-hat Captain</button>
+    <button data-stage-crew="swordsman" type="button" aria-pressed="false">⚔ Triple-blade Swordsman</button>
+    <button data-stage-crew="navigator" type="button" aria-pressed="false">✧ Navigator</button>
+   </div>
+  </div>
+  <div class="real3d-toolbar"><div class="real3d-tools">
+    <button type="button" id="stage3d-inspect">⚓ Inspect ship</button>
+    <button type="button" id="stage3d-action">✦ Animate character</button>
+    <button type="button" id="stage3d-pause" aria-pressed="false">Ⅱ Pause 3D motion</button>
+    <a href="./world.html">Explore full 3D island world ↗</a>
+  </div><p class="real3d-status" id="real3d-status" role="status">3D loads when you reach this section. A WebGL-enabled browser is required.</p></div>
+  <div class="real3d-meta"><div><b>Articulated character rigs</b><span>3D face, hair, limbs, equipment and idle animations</span></div><div><b>Modeled galleon</b><span>Curved hull, cannons, sails, ropes, helm and figurehead</span></div><div><b>Mobile-aware rendering</b><span>Lazy-loaded with adjustable quality and static fallback</span></div></div>
+ </div>
+</section>
 <section class="section intro-section" id="voyage">
 <div class="shell manifesto">
 <div>
