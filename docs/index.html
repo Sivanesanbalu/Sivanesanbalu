@@ -12,9 +12,11 @@
 <title>Sivanesan B — The Engineer's Grand Line</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2307131d'/%3E%3Ccircle cx='50' cy='50' r='35' stroke='%23edc987' fill='none' stroke-width='3'/%3E%3Cpath d='M50 18L63 44L82 50L56 61L50 82L42 57L18 50L43 42Z' fill='%23edc987'/%3E%3C/svg%3E"/>
 <link rel="stylesheet" href="./story.css"/>
+<link rel="stylesheet" href="./anime.css"/>
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script defer src="./story.js"></script>
+<script defer src="./anime.js"></script>
 </head>
 <body data-persona="captain">
 <div id="progress" aria-hidden="true"></div><div id="grain" aria-hidden="true"></div>
@@ -46,7 +48,14 @@
 </div></div>
 <div class="hero-visual">
 <div class="hero-ring" aria-hidden="true"></div>
-<div>
+<div class="anime-crew" data-spotlight="captain" aria-hidden="true">
+<div class="crew-halo"></div><div class="crew-comic-lines"></div><div class="crew-fx-lines"></div>
+<div class="crew-figure" data-crew="swordsman"><img src="./assets/swordsman.svg" alt="" decoding="async" fetchpriority="high"/></div>
+<div class="crew-figure" data-crew="captain"><img src="./assets/captain.svg" alt="" decoding="async" fetchpriority="high"/></div>
+<div class="crew-figure" data-crew="navigator"><img src="./assets/navigator.svg" alt="" decoding="async" fetchpriority="high"/></div>
+<i class="crew-light a"></i><i class="crew-light b"></i><i class="crew-light c"></i>
+</div>
+<div class="hero-main">
 <div class="poster-wrap" id="poster-wrap">
 <div class="poster">
 <div class="poster-eyebrow">THE GRAND LINE ARCHIVES · ENGINEER EDITION</div>
@@ -64,6 +73,12 @@
 <button data-persona="inventor" type="button" aria-pressed="false">Inventor</button>
 <button data-persona="researcher" type="button" aria-pressed="false">Researcher</button>
 </div><div class="persona-note" id="persona-desc">Engineer by craft. Explorer by instinct.</div>
+<div class="crew-switch" role="group" aria-label="Choose an anime-inspired crew cameo">
+<button data-crew-choice="captain" type="button" aria-pressed="true">☀ Straw-hat captain</button>
+<button data-crew-choice="swordsman" type="button" aria-pressed="false">⚔ Swordsman</button>
+<button data-crew-choice="navigator" type="button" aria-pressed="false">✧ Navigator</button>
+</div>
+<p class="crew-disclaimer" id="crew-caption" aria-live="polite">The dreamer — a straw-hat captain who represents curiosity and ambition.</p>
 </div></div>
 </div>
 <div class="scroll-hint">Scroll to enter the story</div>
@@ -106,6 +121,8 @@
 <a class="story-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">Explore the first builds <span>↗</span></a>
 </div>
 <div class="chapter-art art-east" aria-label="Original illustrated dawn over a new sea">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/captain.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ The first departure</span><span class="speech-bubble" aria-hidden="true">Dream bigger.</span>
+
 <span class="art-title">THE FIRST HORIZON</span><div class="big-sun"></div>
 <svg class="boat" viewBox="0 0 200 125" aria-hidden="true"><path d="M29 84H171L148 110H60Z" fill="#563a31" stroke="#261c29" stroke-width="5"/><path d="M96 81V15" stroke="#58422d" stroke-width="8"/><path d="M91 18L36 77H91Z" fill="#f7e6c1"/><path d="M103 25L151 76H103Z" fill="#ead0a5"/><path d="M96 18v-9m0 9l31 7-31 15Z" fill="#ab4d3a" stroke="#58422d" stroke-width="3"/></svg>
 <div class="cliff"></div><span class="art-num">01</span>
@@ -119,7 +136,9 @@
 <div class="chapter-proof"><span>IEEE 2025</span><span>LLM Efficiency</span><span>PyTorch</span></div>
 <a class="story-link" href="https://doi.org/10.1109/ICNGCS64900.2025.11183217" target="_blank" rel="noopener noreferrer">Explore published research <span>↗</span></a>
 </div>
-<div class="chapter-art art-sky" aria-label="Original illustration of an island above the clouds"><span class="art-title">REACH BEYOND THE CLOUDS</span><div class="cloud"></div><div class="sky-island"></div><div class="research-badge"><b>IEEE · 2025</b><span>Eco-Transformers / Carbon-efficient LLM inference</span></div><span class="art-num">02</span></div>
+<div class="chapter-art art-sky" aria-label="Original illustration of an island above the clouds">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/scientist.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ Research voyage</span><span class="speech-bubble" aria-hidden="true">Beyond ordinary limits.</span>
+<span class="art-title">REACH BEYOND THE CLOUDS</span><div class="cloud"></div><div class="sky-island"></div><div class="research-badge"><b>IEEE · 2025</b><span>Eco-Transformers / Carbon-efficient LLM inference</span></div><span class="art-num">02</span></div>
 </section>
 <section class="chapter" id="water7" data-arc="Water 7">
 <div class="chapter-content">
@@ -131,6 +150,8 @@
 <a class="story-link" href="https://github.com/Sivanesanbalu/VoiceForge-AI" target="_blank" rel="noopener noreferrer">Explore VoiceForge AI <span>↗</span></a>
 </div>
 <div class="chapter-art art-water" aria-label="Animated conceptual UI for a Voice AI application">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/shipwright.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ Product engineering</span><span class="speech-bubble" aria-hidden="true">Build. Test. Ship.</span>
+
 <span class="art-title">VOICEFORGE / LIVE CONVERSATION ENGINE</span>
 <div class="voice-ui"><div class="voice-top"><span>VOICE ENGINE · ONLINE</span><span><i></i> LOW LATENCY</span></div>
 <div class="waveform" aria-hidden="true">
@@ -148,6 +169,8 @@
 <a class="story-link" href="https://github.com/Sivanesanbalu/RAG-Offline-Inventory-Management-System" target="_blank" rel="noopener noreferrer">Explore offline RAG <span>↗</span></a>
 </div>
 <div class="chapter-art art-rag" aria-label="Original animated document scanning and knowledge retrieval illustration">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/scholar.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ Knowledge systems</span><span class="speech-bubble" aria-hidden="true">Intelligence, grounded.</span>
+
 <span class="art-title">KNOWLEDGE BEYOND THE NETWORK</span>
 <div class="document a"><div class="line"></div><div class="line short"></div><div class="line"></div><div class="line"></div><div class="line short"></div><div class="stamp">LOCAL</div></div>
 <div class="document b"><div class="line short"></div><div class="line"></div><div class="line"></div><div class="line short"></div><div class="line"></div><div class="stamp">RAG</div></div>
@@ -163,6 +186,8 @@
 <a class="story-link" href="https://github.com/Sivanesanbalu/ai-job-agent-v2" target="_blank" rel="noopener noreferrer">Explore agentic systems <span>↗</span></a>
 </div>
 <div class="chapter-art art-agents" aria-label="Animated network of collaborating autonomous AI agents">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/swordsman.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ Agent awakening</span><span class="speech-bubble" aria-hidden="true">No shortcut to mastery.</span>
+
 <span class="art-title">THE AGENT FLEET · ORCHESTRATION</span>
 <svg viewBox="0 0 460 420" preserveAspectRatio="none" class="agent-lines" aria-hidden="true"><path d="M100 193Q176 110 242 98T351 204"/><path d="M100 193Q145 322 227 327T351 204"/><path d="M242 98V327"/><path d="M100 193H351"/></svg>
 <div class="node n1">⌘</div><div class="node n2">✦</div><div class="node n3">◇</div><div class="node n4">⟡</div><span class="art-num">05</span>
@@ -176,12 +201,21 @@
 <div class="chapter-proof"><span>GenAI</span><span>Applied AI</span><span>Product Engineering</span></div>
 <a class="story-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">See what I'm building now <span>↗</span></a>
 </div>
-<div class="chapter-art art-future" aria-label="Animated abstract futuristic glowing rings"><span class="art-title">THE NEXT ERA IS BUILT, NOT FOUND</span><div class="sunrings"></div><div class="future-text">WHAT'S<br/>NEXT?</div><span class="art-num">06</span></div>
+<div class="chapter-art art-future" aria-label="Animated abstract futuristic glowing rings">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/scientist.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ AI frontier</span><span class="speech-bubble" aria-hidden="true">The next era begins.</span>
+<span class="art-title">THE NEXT ERA IS BUILT, NOT FOUND</span><div class="sunrings"></div><div class="future-text">WHAT'S<br/>NEXT?</div><span class="art-num">06</span></div>
 </section>
 </div></div>
 <section class="map-atlas" id="atlas" aria-label="One Piece story arc inspirations">
 <div class="shell atlas-head"><div><div class="section-kicker">02 / THE ANIME ATLAS</div><h2>THE WORLD<br/>THAT INSPIRED IT.</h2></div>
 <p>One Piece's legendary arc names provide the storytelling structure, not claims about my personal history. The route below is a selective chronological map of major arcs, from East Blue through Elbaph. <a style="text-decoration:underline;color:#eac98e" href="https://one-piece.com/story/index.html" target="_blank" rel="noopener noreferrer">Official story reference ↗</a></p></div>
+<div class="shell">
+<div class="navigator-brief">
+<img src="./assets/navigator.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/>
+<div><div class="mini accent">The navigator's chart</div><h3 class="brief-title">Follow the story. Discover the engineer.</h3><p>Each destination represents an anime-inspired theme. The work behind it belongs to Sivanesan B.</p></div>
+<svg viewBox="0 0 170 105" aria-hidden="true"><path class="navigator-route" d="M7 79Q36 7 75 45T162 21"/><circle class="route-orb" cx="7" cy="79" r="7"/><circle class="route-orb" cx="162" cy="21" r="6"/><path d="M147 21h30M162 6v30" stroke="#dcbf84" stroke-width="2"/></svg>
+</div>
+</div>
 <div class="atlas-scroll" tabindex="0" aria-label="Horizontally scrollable One Piece arc inspiration list">
 <article><b>01</b><h3>East Blue</h3><p>Every dream needs a departure.</p></article>
 <article><b>02</b><h3>Alabasta</h3><p>First impossible missions.</p></article>
@@ -251,4 +285,5 @@
 </div></section>
 </main>
 <footer><div class="shell footer-inner"><span>© 2026 Sivanesan B · An original, unofficial One Piece-inspired portfolio.</span><span><a href="https://github.com/Sivanesanbalu" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="./world.html">3D world</a> · <a href="https://one-piece.com/story/index.html" target="_blank" rel="noopener noreferrer">Story inspiration</a> · <a href="#top">Back to top ↑</a></span></div></footer>
+<button class="motion-control" id="motion-control" type="button" aria-pressed="false" aria-label="Pause ambient effects">Ⅱ Pause effects</button>
 </body></html>
