@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<a href="https://grand-line-3d-sivanesan.vercel.app/">
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/docs/index.html">
   <img src="./assets/profile/grand-line-banner.gif" alt="Animated GIF of Sivanesan B's Grand Line banner with moving pirate ship, sails, sea and AI engineering identity" width="100%" />
 </a>
 
@@ -20,9 +20,9 @@
 
 <br/>
 
-<a href="https://grand-line-3d-sivanesan.vercel.app/"><img alt="Explore my Grand Line story" src="https://img.shields.io/badge/EXPLORE_MY_STORY-Grand_Line-DBB574?style=for-the-badge&labelColor=0B2130" /></a>
-<a href="https://grand-line-3d-sivanesan.vercel.app/#real-3d"><img alt="View full-size real 3D ship and pirate crew" src="https://img.shields.io/badge/REAL_3D_CREW-%26_GALLEON-E4B76F?style=for-the-badge&labelColor=0B2130" /></a>
-<a href="https://grand-line-3d-sivanesan.vercel.app/world.html"><img alt="Enter the interactive 3D world" src="https://img.shields.io/badge/SAIL_THE_3D_WORLD-Interactive-3FA9A6?style=for-the-badge&labelColor=0B2130" /></a>
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/docs/index.html"><img alt="Explore my Grand Line story" src="https://img.shields.io/badge/EXPLORE_MY_STORY-Grand_Line-DBB574?style=for-the-badge&labelColor=0B2130" /></a>
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/docs/index.html#real-3d"><img alt="View full-size real 3D ship and pirate crew" src="https://img.shields.io/badge/REAL_3D_CREW-%26_GALLEON-E4B76F?style=for-the-badge&labelColor=0B2130" /></a>
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/docs/world.html"><img alt="Enter the interactive 3D world" src="https://img.shields.io/badge/SAIL_THE_3D_WORLD-Interactive-3FA9A6?style=for-the-badge&labelColor=0B2130" /></a>
 <a href="https://sivanesanbalu.netlify.app"><img alt="Professional portfolio" src="https://img.shields.io/badge/PORTFOLIO-Visit-7A96C4?style=for-the-badge&labelColor=0B2130" /></a>
 
 <p>
@@ -62,7 +62,7 @@ I enjoy the engineering work that happens *after* the first AI demo: reliable AP
 </div>
 
 <div align="center">
-<a href="https://grand-line-3d-sivanesan.vercel.app/#work">
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/docs/index.html#work">
   <img src="./assets/grand-line-map.svg" width="100%" alt="Animated illustrated Grand Line map connecting AI engineering project islands" />
 </a>
 </div>
@@ -150,7 +150,7 @@ Research into inference-time self-pruning and activation freezing to examine the
 
 <div align="center">
 
-**[⚓ Open every repository](https://github.com/Sivanesanbalu?tab=repositories)** · **[🗺️ Explore the cinematic project atlas](https://grand-line-3d-sivanesan.vercel.app/#work)**
+**[⚓ Open every repository](https://github.com/Sivanesanbalu?tab=repositories)** · **[🗺️ Explore the cinematic project atlas](https://sivanesanbalu.github.io/Sivanesanbalu/docs/index.html#work)**
 
 </div>
 
@@ -213,21 +213,21 @@ The exact components vary by project. See each repository for its implementation
 <table>
 <tr>
 <td align="center" width="33%">
-<a href="https://grand-line-3d-sivanesan.vercel.app/">
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/docs/index.html">
 <img src="./assets/profile/luffy-cutout.gif" alt="Animated background-free Luffy GIF" width="170" height="185" />
 </a><br/>
 <strong>LUFFY · THE DREAMER</strong><br/>
 <sub>Curiosity & ambition</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://grand-line-3d-sivanesan.vercel.app/">
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/docs/index.html">
 <img src="./assets/profile/zoro-cutout.gif" alt="Animated background-free Zoro GIF" width="170" height="185" />
 </a><br/>
 <strong>ZORO · THE BUILDER</strong><br/>
 <sub>Focus & execution</sub>
 </td>
 <td align="center" width="33%">
-<a href="https://grand-line-3d-sivanesan.vercel.app/">
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/docs/index.html">
 <img src="./assets/profile/nami-cutout.gif" alt="Animated background-free Nami GIF" width="170" height="185" />
 </a><br/>
 <strong>NAMI · THE NAVIGATOR</strong><br/>
@@ -236,7 +236,7 @@ The exact components vary by project. See each repository for its implementation
 </tr>
 </table>
 
-**[🌊 View the real interactive 3D galleon and articulated crew →](https://grand-line-3d-sivanesan.vercel.app/#real-3d)**
+**[🌊 View the real interactive 3D galleon and articulated crew →](https://sivanesanbalu.github.io/Sivanesanbalu/docs/index.html#real-3d)**
 
 <sub>GitHub README supports images and animated SVGs; the linked portfolio renders the real-time Three.js 3D models, sails and character animations.</sub>
 
