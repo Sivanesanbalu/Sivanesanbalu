@@ -1,6 +1,6 @@
 <!--
   SIVANESAN B · GitHub Profile
-  Interactive Three.js experience: https://grand-line-3d-sivanesan.vercel.app/
+  Interactive Three.js experience: https://grand-line-3d-sivanesan.vercel.app/command-center.html
   Previous design safely preserved on backup/profile-before-3d-redesign-2026-11-01
 -->
 
@@ -14,13 +14,13 @@
 
   <br/><br/>
 
-  <a href="https://grand-line-3d-sivanesan.vercel.app/">
+  <a href="https://grand-line-3d-sivanesan.vercel.app/command-center.html">
     <img alt="Launch the interactive 3D AI Command Center" src="https://img.shields.io/badge/ENTER-THE_3D_AI_COMMAND_CENTER-067C85?style=for-the-badge&logo=threedotjs&logoColor=white" />
   </a>
 
   <p><sub>Real WebGL-rendered 3D: orbit the camera, zoom into modules, explore projects. Built with JavaScript and Three.js. The experience opens in your browser because GitHub Markdown cannot execute WebGL.</sub></p>
 
-  <a href="https://grand-line-3d-sivanesan.vercel.app/"><img alt="Real 3D scene" src="https://img.shields.io/badge/3D_ENGINE-THREE.JS-111B38?style=flat-square&logo=javascript&logoColor=white" /></a>
+  <a href="https://grand-line-3d-sivanesan.vercel.app/command-center.html"><img alt="Real 3D scene" src="https://img.shields.io/badge/3D_ENGINE-THREE.JS-111B38?style=flat-square&logo=javascript&logoColor=white" /></a>
   <img alt="4 interactive project stations" src="https://img.shields.io/badge/4-INTERACTIVE_MODULES-164F58?style=flat-square" />
   <img alt="Camera interactions" src="https://img.shields.io/badge/CAMERA-ORBIT_%26_ZOOM-1C2852?style=flat-square" />
 
