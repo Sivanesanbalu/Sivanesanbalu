@@ -47,7 +47,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/profile/*.gif
+          mkdir -p docs/assets
+          cp assets/profile/*-cutout.gif docs/assets/
+          git add assets/profile/*.gif docs/assets/*-cutout.gif
           if ! git diff --cached --quiet; then
               git commit -m "assets: publish generated animated Grand Line GIF banner and character cutouts"
               git fetch origin main
