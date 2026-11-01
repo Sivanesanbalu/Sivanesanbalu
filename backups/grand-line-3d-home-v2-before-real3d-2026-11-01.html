@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#07131d"/>
+<meta name="description" content="The Grand Line of Sivanesan B: the real journey of an AI Engineer and IEEE researcher, told through cinematic anime-inspired chapters. Explore projects in GenAI, RAG, Voice AI and agentic systems."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Sivanesan B | The Engineer's Grand Line"/>
+<meta property="og:description" content="An anime-inspired interactive journey through real AI engineering projects, research, and the next frontier."/>
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/161239880?v=4"/>
+<title>Sivanesan B — The Engineer's Grand Line</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2307131d'/%3E%3Ccircle cx='50' cy='50' r='35' stroke='%23edc987' fill='none' stroke-width='3'/%3E%3Cpath d='M50 18L63 44L82 50L56 61L50 82L42 57L18 50L43 42Z' fill='%23edc987'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="./story.css"/>
+<link rel="stylesheet" href="./anime.css"/>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="./story.js"></script>
+<script defer src="./anime.js"></script>
+</head>
+<body data-persona="captain">
+<div id="progress" aria-hidden="true"></div><div id="grain" aria-hidden="true"></div>
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="#top"><span class="brand-symbol">✦</span><span>SIVANESAN B<small>THE ENGINEER'S GRAND LINE</small></span></a>
+<button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-controls="header-links" aria-expanded="false" type="button">☰</button>
+<nav class="header-links" id="header-links" aria-label="Main navigation">
+<a href="#voyage">My Story</a><a href="#work">Projects</a><a href="#research">Research</a><a href="#atlas">Anime Atlas</a><a class="nav-cta" href="#contact">Let's connect ↗</a>
+</nav></div>
+</header>
+<main>
+<section class="hero" id="top" data-persona="captain" aria-label="Sivanesan B portfolio introduction">
+<div class="hero-horizon" aria-hidden="true"><div class="sun"></div><div class="hero-cloud"></div><div class="hero-sea"></div><div class="hero-wind"></div></div>
+<div class="shell hero-grid">
+<div class="hero-copy">
+<div class="overline">An engineer's adventure · Since the first line of code</div>
+<h1 class="hero-title display">SIVANESAN<span>B.</span></h1>
+<p class="hero-sub">Not chasing the One Piece.<br/><span class="accent">Building what comes next.</span></p>
+<p class="hero-intro">I'm Sivanesan B — AI Engineer, builder of real-world GenAI systems, and IEEE-published researcher. This is <strong>my story</strong>, told through the spirit of a Grand Line adventure.</p>
+<div class="hero-actions">
+<a class="btn" href="#voyage">Begin my story <span aria-hidden="true">↗</span></a>
+<a class="btn ghost" href="./world.html">Explore 3D world <span aria-hidden="true">↗</span></a>
+</div>
+<div class="hero-proof" aria-label="Profile highlights">
+<div><b>IEEE</b><small>Published research</small></div><div class="break"></div>
+<div><b>06</b><small>Featured expeditions</small></div><div class="break"></div>
+<div><b id="repo-count">54+</b><small>GitHub repositories</small></div>
+</div></div>
+<div class="hero-visual">
+<div class="hero-ring" aria-hidden="true"></div>
+<div class="anime-crew" data-spotlight="captain" aria-hidden="true">
+<div class="crew-halo"></div><div class="crew-comic-lines"></div><div class="crew-fx-lines"></div>
+<div class="crew-figure" data-crew="swordsman"><img src="./assets/swordsman.svg" alt="" decoding="async" fetchpriority="high"/></div>
+<div class="crew-figure" data-crew="captain"><img src="./assets/captain.svg" alt="" decoding="async" fetchpriority="high"/></div>
+<div class="crew-figure" data-crew="navigator"><img src="./assets/navigator.svg" alt="" decoding="async" fetchpriority="high"/></div>
+<i class="crew-light a"></i><i class="crew-light b"></i><i class="crew-light c"></i>
+</div>
+<div class="hero-main">
+<div class="poster-wrap" id="poster-wrap">
+<div class="poster">
+<div class="poster-eyebrow">THE GRAND LINE ARCHIVES · ENGINEER EDITION</div>
+<div class="poster-wanted">WANTED</div>
+<div class="poster-photo"><img src="https://avatars.githubusercontent.com/u/161239880?v=4" alt="GitHub profile photo of Sivanesan B" loading="eager"/><div class="photo-overlay"></div></div>
+<div class="poster-name">SIVANESAN B.</div>
+<p class="poster-rank" id="persona-role">AI ENGINEER · GRAND LINE CAPTAIN</p>
+<div class="poster-footer" id="persona-tag">BUILDING THE IMPOSSIBLE</div>
+</div>
+<div class="poster-seal"><span>REAL</span><span>BUILDER</span><small>NO FAKE BOUNTY</small></div>
+<div class="poster-stripe">AN ORIGINAL DEVELOPER'S SAGA</div>
+</div>
+<div class="persona" role="group" aria-label="Choose a chapter persona">
+<button data-persona="captain" type="button" aria-pressed="true">Captain</button>
+<button data-persona="inventor" type="button" aria-pressed="false">Inventor</button>
+<button data-persona="researcher" type="button" aria-pressed="false">Researcher</button>
+</div><div class="persona-note" id="persona-desc">Engineer by craft. Explorer by instinct.</div>
+<div class="crew-switch" role="group" aria-label="Choose an anime-inspired crew cameo">
+<button data-crew-choice="captain" type="button" aria-pressed="true">☀ Straw-hat captain</button>
+<button data-crew-choice="swordsman" type="button" aria-pressed="false">⚔ Swordsman</button>
+<button data-crew-choice="navigator" type="button" aria-pressed="false">✧ Navigator</button>
+</div>
+<p class="crew-disclaimer" id="crew-caption" aria-live="polite">The dreamer — a straw-hat captain who represents curiosity and ambition.</p>
+</div></div>
+</div>
+<div class="scroll-hint">Scroll to enter the story</div>
+</section>
+<div class="ticker" aria-label="AI Engineer, Voice AI, Retrieval Augmented Generation, multi-agent systems and green AI">
+<div class="ticker-track" aria-hidden="true">
+<span>THE GRAND LINE OF CODE</span><span>VOICE AI</span><span>RAG & KNOWLEDGE</span><span>AGENTIC SYSTEMS</span><span>GREEN AI</span><span>FULL STACK ENGINEERING</span><span>THE GRAND LINE OF CODE</span><span>VOICE AI</span><span>RAG & KNOWLEDGE</span><span>AGENTIC SYSTEMS</span><span>GREEN AI</span><span>FULL STACK ENGINEERING</span>
+</div></div>
+<section class="section intro-section" id="voyage">
+<div class="shell manifesto">
+<div>
+<div class="section-kicker">00 / THE CAPTAIN'S LOG</div>
+<h2 class="manifesto-big display">EVERY GREAT<br/>JOURNEY<br/><em>BEGINS WITH<br/>A DREAM.</em></h2>
+</div>
+<div class="manifesto-copy">
+<p>One Piece is about chasing a dream across an impossible ocean. My version of that dream is simpler: <strong>build AI that actually works outside a demo.</strong></p>
+<p>From studying Artificial Intelligence & Data Science at Kumaraguru College of Technology to research in efficient LLMs and engineering voice agents, retrieval pipelines and autonomous workflows — each new problem has been another island.</p>
+<div class="manifesto-line">The anime inspires the chapters. The products, code, research, and work are mine.</div>
+<div class="stats-list">
+<div class="stat"><b>2025</b><span>IEEE research publication</span></div>
+<div class="stat"><b>AI +</b><span>Production engineering</span></div>
+<div class="stat"><b>∞</b><span>Curiosity to build</span></div>
+</div></div></div>
+</section>
+<div class="voyage-head">
+<div class="shell section-top">
+<div><div class="section-kicker">01 / THE PERSONAL SAGA</div><h2 class="section-title display">THE SIX<br/>CHAPTERS.</h2></div>
+<p class="section-lead">Inspired by the progression of One Piece's major arcs, reimagined around my real engineering journey. These aren't claims about the anime's characters — they're milestones from my own story. <span id="current-arc">EAST BLUE</span> is the current chapter.</p>
+</div></div>
+<div class="timeline" aria-label="Six real career story chapters">
+<div class="timeline-rail" aria-hidden="true"></div>
+<div class="shell">
+<section class="chapter" id="east-blue" data-arc="East Blue">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 01 <i></i> The departure</div>
+<h3>EAST<br/><span>BLUE.</span></h3>
+<div class="chapter-arc">ORIGIN STORY / AI & DATA SCIENCE</div>
+<p>My first island was curiosity. I studied Artificial Intelligence and Data Science at <strong>Kumaraguru College of Technology</strong> and started turning ideas into actual software, experiments and working prototypes.</p>
+<div class="chapter-proof"><span>B.Tech AI & DS</span><span>Problem Solving</span><span>Early Projects</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">Explore the first builds <span>↗</span></a>
+</div>
+<div class="chapter-art art-east" aria-label="Original illustrated dawn over a new sea">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/captain.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ The first departure</span><span class="speech-bubble" aria-hidden="true">Dream bigger.</span>
+
+<span class="art-title">THE FIRST HORIZON</span><div class="big-sun"></div>
+<svg class="boat" viewBox="0 0 200 125" aria-hidden="true"><path d="M29 84H171L148 110H60Z" fill="#563a31" stroke="#261c29" stroke-width="5"/><path d="M96 81V15" stroke="#58422d" stroke-width="8"/><path d="M91 18L36 77H91Z" fill="#f7e6c1"/><path d="M103 25L151 76H103Z" fill="#ead0a5"/><path d="M96 18v-9m0 9l31 7-31 15Z" fill="#ab4d3a" stroke="#58422d" stroke-width="3"/></svg>
+<div class="cliff"></div><span class="art-num">01</span>
+</div></section>
+<section class="chapter" id="skypiea" data-arc="Skypiea">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 02 <i></i> Going beyond</div>
+<h3>SKY<br/><span>PIEA.</span></h3>
+<div class="chapter-arc">RESEARCH / ECO-TRANSFORMERS</div>
+<p>Instead of simply making LLMs bigger, I explored making them <strong>more efficient</strong>. My Eco-Transformers work studied self-pruning and activation freezing, culminating in an IEEE conference publication.</p>
+<div class="chapter-proof"><span>IEEE 2025</span><span>LLM Efficiency</span><span>PyTorch</span></div>
+<a class="story-link" href="https://doi.org/10.1109/ICNGCS64900.2025.11183217" target="_blank" rel="noopener noreferrer">Explore published research <span>↗</span></a>
+</div>
+<div class="chapter-art art-sky" aria-label="Original illustration of an island above the clouds">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/scientist.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ Research voyage</span><span class="speech-bubble" aria-hidden="true">Beyond ordinary limits.</span>
+<span class="art-title">REACH BEYOND THE CLOUDS</span><div class="cloud"></div><div class="sky-island"></div><div class="research-badge"><b>IEEE · 2025</b><span>Eco-Transformers / Carbon-efficient LLM inference</span></div><span class="art-num">02</span></div>
+</section>
+<section class="chapter" id="water7" data-arc="Water 7">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 03 <i></i> Building the ship</div>
+<h3>WATER<br/><span>SEVEN.</span></h3>
+<div class="chapter-arc">PRODUCTION SYSTEMS / VOICEFORGE AI</div>
+<p>Ships need engineering, not just a beautiful sail. <strong>VoiceForge AI</strong> represents that mindset: voice agent management, telephony integration, realtime transcripts, provider workflows and full-stack product engineering.</p>
+<div class="chapter-proof"><span>Voice AI</span><span>Next.js</span><span>Telephony</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu/VoiceForge-AI" target="_blank" rel="noopener noreferrer">Explore VoiceForge AI <span>↗</span></a>
+</div>
+<div class="chapter-art art-water" aria-label="Animated conceptual UI for a Voice AI application">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/shipwright.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ Product engineering</span><span class="speech-bubble" aria-hidden="true">Build. Test. Ship.</span>
+
+<span class="art-title">VOICEFORGE / LIVE CONVERSATION ENGINE</span>
+<div class="voice-ui"><div class="voice-top"><span>VOICE ENGINE · ONLINE</span><span><i></i> LOW LATENCY</span></div>
+<div class="waveform" aria-hidden="true">
+<i style="--h:31;--i:1"></i><i style="--h:48;--i:2"></i><i style="--h:62;--i:3"></i><i style="--h:24;--i:4"></i><i style="--h:81;--i:5"></i><i style="--h:53;--i:6"></i><i style="--h:38;--i:7"></i><i style="--h:92;--i:8"></i><i style="--h:45;--i:9"></i><i style="--h:69;--i:10"></i><i style="--h:37;--i:11"></i><i style="--h:74;--i:12"></i><i style="--h:57;--i:13"></i><i style="--h:34;--i:14"></i><i style="--h:83;--i:15"></i><i style="--h:49;--i:16"></i><i style="--h:61;--i:17"></i><i style="--h:25;--i:18"></i>
+</div><div class="voice-caption">Intelligence in every conversation.</div><div class="voice-small">Transcripts · Routing · Real-time workflows</div>
+</div><span class="art-num">03</span></div>
+</section>
+<section class="chapter" id="enies" data-arc="Enies Lobby">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 04 <i></i> Challenging limits</div>
+<h3>ENIES<br/><span>LOBBY.</span></h3>
+<div class="chapter-arc">RETRIEVAL / OFFLINE RAG</div>
+<p>Useful intelligence must respect the environment it serves. My <strong>Offline Inventory RAG Assistant</strong> combines local speech recognition, a quantized language model and FAISS search for knowledge workflows without relying on cloud connectivity.</p>
+<div class="chapter-proof"><span>Whisper STT</span><span>Qwen</span><span>FAISS</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu/RAG-Offline-Inventory-Management-System" target="_blank" rel="noopener noreferrer">Explore offline RAG <span>↗</span></a>
+</div>
+<div class="chapter-art art-rag" aria-label="Original animated document scanning and knowledge retrieval illustration">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/scholar.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ Knowledge systems</span><span class="speech-bubble" aria-hidden="true">Intelligence, grounded.</span>
+
+<span class="art-title">KNOWLEDGE BEYOND THE NETWORK</span>
+<div class="document a"><div class="line"></div><div class="line short"></div><div class="line"></div><div class="line"></div><div class="line short"></div><div class="stamp">LOCAL</div></div>
+<div class="document b"><div class="line short"></div><div class="line"></div><div class="line"></div><div class="line short"></div><div class="line"></div><div class="stamp">RAG</div></div>
+<div class="scan"></div><span class="art-num">04</span>
+</div></section>
+<section class="chapter" id="wano" data-arc="Wano">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 05 <i></i> The awakening</div>
+<h3>WANO<br/><span>COUNTRY.</span></h3>
+<div class="chapter-arc">AUTONOMOUS AGENTS / AI WORKFLOWS</div>
+<p>The next leap was making systems that <strong>coordinate and act</strong>. My projects include an autonomous job agent and AI voice recruiter, combining browser workflows, event orchestration, conversational AI and computer vision.</p>
+<div class="chapter-proof"><span>LangGraph</span><span>Playwright</span><span>Multi-Agent</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu/ai-job-agent-v2" target="_blank" rel="noopener noreferrer">Explore agentic systems <span>↗</span></a>
+</div>
+<div class="chapter-art art-agents" aria-label="Animated network of collaborating autonomous AI agents">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/swordsman.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ Agent awakening</span><span class="speech-bubble" aria-hidden="true">No shortcut to mastery.</span>
+
+<span class="art-title">THE AGENT FLEET · ORCHESTRATION</span>
+<svg viewBox="0 0 460 420" preserveAspectRatio="none" class="agent-lines" aria-hidden="true"><path d="M100 193Q176 110 242 98T351 204"/><path d="M100 193Q145 322 227 327T351 204"/><path d="M242 98V327"/><path d="M100 193H351"/></svg>
+<div class="node n1">⌘</div><div class="node n2">✦</div><div class="node n3">◇</div><div class="node n4">⟡</div><span class="art-num">05</span>
+</div></section>
+<section class="chapter" id="egghead" data-arc="Egghead">
+<div class="chapter-content">
+<div class="chapter-kicker">Chapter 06 <i></i> The future island</div>
+<h3>EGG<br/><span>HEAD.</span></h3>
+<div class="chapter-arc">CURRENT DIRECTION / BUILDER'S FUTURE</div>
+<p>There is no final island for an engineer. I'm continuing to explore <strong>production RAG, autonomous AI, voice systems and efficient models</strong>, always with one question: how do we make this useful in the real world?</p>
+<div class="chapter-proof"><span>GenAI</span><span>Applied AI</span><span>Product Engineering</span></div>
+<a class="story-link" href="https://github.com/Sivanesanbalu?tab=repositories" target="_blank" rel="noopener noreferrer">See what I'm building now <span>↗</span></a>
+</div>
+<div class="chapter-art art-future" aria-label="Animated abstract futuristic glowing rings">
+<div class="speed-lines" aria-hidden="true"></div><div class="slash-streak" aria-hidden="true"></div><img class="arc-cameo" src="./assets/scientist.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/><span class="arc-annotation" aria-hidden="true">✦ AI frontier</span><span class="speech-bubble" aria-hidden="true">The next era begins.</span>
+<span class="art-title">THE NEXT ERA IS BUILT, NOT FOUND</span><div class="sunrings"></div><div class="future-text">WHAT'S<br/>NEXT?</div><span class="art-num">06</span></div>
+</section>
+</div></div>
+<section class="map-atlas" id="atlas" aria-label="One Piece story arc inspirations">
+<div class="shell atlas-head"><div><div class="section-kicker">02 / THE ANIME ATLAS</div><h2>THE WORLD<br/>THAT INSPIRED IT.</h2></div>
+<p>One Piece's legendary arc names provide the storytelling structure, not claims about my personal history. The route below is a selective chronological map of major arcs, from East Blue through Elbaph. <a style="text-decoration:underline;color:#eac98e" href="https://one-piece.com/story/index.html" target="_blank" rel="noopener noreferrer">Official story reference ↗</a></p></div>
+<div class="shell">
+<div class="navigator-brief">
+<img src="./assets/navigator.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"/>
+<div><div class="mini accent">The navigator's chart</div><h3 class="brief-title">Follow the story. Discover the engineer.</h3><p>Each destination represents an anime-inspired theme. The work behind it belongs to Sivanesan B.</p></div>
+<svg viewBox="0 0 170 105" aria-hidden="true"><path class="navigator-route" d="M7 79Q36 7 75 45T162 21"/><circle class="route-orb" cx="7" cy="79" r="7"/><circle class="route-orb" cx="162" cy="21" r="6"/><path d="M147 21h30M162 6v30" stroke="#dcbf84" stroke-width="2"/></svg>
+</div>
+</div>
+<div class="atlas-scroll" tabindex="0" aria-label="Horizontally scrollable One Piece arc inspiration list">
+<article><b>01</b><h3>East Blue</h3><p>Every dream needs a departure.</p></article>
+<article><b>02</b><h3>Alabasta</h3><p>First impossible missions.</p></article>
+<article><b>03</b><h3>Skypiea</h3><p>Go farther than expected.</p></article>
+<article><b>04</b><h3>Water 7</h3><p>Build the ship that carries the dream.</p></article>
+<article><b>05</b><h3>Enies Lobby</h3><p>Challenge what seems impossible.</p></article>
+<article><b>06</b><h3>Thriller Bark</h3><p>Learn in uncertain territory.</p></article>
+<article><b>07</b><h3>Marineford</h3><p>Resolve under pressure.</p></article>
+<article><b>08</b><h3>Fish-Man Island</h3><p>New horizons below the surface.</p></article>
+<article><b>09</b><h3>Dressrosa</h3><p>Collaborate across complexity.</p></article>
+<article><b>10</b><h3>Whole Cake Island</h3><p>Navigate unexpected constraints.</p></article>
+<article><b>11</b><h3>Wano</h3><p>Awaken new capabilities.</p></article>
+<article><b>12</b><h3>Egghead</h3><p>The future of intelligence.</p></article>
+<article><b>13</b><h3>Elbaph</h3><p>More adventures ahead.</p></article>
+</div>
+</section>
+<section class="section featured" id="work">
+<div class="shell">
+<div class="section-top">
+<div><div class="section-kicker">03 / THE REAL TREASURE</div><h2 class="section-title display">PROJECT<br/>EXPEDITIONS.</h2></div>
+<p class="section-lead">The story is a tribute. <strong>The work is real.</strong> Explore public repositories, implementation approaches and the engineering problems behind each chapter.</p>
+</div>
+<div class="filterbar" role="group" aria-label="Filter featured projects">
+<button type="button" data-project-filter="all" aria-pressed="true">All</button>
+<button type="button" data-project-filter="voice" aria-pressed="false">Voice AI</button>
+<button type="button" data-project-filter="agents" aria-pressed="false">Agents</button>
+<button type="button" data-project-filter="research" aria-pressed="false">Research</button>
+<button type="button" data-project-filter="rag" aria-pressed="false">RAG</button>
+</div>
+<p class="mini" id="project-status" aria-live="polite" style="color:#a5c2c2">6 featured expeditions shown</p>
+<div class="project-grid">
+<article class="project-card" data-categories="voice"><div class="project-idx">EXPEDITION 001 / VOICE AI</div><div class="pictogram">🎙️</div><h3>VoiceForge AI</h3><p>Provider-oriented voice agent platform for conversational workflows, telephony, transcripts and AI operations.</p><div class="tech">Next.js · TypeScript · Vapi · PostgreSQL</div><a href="https://github.com/Sivanesanbalu/VoiceForge-AI" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="rag"><div class="project-idx">EXPEDITION 002 / RAG</div><div class="pictogram">📚</div><h3>Offline Inventory RAG</h3><p>Air-gapped inventory assistant combining local language inference, Whisper speech-to-text and FAISS retrieval.</p><div class="tech">Python · Qwen · Whisper · FAISS</div><a href="https://github.com/Sivanesanbalu/RAG-Offline-Inventory-Management-System" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="research"><div class="project-idx">EXPEDITION 003 / RESEARCH</div><div class="pictogram">🌿</div><h3>Eco-Transformers</h3><p>Research into self-pruning and activation freezing methods for accelerated, carbon-efficient LLM inference.</p><div class="tech">PyTorch · Transformers · CodeCarbon</div><a href="https://github.com/Sivanesanbalu/Eco-Transformer" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="agents"><div class="project-idx">EXPEDITION 004 / AGENTS</div><div class="pictogram">⚙️</div><h3>Autonomous Job Agent</h3><p>AI-powered job workflows: discovery, application preparation, browser automation and multi-step execution.</p><div class="tech">Python · Playwright · LLM workflows</div><a href="https://github.com/Sivanesanbalu/ai-job-agent-v2" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="voice agents"><div class="project-idx">EXPEDITION 005 / VOICE + VISION</div><div class="pictogram">🧭</div><h3>AI Voice Recruiter</h3><p>Voice-first interview experience with contextual follow-ups and computer-vision-enabled proctoring experiments.</p><div class="tech">Next.js · Voice AI · Computer Vision</div><a href="https://github.com/Sivanesanbalu/AI_Voice_Recruiter" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+<article class="project-card" data-categories="agents"><div class="project-idx">EXPEDITION 006 / APPLIED AI</div><div class="pictogram">🛠️</div><h3>QuotientAI</h3><p>Production-oriented AI full-stack systems and practical agent-driven application engineering.</p><div class="tech">AI Systems · Full Stack · Production</div><a href="https://github.com/Sivanesanbalu/quotient-ai-production" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></article>
+</div>
+<div class="archive">
+<div class="archive-head"><div><h3>Open the full repository treasure chest</h3><p>Live public GitHub repositories; searchable by name, description and language.</p></div><button id="archive-toggle" type="button" aria-expanded="false" aria-controls="archive-body">Explore full repository archive +</button></div>
+<div class="archive-body" id="archive-body" hidden><label for="repo-search" class="mini">Search your repositories</label><div style="margin-top:12px"><input id="repo-search" placeholder="Try RAG, voice, Python, agents..." autocomplete="off"/></div><p id="archive-status" role="status">Loading repository data…</p><div class="repo-list" id="repo-list"></div></div>
+</div>
+</div></section>
+<section class="section research-section" id="research">
+<div class="shell research-grid">
+<div><div class="section-kicker">04 / THE RESEARCH SCROLL</div><h2 class="display">EFFICIENT<br/>INTELLIGENCE.</h2><p><strong>Eco-Transformers:</strong> Carbon-Efficient and Accelerated Inference through Self-Pruning and Activation Freezing in LLMs. Presented as a 2025 IEEE conference publication.</p>
+<div class="button-row"><a class="btn" href="https://doi.org/10.1109/ICNGCS64900.2025.11183217" target="_blank" rel="noopener noreferrer">Read the IEEE paper ↗</a><a class="btn ghost" href="https://github.com/Sivanesanbalu/Eco-Transformer" target="_blank" rel="noopener noreferrer" style="color:#26414b;border-color:#8d6c47">Research code ↗</a></div>
+</div>
+<div><div class="metrics"><div class="metric"><b>58%</b><span>Reported lower inference CO₂</span></div><div class="metric"><b>56%</b><span>Reported latency improvement</span></div></div>
+<p class="research-note">Performance figures are the results described in the project's GitHub profile; refer to the paper and methodology for experimental conditions and limitations.</p></div>
+</div></section>
+<section class="section techstack" id="skills">
+<div class="shell tech-shell">
+<div><div class="section-kicker">05 / THE CREW'S TOOLKIT</div><h2 class="display">BUILT WITH<br/><span class="accent">REAL TOOLS.</span></h2><p style="color:#aebfc0;max-width:460px">No fictional power levels: these are the technologies used across my projects, research and full-stack experiments.</p><a class="btn ghost" href="./world.html">Explore original 3D world ↗</a></div>
+<div class="skillgroups">
+<div class="skillgroup"><h3>Intelligence & agent systems</h3><p>Python · LLMs · LangGraph · RAG · Prompt engineering · AI agents · Retrieval evaluation</p></div>
+<div class="skillgroup"><h3>Speech & conversation</h3><p>Voice AI · Vapi · Whisper STT · Real-time pipelines · Telephony integration</p></div>
+<div class="skillgroup"><h3>Product & backend engineering</h3><p>FastAPI · TypeScript · Next.js · REST APIs · PostgreSQL · Supabase · Playwright</p></div>
+<div class="skillgroup"><h3>Research & optimization</h3><p>PyTorch · Transformers · FAISS · CodeCarbon · Efficient inference</p></div>
+</div>
+</div></section>
+<section class="contact" id="contact"><div class="shell">
+<div class="section-kicker">06 / THE NEXT ISLAND IS YOURS</div>
+<h2 class="display">LET'S BUILD<br/><span class="accent">WHAT'S NEXT.</span></h2>
+<p>Have a challenging AI problem, an engineering opportunity, or an idea worth exploring? I'm ready to talk about what can actually be built.</p>
+<div class="button-row"><a class="btn" href="mailto:apsiva69@gmail.com?subject=Let's%20Build%20Something%20with%20AI">Get in touch ↗</a><a class="btn ghost" href="https://www.linkedin.com/in/sivanesan-b-871ba7264/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div>
+</div></section>
+</main>
+<footer><div class="shell footer-inner"><span>© 2026 Sivanesan B · An original, unofficial One Piece-inspired portfolio.</span><span><a href="https://github.com/Sivanesanbalu" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="./world.html">3D world</a> · <a href="https://one-piece.com/story/index.html" target="_blank" rel="noopener noreferrer">Story inspiration</a> · <a href="#top">Back to top ↑</a></span></div></footer>
+<button class="motion-control" id="motion-control" type="button" aria-pressed="false" aria-label="Pause ambient effects">Ⅱ Pause effects</button>
+</body></html>
