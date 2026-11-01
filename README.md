@@ -21,6 +21,7 @@ I turn ideas into working AI applications — from voice interfaces and offline 
 <br/>
 
 <a href="https://grand-line-3d-sivanesan.vercel.app/"><img alt="Explore my Grand Line story" src="https://img.shields.io/badge/EXPLORE_MY_STORY-Grand_Line-DBB574?style=for-the-badge&labelColor=0B2130" /></a>
+<a href="https://grand-line-3d-sivanesan.vercel.app/#real-3d"><img alt="View full-size real 3D ship and pirate crew" src="https://img.shields.io/badge/REAL_3D_CREW-%26_GALLEON-E4B76F?style=for-the-badge&labelColor=0B2130" /></a>
 <a href="https://grand-line-3d-sivanesan.vercel.app/world.html"><img alt="Enter the interactive 3D world" src="https://img.shields.io/badge/SAIL_THE_3D_WORLD-Interactive-3FA9A6?style=for-the-badge&labelColor=0B2130" /></a>
 <a href="https://sivanesanbalu.netlify.app"><img alt="Professional portfolio" src="https://img.shields.io/badge/PORTFOLIO-Visit-7A96C4?style=for-the-badge&labelColor=0B2130" /></a>
 
@@ -227,7 +228,9 @@ The inspiration is **One Piece's spirit of adventure**. These original animated 
 </tr>
 </table>
 
-**[🌊 Watch the full animated story →](https://grand-line-3d-sivanesan.vercel.app/)**
+**[🌊 View the real interactive 3D galleon and articulated crew →](https://grand-line-3d-sivanesan.vercel.app/#real-3d)**
+
+<sub>GitHub README supports images and animated SVGs; the linked portfolio renders the real-time Three.js 3D models, sails and character animations.</sub>
 
 <sub>Unofficial, anime-inspired original artwork. No official One Piece assets are used.</sub>
 
