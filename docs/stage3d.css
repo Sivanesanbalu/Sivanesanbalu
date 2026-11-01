@@ -1,0 +1,57 @@
+/* Real 3D Grand Line stage — an accessible WebGL enhancement, not a fake SVG/video */
+.real3d-section{position:relative;padding:105px 0 115px;overflow:hidden;background:
+ radial-gradient(ellipse at 70% 34%,#33617b66,transparent 53%),
+ linear-gradient(170deg,#0b2335,#102d40 41%,#071622 100%);border-block:1px solid #d5b37b34}
+.real3d-section:before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.09;background:repeating-linear-gradient(135deg,transparent 0px,transparent 52px,#ebd0a9 54px,transparent 56px)}
+.real3d-kicker{color:#e8c591;letter-spacing:.22em;font-size:.7rem;text-transform:uppercase;font-weight:800}
+.real3d-title{font:400 clamp(3.8rem,8vw,8.2rem) 'Bebas Neue',Impact,sans-serif;line-height:.93;letter-spacing:.018em;margin:11px 0 13px}
+.real3d-title span{color:#efc883}
+.real3d-top{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:end;margin-bottom:32px;position:relative;z-index:3}
+.real3d-top p{max-width:470px;justify-self:end;color:#b9cbd1;font-size:.92rem;line-height:1.8}
+.real3d-frame{position:relative;min-height:585px;height:clamp(520px,54vw,730px);border-radius:12px;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 72% 28%,#c3a07870,transparent 35%),linear-gradient(180deg,#0f2b43,#28576c 58%,#0b2939);border:1px solid #d7b47b86;box-shadow:0 32px 94px #030b17b8}
+.real3d-frame:before{content:'';position:absolute;inset:11px;border:1px solid #edc68a4a;border-radius:6px;z-index:5;pointer-events:none}
+.real3d-frame:after{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(0deg,#06162693 0%,transparent 23%),linear-gradient(90deg,#07162238,transparent 65%)}
+#real3d-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1;touch-action:pan-y;cursor:grab}
+#real3d-canvas:active{cursor:grabbing}
+.real3d-fallback{position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;opacity:.65}
+.real3d-frame[data-ready="true"] .real3d-fallback{opacity:0;transition:opacity .5s}
+.real3d-corner{position:absolute;z-index:4;top:26px;left:28px;display:grid;gap:3px;pointer-events:none}
+.real3d-corner b{font:400 1.65rem 'Bebas Neue',sans-serif;letter-spacing:.13em;color:#ffe5ae}
+.real3d-corner span{font-size:.61rem;color:#ccdedc;letter-spacing:.14em;text-transform:uppercase}
+.real3d-verified{position:absolute;z-index:4;top:27px;right:27px;padding:9px 13px;border-radius:999px;border:1px solid #d8cf9c80;background:#081c2bbd;color:#d4dfd2;font-weight:800;letter-spacing:.13em;font-size:.63rem;pointer-events:none}
+.real3d-verified::before{content:'';display:inline-block;width:6px;height:6px;background:#8ee5ce;border-radius:50%;box-shadow:0 0 9px #74eac4;margin-right:8px}
+.real3d-stage-hint{position:absolute;z-index:4;left:30px;bottom:27px;color:#c9dbd9;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;pointer-events:none;text-shadow:0 2px 14px #000b}
+.real3d-overlay{position:absolute;z-index:4;right:22px;bottom:22px;display:flex;flex-direction:column;gap:8px;max-width:230px}
+.real3d-overlay button{border:1px solid #edc78385;background:#061726d5;backdrop-filter:blur(9px);color:#efdbb8;padding:11px 13px;text-align:left;border-radius:7px;font-size:.72rem;font-weight:800;transition:transform .2s,background .2s,border-color .2s}
+.real3d-overlay button:hover{transform:translateX(-4px);background:#133b4c}
+.real3d-overlay button[aria-pressed="true"]{color:#102738;background:#eed091;border-color:#fff0c5}
+.real3d-toolbar{display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:17px}
+.real3d-tools{display:flex;gap:9px;flex-wrap:wrap}
+.real3d-tools button,.real3d-tools a{border:1px solid #88a7aa77;background:#153445ab;color:#f8e5bc;padding:11px 14px;border-radius:5px;font-size:.75rem;letter-spacing:.06em;font-weight:800;text-decoration:none;min-height:42px;transition:background .2s}
+.real3d-tools button:hover,.real3d-tools a:hover{background:#214e5b}
+.real3d-status{font-size:.7rem;color:#bcd3d0;margin:0;min-width:200px;line-height:1.6}
+.real3d-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:25px 0 0}
+.real3d-meta>div{border-top:1px solid #edcf9a53;padding:14px 2px}
+.real3d-meta b{display:block;font:700 .83rem 'Space Grotesk',sans-serif;color:#f2d7a3}
+.real3d-meta span{display:block;color:#99b9c0;font-size:.72rem;margin-top:5px}
+.real3d-link{color:#f6dfa7;font-size:.75rem;text-decoration:underline;text-underline-offset:5px}
+.real3d-frame:not([data-ready="true"]) .real3d-overlay button{opacity:.7}
+.real3d-frame[data-error="true"] #real3d-canvas{display:none}
+.real3d-frame[data-error="true"] .real3d-fallback{opacity:.9}
+@media(max-width:900px){.real3d-section{padding:85px 0}.real3d-top{grid-template-columns:1fr;gap:2px}.real3d-top p{justify-self:start}.real3d-frame{height:620px;min-height:0}.real3d-overlay{max-width:195px}}
+@media(max-width:650px){
+.real3d-section{padding:65px 0 75px}
+.real3d-title{font-size:clamp(3.7rem,16vw,6rem)}
+.real3d-top p{font-size:.81rem}
+.real3d-frame{height:550px;border-radius:9px}
+.real3d-corner{top:22px;left:18px}.real3d-corner b{font-size:1.22rem}.real3d-corner span{font-size:.52rem}
+.real3d-verified{top:17px;right:16px;padding:7px 9px;font-size:.52rem}
+.real3d-overlay{right:10px;bottom:15px;max-width:160px;gap:6px}
+.real3d-overlay button{font-size:.61rem;padding:9px 11px}
+.real3d-stage-hint{left:15px;bottom:20px;max-width:170px;font-size:.52rem}
+.real3d-status{font-size:.65rem}
+.real3d-meta{grid-template-columns:1fr 1fr;gap:8px}
+.real3d-meta b{font-size:.73rem}
+.real3d-meta span{font-size:.64rem}
+}
+@media(prefers-reduced-motion:reduce){.real3d-frame *, .real3d-section *{animation:none!important;transition:none!important}}
