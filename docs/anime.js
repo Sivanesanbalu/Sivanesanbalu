@@ -4,12 +4,19 @@
 const crew=document.querySelector('.anime-crew');
 const visual=document.querySelector('.hero-visual');
 const buttons=[...document.querySelectorAll('[data-crew-choice]')];
+// A missing GIF falls back gracefully rather than rendering a broken image.
+document.querySelectorAll('.crew-figure img[data-fallback]').forEach(img=>{
+ img.addEventListener('error',()=>{
+  const fallback=img.dataset.fallback;
+  if(fallback && !img.dataset.fallbackUsed){img.dataset.fallbackUsed='true';img.src=fallback;}
+ },{once:false});
+});
 const caption=document.getElementById('crew-caption');
 const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
 const info={
-captain:'The dreamer — a straw-hat captain who represents curiosity and ambition.',
-swordsman:'The swordsman — discipline, focus and the resolve to finish the build.',
-navigator:'The navigator — curiosity, strategy and finding the next engineering island.'
+captain:'Luffy — original animation, displayed without altering frames.',
+swordsman:'Zoro — exact linked anime animation.',
+navigator:'Nami — original user-supplied animation.'
 };
 function spotlight(id){
 if(!crew||!info[id])return;
