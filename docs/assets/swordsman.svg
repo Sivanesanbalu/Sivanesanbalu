@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="680" viewBox="0 0 420 680" role="img" aria-label="Original animated green-haired swordsman with triple blades, inspired by One Piece"><title>Original animated green-haired swordsman with triple blades, inspired by One Piece</title>
+<defs>
+<linearGradient id="skin" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f7d0aa"/><stop offset=".55" stop-color="#df976b"/><stop offset="1" stop-color="#a65c47"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#e45a45"/><stop offset=".6" stop-color="#b62e39"/><stop offset="1" stop-color="#581c36"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#344557"/><stop offset=".7" stop-color="#0e1e31"/><stop offset="1" stop-color="#050d1c"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff2c4"/><stop offset=".5" stop-color="#e6ba6c"/><stop offset="1" stop-color="#a97444"/></linearGradient>
+<filter id="aura"><feGaussianBlur stdDeviation="10"/></filter>
+</defs><style>
+@keyframes idle{0%,100%{transform:translateY(0px) rotate(-.5deg)}50%{transform:translateY(-9px) rotate(1deg)}}
+@keyframes hat{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-5deg)}}
+@keyframes arm{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(6deg)}}
+@keyframes sparkle{0%,100%{opacity:.15;transform:translateY(0)}50%{opacity:.9;transform:translateY(-20px)}}
+@keyframes wind{to{stroke-dashoffset:-120}}
+@keyframes glow{50%{opacity:.28}}
+.char{animation:idle 5.5s ease-in-out infinite;transform-origin:210px 500px}.hat{animation:hat 6s ease-in-out infinite;transform-origin:210px 190px}
+.arm{animation:arm 3s ease-in-out infinite;transform-origin:128px 350px}
+.spark{animation:sparkle 3.2s ease-in-out infinite}.wind{stroke-dasharray:22 18;animation:wind 4s linear infinite}
+.blade{animation:bladePulse 3.5s ease-in-out infinite;transform-origin:200px 300px}@keyframes bladePulse{50%{filter:drop-shadow(0 0 9px #95f8d9)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<ellipse cx="203" cy="619" rx="144" ry="24" fill="#010e1a" opacity=".35"/>
+<ellipse cx="208" cy="335" rx="155" ry="255" fill="#50ae8b" opacity=".16" filter="url(#aura)"/>
+<g opacity=".55" fill="none" stroke="#93f4c8" stroke-width="4"><path class="wind" d="M25 192Q75 178 113 181"/><path class="wind" d="M280 92q54 9 99-13"/></g>
+<g class="char" stroke="#101c2b" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+<path d="M133 455l-10 149q28 29 63 4l29-114 31 114q42 25 67-5l-33-161z" fill="#1c2935"/>
+<path d="M116 597q-28 29-20 40h94l10-27zM238 609l11 29h89q8-22-32-39z" fill="#2a2c32"/>
+<path d="M124 331q81-30 158-1l35 149q-101 39-209-3z" fill="#164b42"/>
+<path d="M124 332q-51 11-69 91l45 28 52-77zM275 333q63 6 79 91l-41 40-56-79z" fill="#154b42"/>
+<path d="M160 337q32-5 52 44 23-39 51-39l-32 132h-42z" fill="#c7bca0"/>
+<path d="M105 467q107 40 208-5l6 43q-113 39-216-1z" fill="#3e3439"/>
+<path d="M192 477l17 39 18-36" fill="#e2c06e"/>
+<!-- arms -->
+<path d="M96 393q-29 28-22 79l35 20q36-20 16-44l-8-36zM314 400q40 25 40 67l-30 25q-34-12-32-41z" fill="url(#skin)"/>
+<!-- face and green hair -->
+<path d="M179 290l2 61q30 17 57-2l-5-62z" fill="url(#skin)"/>
+<ellipse cx="210" cy="226" rx="70" ry="85" fill="url(#skin)"/>
+<path d="M137 213l-5-41 27-12-15-37 33-2 14-31 26 24 36-25 7 30 29 4-18 30 10 39-27 1-15-34-35 22-21-22-30 24z" fill="#3f9d5c"/>
+<path d="M154 226q16-15 32-10m44-1q17-7 33 6" stroke="#222b2c" fill="none"/>
+<path d="M157 235l20-10m55 0 20 4" stroke="#132632" fill="none"/>
+<circle cx="174" cy="236" r="5" fill="#173440" stroke="none"/><circle cx="240" cy="235" r="5" fill="#173440" stroke="none"/>
+<path d="M185 270q25 5 42 0" stroke="#854f40" stroke-width="4" fill="none"/>
+<!-- swords on back -->
+<g class="blade"><path d="M42 431L357 69l20 8-304 375z" fill="#bce4d6" stroke="#43616c" stroke-width="5"/>
+<path d="M57 433l-22 25m-15-22 61 57" stroke="#e1b66a" stroke-width="13"/>
+<path d="M82 415L345 143l16 11L97 433z" fill="#f9e9c9" stroke="#466270" stroke-width="4"/>
+<path d="M62 435l-26 36m-17-23 62 49" stroke="#e1b56a" stroke-width="10"/>
+<path d="M161 460L332 119l20 8-166 353" fill="#c4dce5" stroke="#6a8798" stroke-width="4"/>
+<path d="M160 446l-20 46m-8-45 55 38" stroke="#d6a660" stroke-width="10"/></g>
+</g>
+<g class="sparks" fill="none" stroke="#b6fce0" stroke-width="4"><path d="M315 118q30-18 61-9" class="wind"/><path d="M27 385q43-17 73-6" class="wind"/></g>
+</svg>
