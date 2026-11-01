@@ -232,7 +232,20 @@ The inspiration is **One Piece's spirit of adventure**. These original animated 
 
 <sub>GitHub README supports images and animated SVGs; the linked portfolio renders the real-time Three.js 3D models, sails and character animations.</sub>
 
-<sub>Unofficial, anime-inspired original artwork. No official One Piece assets are used.</sub>
+<sub>The illustrated pirate crew above uses original designs.</sub>
+
+<details>
+<summary><strong>🎞️ Watch the actual Luffy animation reference I chose</strong></summary>
+
+<br/>
+
+<img src="./docs/assets/luffy-film-z.webp" width="340" alt="Looping Luffy anime clip from a One Piece scene supplied as a visual reference" />
+
+<br/>
+
+<sub>This short One Piece excerpt is user-supplied fan reference footage, not a 3D model or original illustration. The portfolio keeps this separate from the original 3D pirate characters.</sub>
+
+</details>
 
 </div>
 
