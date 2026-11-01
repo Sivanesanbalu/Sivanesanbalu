@@ -98,7 +98,7 @@ body.ambient-paused .anime-crew{opacity:.7}
 .crew-figure[data-crew="swordsman"]{left:-3%;bottom:13%;width:39%;opacity:.76}
 .crew-figure[data-crew="navigator"]{right:-2%;bottom:13%;width:39%;opacity:.79}
 .hero-main{padding-top:25px}
-.hero-main>.poster-wrap{transform:scale(.88);transform-origin:center center}
+.hero-main>.poster-wrap{scale:.88;transform-origin:center center}
 .crew-switch{margin-top:12px;gap:5px;max-width:100%}
 .crew-switch button{padding:8px;font-size:.57rem}
 .crew-disclaimer{font-size:.55rem;max-width:270px}
