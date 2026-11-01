@@ -196,33 +196,33 @@ The exact components vary by project. See each repository for its implementation
 
 ---
 
-## 🏴‍☠️ Meet the Crew — Original Anime-Inspired Art
+## 🏴‍☠️ Meet the Crew — Straw Hat Pirates
 
 <div align="center">
 
-The inspiration is **One Piece's spirit of adventure**. These original animated pirate-style characters represent three parts of my engineering journey.
+**Luffy, Zoro and Nami** — the three characters behind this Grand Line tribute. Their artwork is displayed as background-free character cutouts; my projects and engineering work remain the focus.
 
 <table>
 <tr>
 <td align="center" width="33%">
 <a href="https://grand-line-3d-sivanesan.vercel.app/">
-<img src="./docs/assets/captain.svg" alt="Original animated straw-hat pirate captain representing curiosity" width="135" />
+<img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_aabeef15f811604759c6738e841b67e5.webp" alt="Monkey D. Luffy — background-free character artwork" width="135" />
 </a><br/>
-<strong>THE DREAMER</strong><br/>
+<strong>LUFFY · THE DREAMER</strong><br/>
 <sub>Curiosity & ambition</sub>
 </td>
 <td align="center" width="33%">
 <a href="https://grand-line-3d-sivanesan.vercel.app/">
-<img src="./docs/assets/swordsman.svg" alt="Original animated swordsman representing engineering discipline" width="135" />
+<img src="https://www.vhv.rs/dpng/d/484-4847884_one-piece-zoro-png-transparent-image-zoro-one.png" alt="Roronoa Zoro — background-free character artwork" width="135" />
 </a><br/>
-<strong>THE BUILDER</strong><br/>
+<strong>ZORO · THE BUILDER</strong><br/>
 <sub>Focus & execution</sub>
 </td>
 <td align="center" width="33%">
 <a href="https://grand-line-3d-sivanesan.vercel.app/">
-<img src="./docs/assets/navigator.svg" alt="Original animated navigator representing systems thinking" width="135" />
+<img src="https://image.pngaaa.com/338/1502338-middle.png" alt="Nami — background-free character artwork" width="135" />
 </a><br/>
-<strong>THE NAVIGATOR</strong><br/>
+<strong>NAMI · THE NAVIGATOR</strong><br/>
 <sub>Strategy & exploration</sub>
 </td>
 </tr>
@@ -232,7 +232,7 @@ The inspiration is **One Piece's spirit of adventure**. These original animated 
 
 <sub>GitHub README supports images and animated SVGs; the linked portfolio renders the real-time Three.js 3D models, sails and character animations.</sub>
 
-<sub>The illustrated pirate crew above uses original designs.</sub>
+<sub>These are fan-tribute images of One Piece characters, not original 3D models. The separate interactive 3D portfolio uses original crew models.</sub>
 
 <details>
 <summary><strong>🎞️ Watch the actual Luffy animation reference I chose</strong></summary>
