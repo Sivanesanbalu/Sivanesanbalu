@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+<title id="title">Sivanesan B — The Grand Line of Applied AI</title>
+<desc id="desc">Animated night sea with an original sailing pirate ship, warm horizon, compass and editorial title for AI engineer Sivanesan B.</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#071321"/><stop offset=".59" stop-color="#16324a"/><stop offset="1" stop-color="#547d78"/>
+</linearGradient>
+<radialGradient id="sun" cx=".5" cy=".5" r=".5">
+<stop offset="0" stop-color="#fff2c3" stop-opacity=".95"/><stop offset=".49" stop-color="#e4b778" stop-opacity=".8"/><stop offset="1" stop-color="#d79065" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#31747d"/><stop offset=".5" stop-color="#0d4259"/><stop offset="1" stop-color="#071f36"/></linearGradient>
+<linearGradient id="sail" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff1cf"/><stop offset=".6" stop-color="#e6c493"/><stop offset="1" stop-color="#b88c63"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#805239"/><stop offset="1" stop-color="#322631"/></linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+<filter id="shine"><feGaussianBlur stdDeviation="4"/></filter>
+<clipPath id="edge"><rect width="1200" height="390" rx="20"/></clipPath>
+<style>
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-.5deg)}50%{transform:translateY(-7px) rotate(1deg)}}
+@keyframes current{to{transform:translateX(-55px)}}
+@keyframes shine{50%{opacity:.22}}
+@keyframes flutter{50%{transform:skewX(7deg)}}
+@keyframes blink{50%{opacity:.12}}
+@keyframes swing{50%{transform:rotate(12deg)}}
+@keyframes star{50%{opacity:.3}}
+.ship{animation:bob 5.4s ease-in-out infinite;transform-origin:995px 278px}
+.wave-a{animation:current 8s ease-in-out infinite alternate}
+.wave-b{animation:current 11s ease-in-out infinite alternate-reverse}
+.mast-flag{transform-origin:936px 115px;animation:flutter 2.7s ease-in-out infinite}
+.glint{animation:blink 3.5s ease-in-out infinite}
+.compass{transform-origin:1066px 108px;animation:swing 12s ease-in-out infinite}
+.star{animation:star 4s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</defs>
+<g clip-path="url(#edge)">
+<rect width="1200" height="390" fill="url(#sky)"/>
+<g opacity=".62" fill="#f5d9ab">
+<circle class="star" cx="88" cy="58" r="1.6"/><circle cx="212" cy="36" r="1.7"/><circle class="star" cx="356" cy="51" r="1.3"/><circle cx="494" cy="25" r="1.1"/><circle cx="658" cy="70" r="1.4"/><circle cx="735" cy="36" r="2"/><circle class="star" cx="864" cy="70" r="1.4"/><circle cx="1112" cy="39" r="1.6"/><circle class="star" cx="1174" cy="90" r="1.2"/>
+</g>
+<ellipse cx="987" cy="156" rx="180" ry="140" fill="#e5b36f" opacity=".18" filter="url(#blur)"/>
+<circle cx="982" cy="164" r="111" fill="url(#sun)" opacity=".85"/>
+<g class="compass" opacity=".43" fill="none" stroke="#f8d59a">
+<circle cx="1066" cy="108" r="66" stroke-width="1.6"/>
+<circle cx="1066" cy="108" r="53" stroke-width="1" stroke-dasharray="3 6"/>
+<path d="M1066 32V184M990 108H1142M1012 54L1120 162M1120 54L1012 162" stroke-width="1"/>
+<path d="M1066 62l11 35 34 11-34 10-11 36-10-36-35-10 35-11z" fill="#c9aa75" fill-opacity=".35" stroke-width="1"/>
+</g>
+<path d="M0 245l61-28 50 13 107-45 81 34 104-38 69 32 92-23 98 42 100-38 91 29 107-41 89 36 151-47v187H0Z" fill="#0a2a3d" opacity=".62"/>
+<path d="M0 270l122-39 130 40 92-45 101 28 142-31 104 40 91-30 120 29 108-36 190 50v114H0Z" fill="#113c50" opacity=".62"/>
+<path d="M0 277q108-14 223 6t225-6t252 5t249-7t251 5v110H0Z" fill="url(#ocean)"/>
+<g fill="#fff0c7" opacity=".13" filter="url(#blur)">
+<ellipse cx="976" cy="275" rx="212" ry="12"/><ellipse cx="1128" cy="306" rx="140" ry="10"/>
+</g>
+<g class="ship">
+<!-- Original hand-drawn pirate sailing ship; no licensed character artwork -->
+<path d="M803 272q132 20 365-3l-57 68q-142 34-246-1z" fill="#0d1c30" opacity=".55" filter="url(#shine)"/>
+<path d="M797 267q132 14 360-2l-43 66q-130 34-255-2z" fill="url(#wood)" stroke="#e2bc7b" stroke-width="5"/>
+<path d="M812 275q145 16 326-5" fill="none" stroke="#f2ce8e" stroke-width="6"/>
+<path d="M867 328q134 32 242-4" fill="none" stroke="#af7650" stroke-width="3"/>
+<path d="M842 270v-15h270v14" stroke="#d4aa70" stroke-width="7" fill="none"/>
+<path d="M923 260V101M1017 264V143" stroke="#593d36" stroke-width="9"/>
+<path d="M914 115l-106 137 104-4z" fill="url(#sail)" stroke="#af875c" stroke-width="3"/>
+<path d="M930 119l93 133-91-5z" fill="url(#sail)" stroke="#af875c" stroke-width="3"/>
+<path d="M1022 151l86 104-85-5z" fill="url(#sail)" stroke="#a88159" stroke-width="3"/>
+<path d="M916 160l-74 91m98-89 69 91m20-68 62 66" stroke="#ba8e64" stroke-width="1.5" fill="none" opacity=".66"/>
+<path d="M800 254l125-150 190 154m-271 0 175-111 97 116" stroke="#f7e2aa" stroke-width="1.5" fill="none" opacity=".65"/>
+<path class="mast-flag" d="M923 105v-24q35-12 69 4l-69 24z" fill="#bc4a42" stroke="#f4d99c" stroke-width="2"/>
+<!-- small original captain silhouette -->
+<circle cx="982" cy="245" r="10" fill="#202633"/>
+<path d="M967 238q15-21 31-1" fill="none" stroke="#e5bc73" stroke-width="6"/>
+<path d="M971 258q12-10 21 0l10 13h-42z" fill="#a44739"/>
+<circle cx="982" cy="277" r="12" stroke="#d9af76" stroke-width="4" fill="#173e50"/>
+<circle cx="1099" cy="292" r="6" fill="#e6b873"/><circle cx="1035" cy="299" r="6" fill="#e6b873"/><circle cx="973" cy="300" r="6" fill="#e6b873"/><circle cx="910" cy="296" r="6" fill="#e6b873"/>
+</g>
+<g class="wave-a" fill="none" stroke="#9dcfd0" opacity=".43" stroke-width="2.4">
+<path d="M-160 320q55-14 110 0t110 0t110 0t110 0t110 0t110 0t110 0t110 0t110 0t110 0t110 0t110 0t110 0"/>
+</g>
+<g class="wave-b" fill="none" stroke="#70c3c8" opacity=".33" stroke-width="3">
+<path d="M-180 353q72-13 144 0t144 0t144 0t144 0t144 0t144 0t144 0t144 0t144 0t144 0t144 0"/>
+</g>
+<path d="M0 358q180-7 360 8t340-7t500 5v26H0z" fill="#081b2d" opacity=".55"/>
+<rect x="23" y="24" width="1154" height="342" rx="11" fill="none" stroke="#d5ae73" stroke-opacity=".34" stroke-width="1.4"/>
+<rect x="44" y="42" width="594" height="279" rx="6" fill="#071727" opacity=".22"/>
+<text x="68" y="97" font-family="Verdana,Arial,sans-serif" font-size="17" font-weight="bold" letter-spacing="4.2" fill="#efcb8c">CHAPTER 01 / THE ENGINEER'S GRAND LINE</text>
+<text x="60" y="195" font-family="Verdana,Arial,sans-serif" font-size="79" font-weight="900" letter-spacing="-2.7" fill="#fff4d9" stroke="#092135" stroke-width="1.2" paint-order="stroke">SIVANESAN B.</text>
+<path d="M69 218h444" stroke="#e9bd77" stroke-width="3" opacity=".85"/>
+<text x="69" y="254" font-family="Verdana,Arial,sans-serif" font-size="20" font-weight="bold" letter-spacing="2.3" fill="#d6e8e1">AI ENGINEER  •  GENAI  •  RAG  •  VOICE AI</text>
+<text x="69" y="287" font-family="Verdana,Arial,sans-serif" font-size="16" letter-spacing=".6" fill="#e3c99d">Building practical AI systems, one island at a time.</text>
+<g transform="translate(69 320)">
+<rect width="212" height="27" rx="13.5" fill="#dbb472" opacity=".94"/>
+<text x="12" y="18" font-family="Verdana,Arial,sans-serif" font-size="11.3" font-weight="bold" fill="#102938" letter-spacing="1.3">RESEARCH × ENGINEERING</text>
+</g>
+</g>
+</svg>
