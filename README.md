@@ -7,16 +7,16 @@
 <div align="center">
 
 <a href="https://grand-line-3d-sivanesan.vercel.app/">
-  <img src="./assets/profile-grand-line-hero.svg" alt="The Engineer's Grand Line — Sivanesan B, AI Engineer, aboard an animated pirate ship" width="100%" />
+  <img src="./assets/profile/grand-line-banner.gif" alt="Animated GIF of Sivanesan B's Grand Line banner with moving pirate ship, sails, sea and AI engineering identity" width="100%" />
 </a>
 
 <br/>
 
-### Building useful AI, one island at a time. 🏴‍☠️
+### 🏴‍☠️ The Grand Line of Code · AI Engineer & Researcher
 
 **AI Engineer · Generative AI · RAG · Voice AI · Agentic Systems · Efficient LLMs**
 
-I turn ideas into working AI applications — from voice interfaces and offline knowledge assistants to agent workflows and full-stack products.
+**Shipping applied AI, not just building demos.** I engineer voice interfaces, offline RAG assistants, autonomous workflows and full-stack AI products.
 
 <br/>
 
@@ -33,6 +33,8 @@ I turn ideas into working AI applications — from voice interfaces and offline 
 </p>
 
 <img src="https://komarev.com/ghpvc/?username=Sivanesanbalu&label=Profile%20visits&color=0b7b88&style=flat" alt="GitHub profile visitor count" />
+
+<sub>⚓ Explore the world &nbsp;·&nbsp; 🧭 Follow my project journey &nbsp;·&nbsp; 🏴‍☠️ Meet the crew</sub>
 
 </div>
 
@@ -52,6 +54,12 @@ I enjoy the engineering work that happens *after* the first AI demo: reliable AP
 > *The Grand Line is the theme. The engineering and projects are the real story.*
 
 ## 🗺️ Project Islands — Explore the Work
+
+<div align="center">
+
+**6 selected projects · Real source code · Production-focused engineering**
+
+</div>
 
 <div align="center">
 <a href="https://grand-line-3d-sivanesan.vercel.app/#work">
@@ -200,27 +208,27 @@ The exact components vary by project. See each repository for its implementation
 
 <div align="center">
 
-**Luffy, Zoro and Nami** — the three characters behind this Grand Line tribute. Their artwork is displayed as background-free character cutouts; my projects and engineering work remain the focus.
+**The animated Straw Hat crew** — Luffy, Zoro and Nami, with moving GIF cutouts and transparent backgrounds. They're the inspiration; the actual story here is my AI engineering work.
 
 <table>
 <tr>
 <td align="center" width="33%">
 <a href="https://grand-line-3d-sivanesan.vercel.app/">
-<img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_aabeef15f811604759c6738e841b67e5.webp" alt="Monkey D. Luffy — background-free character artwork" width="135" />
+<img src="./assets/profile/luffy-cutout.gif" alt="Animated background-free Luffy GIF" width="170" height="185" />
 </a><br/>
 <strong>LUFFY · THE DREAMER</strong><br/>
 <sub>Curiosity & ambition</sub>
 </td>
 <td align="center" width="33%">
 <a href="https://grand-line-3d-sivanesan.vercel.app/">
-<img src="https://www.vhv.rs/dpng/d/484-4847884_one-piece-zoro-png-transparent-image-zoro-one.png" alt="Roronoa Zoro — background-free character artwork" width="135" />
+<img src="./assets/profile/zoro-cutout.gif" alt="Animated background-free Zoro GIF" width="170" height="185" />
 </a><br/>
 <strong>ZORO · THE BUILDER</strong><br/>
 <sub>Focus & execution</sub>
 </td>
 <td align="center" width="33%">
 <a href="https://grand-line-3d-sivanesan.vercel.app/">
-<img src="https://image.pngaaa.com/338/1502338-middle.png" alt="Nami — background-free character artwork" width="135" />
+<img src="./assets/profile/nami-cutout.gif" alt="Animated background-free Nami GIF" width="170" height="185" />
 </a><br/>
 <strong>NAMI · THE NAVIGATOR</strong><br/>
 <sub>Strategy & exploration</sub>
@@ -232,7 +240,7 @@ The exact components vary by project. See each repository for its implementation
 
 <sub>GitHub README supports images and animated SVGs; the linked portfolio renders the real-time Three.js 3D models, sails and character animations.</sub>
 
-<sub>These are fan-tribute images of One Piece characters, not original 3D models. The separate interactive 3D portfolio uses original crew models.</sub>
+<sub>Fan-made tribute using One Piece animation references. These GIFs are 2D; the linked portfolio contains separate original 3D ship/crew demos.</sub>
 
 <details>
 <summary><strong>🎞️ Watch the actual Luffy animation reference I chose</strong></summary>
