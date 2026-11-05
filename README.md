@@ -12,7 +12,7 @@
 
 <br/>
 
-**AI Engineer · Generative AI · RAG / LLM · Voice AI · Agentic Systems**
+**AI Engineer · Generative AI · Forward Deployed Engineer · RAG / LLM · Voice AI · Agentic Systems**
 
 *I build practical AI products — connecting research, models, software engineering, and real users.*
 
