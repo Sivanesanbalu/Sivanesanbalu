@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="560" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
+<title id="title">Sivanesan B — Naruto-inspired AI Ninja Way</title>
+<desc id="desc">Anime illustration of a blond ninja in an orange jacket, surrounded by blue chakra energy, with a chapter-style AI engineering profile introduction.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050914"/><stop offset=".58" stop-color="#11192d"/><stop offset="1" stop-color="#291425"/></linearGradient>
+  <radialGradient id="aura"><stop stop-color="#62e5ff" stop-opacity=".7"/><stop offset=".48" stop-color="#3085c5" stop-opacity=".23"/><stop offset="1" stop-color="#36b6ff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="jacket" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffb12a"/><stop offset=".55" stop-color="#f37516"/><stop offset="1" stop-color="#aa451b"/></linearGradient>
+  <linearGradient id="steel" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f0f6fc"/><stop offset=".45" stop-color="#95a7b5"/><stop offset="1" stop-color="#4b5869"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7"/></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+  <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#a5c2f6" opacity=".13"/></pattern>
+  <clipPath id="round"><rect width="1440" height="560" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#round)">
+ <rect width="1440" height="560" fill="url(#bg)"/>
+ <rect width="1440" height="560" fill="url(#dots)"/>
+ <path d="M0 480L180 290 335 460 515 265 735 560H0Z" fill="#12192a" opacity=".75"/>
+ <path d="M0 530L160 350 342 545 530 315 710 560H0Z" fill="#1a2638" opacity=".78"/>
+ <circle cx="372" cy="265" r="315" fill="url(#aura)"/>
+ <circle cx="360" cy="263" r="192" fill="none" stroke="#3ddcff" stroke-width="2" stroke-dasharray="8 17" opacity=".45">
+  <animateTransform attributeName="transform" type="rotate" from="0 360 263" to="360 360 263" dur="32s" repeatCount="indefinite"/>
+ </circle>
+ <circle cx="360" cy="263" r="228" fill="none" stroke="#ffad38" stroke-width="1.5" stroke-dasharray="2 22" opacity=".34">
+  <animateTransform attributeName="transform" type="rotate" from="360 360 263" to="0 360 263" dur="45s" repeatCount="indefinite"/>
+ </circle>
+ <g opacity=".7">
+   <path d="M135 410 Q255 135 530 185" stroke="#56d9ff" stroke-width="7" fill="none" filter="url(#glow)"/>
+   <path d="M180 440 Q345 40 530 250" stroke="#8fe8ff" stroke-width="2" fill="none"/>
+   <path d="M265 492 Q545 410 520 175" stroke="#ef8c34" stroke-width="3" fill="none"/>
+ </g>
+ <!-- Naruto-inspired character drawn as original vector fan art -->
+ <g transform="translate(130 36)">
+  <!-- shoulders and jacket -->
+  <path d="M94 505 Q68 414 110 369 L189 323 300 317 389 366 Q422 407 425 505Z" fill="#121c2c" stroke="#010814" stroke-width="9"/>
+  <path d="M97 506 Q98 413 153 380L205 352 230 425 231 506Z" fill="url(#jacket)" stroke="#432118" stroke-width="6"/>
+  <path d="M423 506 Q418 413 370 380L305 349 284 425 284 506Z" fill="url(#jacket)" stroke="#432118" stroke-width="6"/>
+  <path d="M211 341 L260 388 309 340 327 505 190 505Z" fill="#202e3c" stroke="#090e17" stroke-width="6"/>
+  <path d="M251 378L265 500" stroke="#ced2d5" stroke-width="5"/>
+  <path d="M160 385 L215 353 251 386 225 415Z" fill="#131c27"/>
+  <path d="M355 385L301 351 265 386 292 415Z" fill="#131c27"/>
+  <!-- neck -->
+  <path d="M211 288L218 360 Q265 387 308 358L315 280Z" fill="#e0a075" stroke="#6f463a" stroke-width="5"/>
+  <!-- face/ears -->
+  <ellipse cx="166" cy="257" rx="18" ry="30" fill="#df9c70" stroke="#80583d" stroke-width="4"/>
+  <ellipse cx="361" cy="257" rx="18" ry="30" fill="#df9c70" stroke="#80583d" stroke-width="4"/>
+  <path d="M170 166 Q171 113 252 110 Q350 104 355 174 L348 281 Q323 334 263 345 Q205 336 177 288Z" fill="#f2bd8d" stroke="#6c4236" stroke-width="6"/>
+  <path d="M177 294L200 303M326 305L351 290" stroke="#9f5e45" stroke-width="5"/>
+  <!-- whisker marks -->
+  <path d="M186 261l42 9M186 281l38 4M304 271l40-9M305 286l40-6" stroke="#745043" stroke-width="4" stroke-linecap="round"/>
+  <!-- eyes -->
+  <path d="M193 233 Q215 217 236 234L231 249 199 249Z" fill="#f0f7ff" stroke="#392f35" stroke-width="3"/>
+  <ellipse cx="214" cy="238" rx="11" ry="12" fill="#218fcb"/><ellipse cx="215" cy="239" rx="5" ry="8" fill="#071e33"/><circle cx="211" cy="234" r="2.4" fill="white"/>
+  <path d="M290 233Q310 217 332 233L327 249 295 249Z" fill="#f0f7ff" stroke="#392f35" stroke-width="3"/>
+  <ellipse cx="310" cy="239" rx="11" ry="12" fill="#218fcb"/><ellipse cx="309" cy="239" rx="5" ry="8" fill="#071e33"/><circle cx="306" cy="234" r="2.4" fill="white"/>
+  <path d="M198 218l34-7M293 211l34 7" stroke="#5c4437" stroke-width="7" stroke-linecap="round"/>
+  <path d="M263 248l-6 31 10 2" fill="none" stroke="#af715a" stroke-width="3"/>
+  <path d="M242 303Q263 314 287 302" fill="none" stroke="#9d554b" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- band and plate -->
+  <path d="M164 171 Q263 120 361 172L360 217Q260 191 165 219Z" fill="#222f42" stroke="#0a0c16" stroke-width="7"/>
+  <path d="M196 169Q263 145 333 170L326 209Q262 198 203 210Z" fill="url(#steel)" stroke="#303b4a" stroke-width="5"/>
+  <circle cx="210" cy="182" r="3" fill="#384455"/><circle cx="318" cy="183" r="3" fill="#384455"/>
+  <path d="M246 184Q257 171 274 178Q290 190 275 198Q260 207 250 192Q251 184 260 187Q267 189 263 195M253 175L249 169" stroke="#344353" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- iconic golden spikes -->
+  <path d="M156 188L126 132 160 147 151 95 191 118 191 54 223 93 237 37 262 86 298 34 303 89 354 62 341 120 388 108 365 154 394 168 356 183 341 152Q259 120 172 169Z" fill="#ffd337" stroke="#ad6c23" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M172 149l26-27M238 102l22-33M316 120l20-30" stroke="#ffec8b" stroke-width="5" opacity=".8"/>
+  <path d="M167 172 Q263 138 358 173" fill="none" stroke="#1b2434" stroke-width="12"/>
+  <!-- scarf tie -->
+  <path d="M158 188Q90 197 67 171L140 206 102 245 174 215Z" fill="#141d2e" stroke="#020a12" stroke-width="5"/>
+ </g>
+ <g opacity=".9">
+  <circle cx="570" cy="380" r="64" fill="#56d2ff" opacity=".18" filter="url(#glow)">
+   <animate attributeName="opacity" values=".12;.25;.12" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="570" cy="380" r="43" stroke="#83ecff" stroke-width="3" fill="none" stroke-dasharray="11 5"/>
+  <path d="M545 372q31-43 56 9q-41 14-44-20q27-10 26 30" fill="none" stroke="#b6f6ff" stroke-width="5" stroke-linecap="round"/>
+ </g>
+ <!-- story text -->
+ <line x1="726" y1="85" x2="1392" y2="85" stroke="#ee9348" stroke-opacity=".6"/>
+ <text x="730" y="58" fill="#f9a444" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="5">THE NINJA WAY  /  CODE CHRONICLES</text>
+ <text x="722" y="170" fill="#fff7e8" font-family="Arial,sans-serif" font-size="68" font-weight="900" letter-spacing="2">SIVANESAN B</text>
+ <text x="725" y="227" fill="#a7d9ee" font-family="Arial,sans-serif" font-size="29" font-weight="700">AI Engineer  ·  GenAI  ·  RAG  ·  Voice AI</text>
+ <path d="M730 265H1320" stroke="#53677a" stroke-width="1"/>
+ <text x="728" y="318" fill="#fff2e3" font-family="Arial,sans-serif" font-size="27" font-weight="700">MY NINJA WAY: BUILD. LEARN. EVOLVE.</text>
+ <text x="728" y="360" fill="#d2dae9" font-family="Arial,sans-serif" font-size="22">Every project is a new mission.</text>
+ <text x="728" y="392" fill="#d2dae9" font-family="Arial,sans-serif" font-size="22">Every bug is another training arc.</text>
+ <rect x="726" y="438" rx="19" width="263" height="49" fill="#e9771e"/>
+ <text x="753" y="470" fill="#111422" font-family="Arial,sans-serif" font-size="19" font-weight="800">MISSION: SHIP REAL AI</text>
+ <rect x="1005" y="438" rx="19" width="310" height="49" fill="none" stroke="#70d5f7" stroke-width="2"/>
+ <text x="1035" y="470" fill="#a1e6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">RANK: ALWAYS LEARNING</text>
+ <path d="M700 523H1394" stroke="#47586b" stroke-width="1"/>
+ <text x="728" y="547" fill="#809caf" font-family="Arial,sans-serif" font-size="14">Naruto fan tribute • Personal developer profile • Unofficial artwork</text>
+</g>
+</svg>

@@ -8,13 +8,13 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/ai-command-center-3d.svg" width="100%" alt="Sivanesan B: animated 3D AI Command Core with luminous neural sphere, rotating 3D orbital geometry and floating holographic modules"/>
+<img src="assets/naruto-ninja-way-hero.svg" width="100%" alt="Naruto-inspired ninja-way profile hero featuring a blond anime ninja, swirling chakra, and the AI engineering journey of Sivanesan B"/>
 
 <br/>
 
 **AI Engineer · Generative AI · Forward Deployed Engineer · RAG / LLM · Voice AI · Agentic Systems**
 
-*I build practical AI products — connecting research, models, software engineering, and real users.*
+*My ninja way: turn curiosity into practical AI products — one mission, one iteration, one deployment at a time.*
 
 <br/>
 
@@ -33,6 +33,37 @@
 <img src="https://img.shields.io/badge/POSTGRESQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 
 </div>
+
+---
+
+### Prologue / My Ninja Way 🍥
+
+> **"Every project is a new mission. Every bug is a training arc."**
+
+From the first line of Python to building AI products, I see my engineering journey through the story of **Naruto**: curiosity, training, teamwork, setbacks, perseverance, and finally building something that helps people.
+
+<table>
+<tr><td align="center" width="20%"><b>🍥 Naruto</b><br/><sub>Never give up</sub></td><td align="left">I keep iterating until an AI prototype becomes something people can actually use.</td></tr>
+<tr><td align="center"><b>⚡ Sasuke</b><br/><sub>Precision</sub></td><td align="left">Careful debugging, model evaluation, and attention to the smallest implementation details.</td></tr>
+<tr><td align="center"><b>📘 Kakashi</b><br/><sub>System design</sub></td><td align="left">Connecting models, tools, APIs, retrieval, UI, and infrastructure into one coordinated system.</td></tr>
+<tr><td align="center"><b>🌙 Itachi</b><br/><sub>Think ahead</sub></td><td align="left">Security, reliability, trade-offs, and building systems that hold up beyond the demo.</td></tr>
+</table>
+
+**The five arcs of my developer story**
+
+`01 — Academy` Learned Python, AI and Data Science fundamentals.  
+`02 — Team 7` Started combining ML, software, APIs and collaboration.  
+`03 — Chūnin Exams` Built and tested RAG systems, agents, and voice interfaces.  
+`04 — Sage Training` Explored efficient LLM inference, evaluation, and deployment.  
+`05 — The Hokage Dream` Keep building useful, dependable AI for real users.
+
+<details>
+<summary><b>🎮 Open the original 3D AI Command Core</b></summary>
+<br/>
+<div align="center">
+<img src="assets/ai-command-center-3d.svg" width="100%" alt="Original AI Command Core holographic SVG artwork"/>
+</div>
+</details>
 
 ---
 
@@ -143,6 +174,6 @@ flowchart LR
 
 [**Portfolio**](https://sivanesanbalu.netlify.app) · [**LinkedIn**](https://www.linkedin.com/in/sivanesan-b-871ba7264/) · [**Email**](mailto:apsiva69@gmail.com) · [**GitHub Repositories**](https://github.com/Sivanesanbalu?tab=repositories)
 
-<sub>Original animated 3D-projected visual assets are stored in this repository and appear directly in this README. GitHub Markdown does not execute interactive JavaScript/WebGL scenes.</sub>
+<sub>Naruto-inspired fan tribute with original vector art; not affiliated with the Naruto creators. Original 3D Command Core preserved above. GitHub Markdown does not execute interactive JavaScript/WebGL scenes.</sub>
 
 </div>
