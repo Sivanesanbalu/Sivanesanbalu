@@ -14,7 +14,7 @@
 
 **AI Engineer · Generative AI · Forward Deployed Engineer · RAG / LLM · Voice AI · Agentic Systems**
 
-*I build practical AI products — connecting research, models, software engineering, and real users.*
+*AI/ML Engineer with hands-on experience in Generative AI, LLMs, RAG, Agentic AI, Voice AI and end-to-end AI application development.*
 
 <br/>
 
@@ -38,17 +38,26 @@
 
 ### 01 / The engineer behind the systems
 
-Hi, I'm **Sivanesan B** — an AI & Data Science graduate, AI engineer and builder interested in everything from language model inference to user-facing products.
+Hi, I'm **Sivanesan B** — an **AI/ML Engineer and GenAI Executive & Forward Deployed Engineer** with a B.Tech in Artificial Intelligence and Data Science from Kumaraguru College of Technology.
 
-My focus is translating a good AI prototype into an **end-to-end system**: ingestion, retrieval, agents, APIs, interface, testing, monitoring and deployment.
+I work on **LLM-powered applications, AI agents, RAG workflows and business automation**. My experience spans model optimization, NLP, computer vision and building end-to-end AI solutions — from research and prototyping to APIs, interfaces and practical business integrations.
 
 - **Build:** Generative AI workflows, RAG search and task-focused agents.
 - **Explore:** Speech interfaces, voice infrastructure and offline-first assistants.
 - **Engineer:** Python backends, TypeScript interfaces, databases, secure integrations and testing.
 - **Research:** Resource-efficient LLM inference, activation freezing and responsible compute.
-- **Next:** Full-time AI engineering roles involving GenAI, Voice AI, RAG and applied AI systems.
+- **Current role:** GenAI Executive & Forward Deployed Engineer at Nunes Instruments (Aug 2026–present), as listed on my résumé.
+- **Earlier experience:** Innovation Engineer Trainee at Forge Innovation & Ventures (Jan–Jul 2025), developing an offline voice-enabled inventory assistant with Whisper, FAISS and a quantized local LLM.
+- **Next:** AI Engineer, GenAI, RAG, Voice AI and Forward Deployed Engineer opportunities.
 
-### 02 / AI systems laboratory
+### 02 / Professional experience
+
+| Role | Organization | Focus |
+| :--- | :--- | :--- |
+| **GenAI Executive & Forward Deployed Engineer** · Aug 2026–present | **Nunes Instruments** | LLM-powered applications, AI agents, document workflows, REST APIs, WhatsApp business-intelligence dashboard and ERP/Excel reporting automation. |
+| **Innovation Engineer Trainee** · Jan–Jul 2025 | **Forge Innovation & Ventures** | Offline inventory assistance using Whisper speech recognition, FAISS semantic search and local LLM inference. |
+
+### 03 / AI systems laboratory
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Sivanesanbalu/Sivanesanbalu/main/assets/ai-module-lab-3d.svg" width="100%" alt="Four isometric 3D illustrations showing a voice microphone, stacked retrieval databases, an agent network and a research processor"/>
@@ -65,7 +74,7 @@ My focus is translating a good AI prototype into an **end-to-end system**: inges
 
 > **How I approach engineering:** build the prototype, prove its behavior, expose its limitations, then improve reliability before making production claims.
 
-### 03 / Research that shapes the engineering
+### 04 / Research that shapes the engineering
 
 <div align="center">
 
@@ -77,9 +86,11 @@ My focus is translating a good AI prototype into an **end-to-end system**: inges
 
 </div>
 
-Published at **ICNGCS 2025**. The research explores ways to make transformer inference more efficient through self-pruning and activation freezing. I apply that curiosity about **latency, memory and compute** to practical AI engineering decisions.
+Published at **IEEE ICNGCS 2025** (DOI: [10.1109/ICNGCS64900.2025.11183217](https://doi.org/10.1109/ICNGCS64900.2025.11183217)). My résumé reports **58% lower CO₂ emissions and 56% faster LLM inference** through self-pruning and activation freezing.
 
-### 04 / Architecture + technology
+🏆 **Best Final Year Project Award** — Department of Artificial Intelligence & Data Science, Kumaraguru College of Technology.
+
+### 05 / Architecture + technology
 
 | Layer | Tools and practices |
 | :--- | :--- |
@@ -110,7 +121,7 @@ flowchart LR
 
 </details>
 
-### 05 / GitHub universe
+### 06 / GitHub universe
 
 <div align="center">
 
