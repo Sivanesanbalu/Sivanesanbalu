@@ -8,6 +8,11 @@
 
 <img src="assets/neo/hero.svg" width="100%" alt="Sivanesan B — animated neon city hero"/>
 
+<img src="assets/neo/rocket-launch-3d.webp" width="280" alt="3D rocket launching from a browser window"/>
+
+**🚀 From idea → prototype → production — launching AI that actually ships.**
+
+
 <a href="https://sivanesanbalu.netlify.app"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-00F0FF?style=for-the-badge&logo=googlechrome&logoColor=05040f"/></a>
 <a href="https://www.linkedin.com/in/sivanesan-b-871ba7264/"><img alt="LinkedIn" src="https://img.shields.io/badge/LINKEDIN-FF2BD6?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:apsiva69@gmail.com"><img alt="Email" src="https://img.shields.io/badge/EMAIL-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white"/></a>
@@ -71,4 +76,4 @@ My rule: *build it, prove it, expose its limits, then harden it before calling i
 
 <img src="assets/neo/footer.svg" width="100%" alt="Let's build something useful"/>
 
-<sub>3D robot-brain animation: <a href="https://lottiefiles.com/free-animation/technology-isometric-ai-robot-brain-2vX5SyCjFX">“Technology isometric AI robot brain”</a> by Abdul Latif on LottieFiles (Lottie Simple License), rendered to WebP.</sub>
+<sub>3D robot-brain animation: <a href="https://lottiefiles.com/free-animation/technology-isometric-ai-robot-brain-2vX5SyCjFX">“Technology isometric AI robot brain”</a> by Abdul Latif on LottieFiles (Lottie Simple License), rendered to WebP. 3D rocket launch: <a href="https://lottiefiles.com/free-animation/3d-accelerate-success-3tE5Qj0GTP">“3D Accelerate Success”</a> by Irfan M on LottieFiles (Lottie Simple License), background removed and rendered to WebP.</sub>

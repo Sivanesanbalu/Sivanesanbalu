@@ -218,14 +218,6 @@ def hero() -> str:
     # name with glitch
     name = "SIVANESAN B"
     common = f'x="600" y="150" text-anchor="middle" font-size="86" font-weight="900" letter-spacing="8"'
-    for k in range(14, 0, -1):  # 3D extrusion whose depth direction swings like a slow camera orbit
-        mix = k / 14
-        col = "#%02x%02x%02x" % (int(150 - 110 * mix), int(40 - 32 * mix), int(200 - 130 * mix))
-        vals = ";".join(f"{k * 1.15 * math.sin(a):.1f} {k * 0.95 * math.cos(a) + k * .25:.1f}" for a in (-.75, .75, -.75))
-        b.append(f'<text {common} fill="{col}"><animateTransform attributeName="transform" type="translate" values="{vals}" '
-                 f'keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1" dur="7s" repeatCount="indefinite"/>{name}</text>')
-    b.append(f'<g class="bob">{wire3d(CUBE_V, CUBE_E, 130, 120, 34, math.pi / 2, 30, 4, -.45, CYAN, CYAN, 3.2, 1.8)}</g>')
-    b.append(f'<g class="bob2">{wire3d(OCTA_V, OCTA_E, 1072, 122, 44, math.pi / 2, 30, 5, .35, PINK, AMBER, 3.2, 1.8)}</g>')
     b.append(f'<text {common} fill="{PINK}" opacity=".8" class="g1">{name}</text>')
     b.append(f'<text {common} fill="{CYAN}" opacity=".8" class="g2">{name}</text>')
     b.append(f'<text {common} fill="url(#name)" filter="url(#glow)" class="g0">{name}</text>')
