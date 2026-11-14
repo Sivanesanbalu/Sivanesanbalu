@@ -50,6 +50,95 @@ def t(x, y, s, size=14, fill=INK, weight=400, anchor="start", cls="", extra=""):
             f'text-anchor="{anchor}"{c} {extra}>{escape(s)}</text>')
 
 
+
+# ─────────────────────────────────────────────────────── 3D ENGINE ──
+# Real 3D: geometry is built in 3D, rotated, perspective-projected per frame,
+# and the frames are played back with SMIL. Depth drives size, brightness
+# and front/back occlusion.
+def rx(p, a):
+    x, y, z = p; c, s_ = math.cos(a), math.sin(a)
+    return (x, y * c - z * s_, y * s_ + z * c)
+
+
+def ry(p, a):
+    x, y, z = p; c, s_ = math.cos(a), math.sin(a)
+    return (x * c + z * s_, y, -x * s_ + z * c)
+
+
+def rz(p, a):
+    x, y, z = p; c, s_ = math.cos(a), math.sin(a)
+    return (x * c - y * s_, x * s_ + y * c, z)
+
+
+def proj(p, cx, cy, f=420.0):
+    k = f / (f + p[2])
+    return cx + p[0] * k, cy + p[1] * k, k
+
+
+def icosphere(subdiv=1):
+    r5 = 1 / math.sqrt(5)
+    v = [(0, -1, 0), (0, 1, 0)]
+    v += [(2 * r5 * math.cos(math.radians(72 * i)), -r5, 2 * r5 * math.sin(math.radians(72 * i))) for i in range(5)]
+    v += [(2 * r5 * math.cos(math.radians(72 * i + 36)), r5, 2 * r5 * math.sin(math.radians(72 * i + 36))) for i in range(5)]
+    A, B = (lambda i: 2 + i % 5), (lambda i: 7 + i % 5)
+    faces = []
+    for i in range(5):
+        faces += [(0, A(i), A(i + 1)), (1, B(i + 1), B(i)), (A(i), B(i), A(i + 1)), (A(i + 1), B(i), B(i + 1))]
+    for _ in range(subdiv):
+        cache, nf = {}, []
+
+        def mid(a, b):
+            key = (min(a, b), max(a, b))
+            if key not in cache:
+                m = [(v[a][j] + v[b][j]) / 2 for j in range(3)]
+                n = math.sqrt(sum(c * c for c in m))
+                v.append(tuple(c / n for c in m)); cache[key] = len(v) - 1
+            return cache[key]
+        for a, b, c in faces:
+            ab, bc, ca = mid(a, b), mid(b, c), mid(c, a)
+            nf += [(a, ab, ca), (b, bc, ab), (c, ca, bc), (ab, bc, ca)]
+        faces = nf
+    edges = sorted({(min(a, b), max(a, b)) for f in faces for a, b in ((f[0], f[1]), (f[1], f[2]), (f[2], f[0]))})
+    return v, edges
+
+
+CUBE_V = [(x, y, z) for x in (-1, 1) for y in (-1, 1) for z in (-1, 1)]
+CUBE_E = [(a, b) for a in range(8) for b in range(a + 1, 8) if sum(CUBE_V[a][i] != CUBE_V[b][i] for i in range(3)) == 1]
+OCTA_V = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]
+OCTA_E = [(a, b) for a in range(6) for b in range(a + 1, 6) if OCTA_V[a] != tuple(-c for c in OCTA_V[b])]
+
+
+def wire3d(verts, edges, cx, cy, size, sym, frames, dur, tilt, color, node_color=None, node_r=0.0,
+           width=1.4, f=420.0, spin=ry):
+    """Rotating wireframe: one <line> per edge, coordinates + depth-shaded opacity per frame."""
+    fr = []
+    for i in range(frames + 1):
+        ang = sym * i / frames
+        fr.append([proj(tuple(c * size for c in rx(spin(p, ang), tilt)), cx, cy, f) + (rx(spin(p, ang), tilt)[2],) for p in verts])
+    kt = ";".join(f"{i / frames:.4f}" for i in range(frames + 1))
+    out = []
+
+    def anim(attr, vals):
+        return f'<animate attributeName="{attr}" values="{";".join(vals)}" keyTimes="{kt}" dur="{dur}s" repeatCount="indefinite"/>'
+    for a, b in edges:
+        xa = [f"{fr[i][a][0]:.1f}" for i in range(frames + 1)]
+        ya = [f"{fr[i][a][1]:.1f}" for i in range(frames + 1)]
+        xb = [f"{fr[i][b][0]:.1f}" for i in range(frames + 1)]
+        yb = [f"{fr[i][b][1]:.1f}" for i in range(frames + 1)]
+        op = [f"{max(.12, min(1, .55 - (fr[i][a][3] + fr[i][b][3]) / 2 * .5)):.2f}" for i in range(frames + 1)]
+        out.append(f'<line stroke="{color}" stroke-width="{width}" stroke-linecap="round" x1="{xa[0]}" y1="{ya[0]}" x2="{xb[0]}" y2="{yb[0]}" stroke-opacity="{op[0]}">'
+                   + anim("x1", xa) + anim("y1", ya) + anim("x2", xb) + anim("y2", yb) + anim("stroke-opacity", op) + "</line>")
+    if node_r:
+        for k in range(len(verts)):
+            xs = [f"{fr[i][k][0]:.1f}" for i in range(frames + 1)]
+            ys = [f"{fr[i][k][1]:.1f}" for i in range(frames + 1)]
+            rs = [f"{node_r * fr[i][k][2] ** 2:.2f}" for i in range(frames + 1)]
+            op = [f"{max(.15, min(1, .6 - fr[i][k][3] * .55)):.2f}" for i in range(frames + 1)]
+            out.append(f'<circle fill="{node_color or color}" cx="{xs[0]}" cy="{ys[0]}" r="{rs[0]}">'
+                       + anim("cx", xs) + anim("cy", ys) + anim("r", rs) + anim("opacity", op) + "</circle>")
+    return "".join(out)
+
+
 # ───────────────────────────────────────────────────────────── HERO ──
 def hero() -> str:
     W, H, HZ = 1200, 460, 338
@@ -129,6 +218,14 @@ def hero() -> str:
     # name with glitch
     name = "SIVANESAN B"
     common = f'x="600" y="150" text-anchor="middle" font-size="86" font-weight="900" letter-spacing="8"'
+    for k in range(14, 0, -1):  # 3D extrusion whose depth direction swings like a slow camera orbit
+        mix = k / 14
+        col = "#%02x%02x%02x" % (int(150 - 110 * mix), int(40 - 32 * mix), int(200 - 130 * mix))
+        vals = ";".join(f"{k * 1.15 * math.sin(a):.1f} {k * 0.95 * math.cos(a) + k * .25:.1f}" for a in (-.75, .75, -.75))
+        b.append(f'<text {common} fill="{col}"><animateTransform attributeName="transform" type="translate" values="{vals}" '
+                 f'keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1" dur="7s" repeatCount="indefinite"/>{name}</text>')
+    b.append(f'<g class="bob">{wire3d(CUBE_V, CUBE_E, 130, 120, 34, math.pi / 2, 30, 4, -.45, CYAN, CYAN, 3.2, 1.8)}</g>')
+    b.append(f'<g class="bob2">{wire3d(OCTA_V, OCTA_E, 1072, 122, 44, math.pi / 2, 30, 5, .35, PINK, AMBER, 3.2, 1.8)}</g>')
     b.append(f'<text {common} fill="{PINK}" opacity=".8" class="g1">{name}</text>')
     b.append(f'<text {common} fill="{CYAN}" opacity=".8" class="g2">{name}</text>')
     b.append(f'<text {common} fill="url(#name)" filter="url(#glow)" class="g0">{name}</text>')
@@ -179,6 +276,7 @@ def hero() -> str:
 @keyframes g1{{0%,86%,100%{{transform:translate(0,0);opacity:0}}88%{{transform:translate(-7px,2px);opacity:.85}}91%{{transform:translate(5px,-3px)}}94%{{transform:translate(-3px,0)}}}}
 @keyframes g2{{0%,86%,100%{{transform:translate(0,0);opacity:0}}88%{{transform:translate(7px,-2px);opacity:.85}}91%{{transform:translate(-5px,3px)}}94%{{transform:translate(3px,1px)}}}}
 @keyframes g0{{0%,87%,100%{{transform:none}}89%{{transform:skewX(-8deg)}}92%{{transform:translateX(4px)}}}}
+.bob{{animation:bob 6s ease-in-out infinite}}.bob2{{animation:bob 7s ease-in-out -3s infinite}}@keyframes bob{{50%{{transform:translateY(-14px)}}}}
 .shoot{{animation:sh 9s ease-out infinite}}@keyframes sh{{0%,80%{{transform:translate(1300px,30px);opacity:0}}82%{{opacity:1}}92%,100%{{transform:translate(700px,230px);opacity:0}}}}
 """
     return svg(W, H, "".join(b), style, "Sivanesan B — animated neon city hero: AI Engineer, Multi-Agent Architect, Voice AI Builder")
@@ -233,35 +331,58 @@ def terminal() -> str:
 
 # ─────────────────────────────────────────────────────────── ORBIT ──
 def orbit() -> str:
-    W, H, CX, CY = 600, 400, 300, 200
-    rings = [
-        (70, 24, ["Python", "PyTorch", "FastAPI"], CYAN),
-        (122, 36, ["LangGraph", "FAISS", "Whisper", "Hugging Face"], PINK),
-        (172, 52, ["TypeScript", "Next.js", "PostgreSQL", "Supabase", "Docker", "Vapi"], AMBER),
-    ]
-    b = [f"""<defs><radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="{CYAN}"/><stop offset="1" stop-color="{VIOLET}" stop-opacity="0"/></radialGradient>
-<filter id="g"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    W, H, CX, CY = 600, 400, 300, 192
+    v, e = icosphere(1)
+    b = [f"""<defs><radialGradient id="core"><stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset=".25" stop-color="{CYAN}" stop-opacity=".55"/><stop offset="1" stop-color="{VIOLET}" stop-opacity="0"/></radialGradient>
+<radialGradient id="ball" cx=".38" cy=".32"><stop offset="0" stop-color="#3b2a8a" stop-opacity=".55"/><stop offset="1" stop-color="#0c0a22" stop-opacity=".2"/></radialGradient>
+<filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
 <rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="14" fill="{PANEL}" stroke="{VIOLET}" stroke-opacity=".6"/>
-{t(22, 32, "TECH ORBIT", 12, DIM, 700, cls="m", extra='letter-spacing="3"')}"""]
-    for k in range(3):
-        b.append(f'<circle cx="{CX}" cy="{CY}" r="20" fill="none" stroke="{CYAN}" stroke-width="2">'
-                 f'<animate attributeName="r" values="22;64" dur="3s" begin="{k}s" repeatCount="indefinite"/>'
-                 f'<animate attributeName="opacity" values=".8;0" dur="3s" begin="{k}s" repeatCount="indefinite"/></circle>')
-    b.append(f'<circle cx="{CX}" cy="{CY}" r="44" fill="url(#core)"/>')
-    b.append(t(CX, CY + 7, "AI", 22, "#05040f", 900, "middle"))
-    for ri, (r, dur, items, col) in enumerate(rings):
-        sign = 1 if ri % 2 == 0 else -1
-        b.append(f'<circle cx="{CX}" cy="{CY}" r="{r}" fill="none" stroke="{col}" stroke-opacity=".35" stroke-dasharray="3 6"/>')
-        b.append(f'<g><animateTransform attributeName="transform" type="rotate" from="0 {CX} {CY}" to="{sign * 360} {CX} {CY}" dur="{dur}s" repeatCount="indefinite"/>')
-        for i, name in enumerate(items):
-            a = 2 * math.pi * i / len(items) + ri
-            x, y = CX + r * math.cos(a), CY + r * math.sin(a)
-            w = len(name) * 7.4 + 18
-            b.append(f'<g><animateTransform attributeName="transform" type="rotate" from="0 {x:.1f} {y:.1f}" to="{-sign * 360} {x:.1f} {y:.1f}" dur="{dur}s" repeatCount="indefinite"/>'
-                     f'<rect x="{x - w / 2:.1f}" y="{y - 12:.1f}" width="{w:.1f}" height="24" rx="12" fill="#0c0a22" stroke="{col}" filter="url(#g)"/>'
-                     f'{t(round(x, 1), round(y + 4.5, 1), name, 12.5, INK, 600, "middle")}</g>')
-        b.append("</g>")
-    return svg(W, H, "".join(b), "", "Orbiting technology stack: Python, PyTorch, LangGraph, FAISS, Whisper, TypeScript, Next.js and more")
+{t(22, 32, "TECH ORBIT · REAL-TIME 3D", 12, DIM, 700, cls="m", extra='letter-spacing="3"')}
+<ellipse cx="{CX}" cy="{CY + 125}" rx="150" ry="16" fill="{CYAN}" opacity=".08"/>"""]
+    rings = [  # radius, tilt(x), roll(z), period, color, labels
+        (100, 1.15, .26, 26, CYAN, ["Python", "PyTorch", "FastAPI", "Whisper"]),
+        (145, 1.25, -.30, 38, PINK, ["LangGraph", "FAISS", "Hugging Face", "Vapi"]),
+        (178, 1.36, .08, 50, AMBER, ["TypeScript", "Next.js", "PostgreSQL", "Supabase", "Docker"]),
+    ]
+    back, front = [], []
+    N = 60
+    for R, tx, tz, per, col, labels in rings:
+        def P(phi):
+            return rz(rx((R * math.cos(phi), 0, R * math.sin(phi)), tx), tz)
+        pts = [P(2 * math.pi * i / 96) for i in range(97)]
+        for want_back, dst in ((True, back), (False, front)):
+            seg, dash = [], 'stroke-dasharray="3 5"' if want_back else ""
+            for p in pts:
+                if (p[2] > 0) == want_back:
+                    x, y, _ = proj(p, CX, CY); seg.append(f"{x:.1f} {y:.1f}")
+                elif seg:
+                    dst.append(f'<path d="M{" L".join(seg)}" fill="none" stroke="{col}" stroke-opacity="{.18 if want_back else .5}" stroke-width="{1 if want_back else 1.6}" {dash}/>'); seg = []
+            if seg:
+                dst.append(f'<path d="M{" L".join(seg)}" fill="none" stroke="{col}" stroke-opacity="{.18 if want_back else .5}" stroke-width="{1 if want_back else 1.6}" {dash}/>')
+        kt = ";".join(f"{i / N:.4f}" for i in range(N + 1))
+        for j, name in enumerate(labels):
+            ph0 = 2 * math.pi * j / len(labels)
+            fr = [P(ph0 + 2 * math.pi * i / N) for i in range(N + 1)]
+            pj = [proj(p, CX, CY) for p in fr]
+            tr = ";".join(f"{x:.1f} {y:.1f}" for x, y, _ in pj)
+            sc = ";".join(f"{k ** 1.6:.3f}" for _, _, k in pj)
+            w = len(name) * 7.4 + 20
+            pill = (f'<rect x="{-w / 2:.1f}" y="-12" width="{w:.1f}" height="24" rx="12" fill="#0c0a22" stroke="{col}" stroke-width="1.5"/>'
+                    + t(0, 4.5, name, 12.5, INK, 600, "middle")
+                    + f'<circle cx="{-w / 2 - 7:.1f}" cy="0" r="3" fill="{col}"/>')
+            moving = (f'<g><animateTransform attributeName="transform" type="translate" values="{tr}" keyTimes="{kt}" dur="{per}s" repeatCount="indefinite"/>'
+                      f'<g><animateTransform attributeName="transform" type="scale" values="{sc}" keyTimes="{kt}" dur="{per}s" repeatCount="indefinite"/>{pill}</g></g>')
+            vis_f = ";".join("1" if p[2] <= 0 else "0" for p in fr)
+            vis_b = ";".join("0" if p[2] <= 0 else ".55" for p in fr)
+            back.append(f'<g><animate attributeName="opacity" values="{vis_b}" keyTimes="{kt}" calcMode="discrete" dur="{per}s" repeatCount="indefinite"/>{moving}</g>')
+            front.append(f'<g filter="url(#g)"><animate attributeName="opacity" values="{vis_f}" keyTimes="{kt}" calcMode="discrete" dur="{per}s" repeatCount="indefinite"/>{moving}</g>')
+    b += back
+    b.append(f'<circle cx="{CX}" cy="{CY}" r="86" fill="url(#core)"><animate attributeName="r" values="80;92;80" dur="4s" repeatCount="indefinite"/></circle>')
+    b.append(f'<circle cx="{CX}" cy="{CY}" r="60" fill="url(#ball)"/>')
+    b.append(wire3d(v, e, CX, CY, 60, 2 * math.pi / 5, 24, 5, -.38, CYAN, "#ffffff", 3.4, 1.1))
+    b.append(t(CX, CY + 8, "AI", 24, "#ffffff", 900, "middle", extra='filter="url(#g)"'))
+    b += front
+    return svg(W, H, "".join(b), "", "Real-time 3D tech orbit: a rotating geodesic AI core with Python, PyTorch, LangGraph, FAISS, Whisper, TypeScript and more orbiting in 3D")
 
 
 # ───────────────────────────────────────────────────────── PROJECTS ──
