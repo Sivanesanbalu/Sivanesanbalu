@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" role="img" aria-label="divider"><title>divider</title><style>text{font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif}.m{font-family:'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}</style><defs><linearGradient id="d" x1="0" x2="1"><stop offset="0" stop-color="#00f0ff" stop-opacity="0"/><stop offset=".5" stop-color="#00f0ff"/><stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/></linearGradient>
+<filter id="g" x="-10%" y="-200%" width="120%" height="500%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<line x1="0" y1="12" x2="1200" y2="12" stroke="#8b5cf6" stroke-opacity=".35"/>
+<rect y="10" width="260" height="4" rx="2" fill="url(#d)" filter="url(#g)"><animate attributeName="x" values="-260;1200" dur="3.5s" repeatCount="indefinite"/></rect>
+<rect x="594" y="6" width="12" height="12" transform="rotate(45 600 12)" fill="#05040f" stroke="#ff2bd6"/></svg>

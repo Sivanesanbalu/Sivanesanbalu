@@ -1,0 +1,44 @@
+name: Refresh NEO-CITY profile visuals
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_neo_profile.py"
+      - ".github/workflows/neo-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: neo-profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate animated SVGs and live stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: python scripts/build_neo_profile.py
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/neo
+          if git diff --cached --quiet; then
+            echo "Visuals already up to date"
+          else
+            git commit -m "chore(profile): refresh live telemetry"
+            git push
+          fi
