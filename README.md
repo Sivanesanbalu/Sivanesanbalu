@@ -25,7 +25,18 @@
 
 <img src="assets/neo/timeline.svg" width="100%" alt="Career timeline"/>
 
-I build **LLM-powered applications, AI agents, RAG workflows and voice systems** — from research and prototype to APIs, interfaces and real business integrations. My rule: *build it, prove it, expose its limits, then harden it before calling it production.*
+<img src="assets/neo/ai-robot-brain-3d.webp" align="right" width="300" alt="3D isometric AI robot brain animation"/>
+
+I build **LLM-powered applications, AI agents, RAG workflows and voice systems** — from research and prototype to APIs, interfaces and real business integrations.
+
+- 🧠 **Think:** LLMs, RAG retrieval and multi-agent orchestration
+- 🎙️ **Speak:** low-latency Voice AI and live call translation
+- 👁️ **See:** computer vision for recognition and proctoring
+- 🌿 **Optimize:** carbon-efficient inference (IEEE '25)
+
+My rule: *build it, prove it, expose its limits, then harden it before calling it production.*
+
+<br clear="right"/>
 
 ### ⟢ 02 // systems I've built
 
@@ -59,3 +70,5 @@ I build **LLM-powered applications, AI agents, RAG workflows and voice systems**
 </details>
 
 <img src="assets/neo/footer.svg" width="100%" alt="Let's build something useful"/>
+
+<sub>3D robot-brain animation: <a href="https://lottiefiles.com/free-animation/technology-isometric-ai-robot-brain-2vX5SyCjFX">“Technology isometric AI robot brain”</a> by Abdul Latif on LottieFiles (Lottie Simple License), rendered to WebP.</sub>
