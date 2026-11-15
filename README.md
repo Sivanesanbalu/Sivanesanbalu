@@ -6,7 +6,9 @@
 
 <div align="center">
 
-<img src="assets/neo/hero.svg" width="100%" alt="Sivanesan B — animated neon city hero"/>
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/shinobi/"><img src="assets/neo/shinobi-hero.webp" width="100%" alt="Sivanesan B — 3D hand seals charging a spiral chakra core"/></a>
+
+<a href="https://sivanesanbalu.github.io/Sivanesanbalu/shinobi/"><img alt="Enter the 3D scroll" src="https://img.shields.io/badge/%E2%9A%A1_ENTER_THE_3D_SCROLL-LIVE_SITE-FFD84A?style=for-the-badge&labelColor=04050d"/></a>
 
 <img src="assets/neo/rocket-launch-3d.webp" width="280" alt="3D rocket launching from a browser window"/>
 

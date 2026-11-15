@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sivanesan B · Shinobi Engineer</title>
+<meta name="description" content="Sivanesan B — AI Engineer. A scroll-driven 3D journey: hand seals, a spiral chakra core and flash-step kunai through my projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<canvas id="scene"></canvas>
+<div id="flash"></div>
+<div id="seal-hud" aria-hidden="true"></div>
+
+<nav class="dots" aria-label="Sections"></nav>
+
+<main>
+  <section class="panel hero" data-scene="0">
+    <p class="kicker mono">巻物 · SCROLL OF THE ENGINEER</p>
+    <h1><span>SIVANESAN</span> <span class="b">B</span></h1>
+    <p class="role">AI Engineer · Multi-Agent Architect · Voice AI Builder</p>
+    <p class="hint mono">scroll to release the jutsu ↓</p>
+  </section>
+
+  <section class="panel" data-scene="1">
+    <div class="card left">
+      <p class="kicker mono">壱 · SPIRAL CORE</p>
+      <h2>Compressing ideas into a spinning core</h2>
+      <p>I build <b>LLM-powered applications, AI agents, RAG workflows and voice systems</b> — from research and prototype to APIs, interfaces and real business integrations.</p>
+      <ul class="chips" id="skills"></ul>
+      <p class="quote">“Build it, prove it, expose its limits, then harden it before calling it production.”</p>
+    </div>
+  </section>
+
+  <section class="panel tall" data-scene="2">
+    <div class="sticky">
+      <p class="kicker mono center">弐 · FLASH STEP — every kunai is a project</p>
+      <div id="project-card" class="card project"></div>
+      <div id="project-index" class="mono center"></div>
+    </div>
+  </section>
+
+  <section class="panel" data-scene="3">
+    <div class="card right">
+      <p class="kicker mono">参 · THE PATH</p>
+      <h2>Journey so far</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <section class="panel" data-scene="4">
+    <div class="card left">
+      <p class="kicker mono">肆 · SEALING TECHNIQUE</p>
+      <h2>Eco-Transformers <small>IEEE ICNGCS 2025</small></h2>
+      <p>Carbon-efficient and accelerated inference through <b>self-pruning</b> and <b>activation freezing</b> in large language models.</p>
+      <div class="metrics">
+        <div><strong data-count="58">0</strong><span>% lower CO₂</span></div>
+        <div><strong data-count="56">0</strong><span>% faster inference</span></div>
+      </div>
+      <p>🏆 Best Final Year Project — AI &amp; DS, Kumaraguru College of Technology</p>
+      <a class="btn" href="https://doi.org/10.1109/ICNGCS64900.2025.11183217" target="_blank" rel="noopener">Read the paper ↗</a>
+    </div>
+  </section>
+
+  <section class="panel" data-scene="5">
+    <div class="card right">
+      <p class="kicker mono">伍 · CHAKRA READING <span class="live">● live</span></p>
+      <h2>GitHub telemetry</h2>
+      <div class="stats" id="stats"><p class="mono">reading chakra from GitHub…</p></div>
+      <div id="langs"></div>
+      <p class="mono small" id="recent"></p>
+    </div>
+  </section>
+
+  <section class="panel final" data-scene="6">
+    <div class="center-block">
+      <p class="kicker mono">終 · SUMMONING</p>
+      <h2>Let's build something useful.</h2>
+      <p>Open to AI Engineer · GenAI · RAG · Voice AI roles and collaboration.</p>
+      <div class="links">
+        <a class="btn" href="https://github.com/Sivanesanbalu" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/sivanesan-b-871ba7264/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://sivanesanbalu.netlify.app" target="_blank" rel="noopener">Portfolio</a>
+        <a class="btn" href="mailto:apsiva69@gmail.com">Email</a>
+      </div>
+      <p class="mono small credit">Original artwork · rendered live with Three.js</p>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
